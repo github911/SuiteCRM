@@ -1013,11 +1013,9 @@ div.indent_right {
 
 .companyLogo
 {
-
-    width:150px;
+    width:auto;
     float:left;
     padding: 0 10px 0 0;
-    border-right:1px solid #cccccc;
 
 }
 
@@ -1031,19 +1029,13 @@ div.indent_right {
 div#responseTime {
 
     width:50%;
-    text-align:center;
     font-size:12px;
     color:#888888;
-    margin:0px auto;
 }
 
 #copyright_data {
-
-    font-size:12px;
-    color:#888888;
-width:350px;
+    width:auto;
     margin:0 auto;
-    padding:5px 000;
 }
 
 #themePicker, #langPicker
@@ -4201,13 +4193,14 @@ ol, ul, dl {
     z-index: 2;
 }
 
-#bigbutton{
-    padding:10px 0 10px 0;
+.form-signin input[type=text]{
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
 
-.companylogo {
-    text-align:center;
-
+#bigbutton{
+    padding:10px 0 10px 0;
 }
 
 div.input-group input{
@@ -4309,7 +4302,9 @@ fieldset[disabled] .btn-primary.active {
     transition: all 0.3s ease-out;
 }
 
-.dropdown-menu li{
+.dropdown-me -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;nu li{
     margin:5px 0 5px 0;
 }
 
