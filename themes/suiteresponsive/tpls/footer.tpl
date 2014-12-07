@@ -185,12 +185,15 @@ function qe_init(){
                 $(this).toggleClass("active").next().toggle();
                 var new_value = $(".sidebar").is(":visible") ? 'expanded' : 'collapsed';
                 $.cookie('showSidebar', new_value);
+                /* Unfinished code - working on removing sidebar area when sidebar toggled off
                 if (new_value = 'collapsed'){
+
                     $( "#bootstrap-container" ).removeClass( "col-md-offset-2 col-sm-offset-3" );
                 }
                 else if (new_value = 'expanded'){
                     $( "#bootstrap-container" ).addClass( "col-md-offset-2 col-sm-offset-3" );
                 }
+                */
             });
         });
     </script>
