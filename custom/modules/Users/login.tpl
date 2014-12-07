@@ -47,90 +47,75 @@ var LBL_REQUEST_SUBMIT = '{sugar_translate module="Users" label="LBL_REQUEST_SUB
 var LBL_SHOWOPTIONS = '{sugar_translate module="Users" label="LBL_SHOWOPTIONS"}';
 var LBL_HIDEOPTIONS = '{sugar_translate module="Users" label="LBL_HIDEOPTIONS"}';
 </script>
-<table cellpadding="0" align="center" width="100%" cellspacing="0" border="0" style="margin-top: 100px;">
-	<tr>
-		<td align="center">
-		<div class="loginBoxShadow" style="width: 460px;">
-			<div class="loginBox">
-			<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
-				<tr>
-					<td align="center">
-					    {$LOGIN_IMAGE}
-					</td>
-				</tr>
-				<tr>
-					<td align="center">
-						<div class="login">
-							<form action="index.php" method="post" name="DetailView" id="form" onsubmit="return document.getElementById('cant_login').value == ''">
-								<table cellpadding="0" cellspacing="2" border="0" align="center" width="100%">
-						    	<td scope="row" colspan="2">
-						    	    <span class="error" id="browser_warning" style="display:none">
-						    	        {sugar_translate label="WARN_BROWSER_VERSION_WARNING"}
-						    	    </span>
-						    	    <span class="error" id="ie_compatibility_mode_warning" style="display:none">
-						    	        {sugar_translate label="WARN_BROWSER_IE_COMPATIBILITY_MODE_WARNING"}
-						    	    </span>
-						    	</td>
-						    	{if $LOGIN_ERROR !=''}
-									<tr>
-										<td scope="row" colspan="2"><span class="error">{$LOGIN_ERROR}</span></td>
-						    	{if $WAITING_ERROR !=''}
-							        <tr>
-							            <td scope="row" colspan="2"><span class="error">{$WAITING_ERROR}</span></td>
-									</tr>
-								{/if}
-									</tr>
-								{else}
-									<tr>
-										<td scope="row" width='1%'></td>
-										<td scope="row"><span id='post_error' class="error"></span></td>
-									</tr>
-								{/if}
-									<tr>
-										<td scope="row" colspan="2" width="100%" style="font-size: 12px; font-weight: normal; padding-bottom: 4px;">
-										<input type="hidden" name="module" value="Users">
-										<input type="hidden" name="action" value="Authenticate">
-										<input type="hidden" name="return_module" value="Users">
-										<input type="hidden" name="return_action" value="Login">
-										<input type="hidden" id="cant_login" name="cant_login" value="">
-										{foreach from=$LOGIN_VARS key=key item=var}
-											<input type="hidden" name="{$key}" value="{$var}">
-										{/foreach}
-										</td>
-									</tr>
+<div class="container">
+    <form class="form-signin" role="form" action="index.php" method="post" name="DetailView" id="form" onsubmit="return document.getElementById('cant_login').value == ''">
+        <div class="companylogo">{$LOGIN_IMAGE}</div>
+        <span class="error" id="browser_warning" style="display:none">
+		{sugar_translate label="WARN_BROWSER_VERSION_WARNING"}
+		</span>
+		<span class="error" id="ie_compatibility_mode_warning" style="display:none">
+		{sugar_translate label="WARN_BROWSER_IE_COMPATIBILITY_MODE_WARNING"}
+		</span>
+        {if $LOGIN_ERROR !=''}
+            <span class="error">{$LOGIN_ERROR}</span>
+            {if $WAITING_ERROR !=''}
+            <span class="error">{$WAITING_ERROR}</span>
+        {/if}
+        {else}
+                <span id='post_error' class="error"></span>
+        {/if}
+        <span class="error" id="browser_warning" style="display:none">
+            {sugar_translate label="WARN_BROWSER_VERSION_WARNING"}
+        </span>
+		<span class="error" id="ie_compatibility_mode_warning" style="display:none">
+		{sugar_translate label="WARN_BROWSER_IE_COMPATIBILITY_MODE_WARNING"}
+		</span>
+        {if $LOGIN_ERROR !=''}
+            <span class="error">{$LOGIN_ERROR}</span>
+            {if $WAITING_ERROR !=''}
+                <span class="error">{$WAITING_ERROR}</span>
+            {/if}
+        {else}
+            <span id='post_error' class="error"></span>
+        {/if}
+        <input type="hidden" name="module" value="Users">
+        <input type="hidden" name="action" value="Authenticate">
+        <input type="hidden" name="return_module" value="Users">
+        <input type="hidden" name="return_action" value="Login">
+        <input type="hidden" id="cant_login" name="cant_login" value="">
+        {foreach from=$LOGIN_VARS key=key item=var}
+            <input type="hidden" name="{$key}" value="{$var}">
+        {/foreach}
+        <br>
+        {if !empty($SELECT_LANGUAGE)}
+                {sugar_translate module="Users" label="LBL_LANGUAGE"}:
+                <select name='login_language' onchange="switchLanguage(this.value)">{$SELECT_LANGUAGE}</select>
+        {/if}
+        <br>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon logininput glyphicon glyphicon-user"></span>
+            <input type="text" class="form-control" placeholder="Username" required autofocus tabindex="1" id="user_name" name="user_name"  value='{$LOGIN_USER_NAME}' />
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon logininput glyphicon glyphicon-lock"></span>
+            <input type="password" class="form-control" placeholder="Password" tabindex="2" id="user_password" name="user_password" value='{$LOGIN_PASSWORD}' />
+        </div>
+        <br>
+        <input id="bigbutton" class="btn btn-lg btn-primary btn-block" type="submit" title="{sugar_translate module="Users" label="LBL_LOGIN_BUTTON_TITLE"}" tabindex="3" name="Login" value="{sugar_translate module="Users" label="LBL_LOGIN_BUTTON_LABEL"}">
+        <!--<div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>-->
+    </form>
+</div> <!-- /container -->
+<!--
+            <label for="user_name" lass="sr-only">{sugar_translate module="Users" label="LBL_USER_NAME"}</label>
 
-                                    <tr><td>&nbsp;</td></tr>
-                                {if !empty($SELECT_LANGUAGE)}
-                                    <tr>
-                                        <td scope="row">{sugar_translate module="Users" label="LBL_LANGUAGE"}:</td>
-                                        <td><select style='width: 152px' name='login_language' onchange="switchLanguage(this.value)">{$SELECT_LANGUAGE}</select></td>
-                                    </tr>
-                                {/if}
-									<tr>
-										<td scope="row" width="30%"><label for="user_name">{sugar_translate module="Users" label="LBL_USER_NAME"}:</label></td>
-										<td width="70%"><input type="text" size='35' tabindex="1" id="user_name" name="user_name"  value='{$LOGIN_USER_NAME}' /></td>
-									</tr>
-									<tr>
-										<td scope="row"><label for="user_password">{sugar_translate module="Users" label="LBL_PASSWORD"}:</label></td>
-										<td width="30%"><input type="password" size='26' tabindex="2" id="user_password" name="user_password" value='{$LOGIN_PASSWORD}' /></td>
-									</tr>
-
-									<tr>
-										<td>&nbsp;</td>
-										<td><input title="{sugar_translate module="Users" label="LBL_LOGIN_BUTTON_TITLE"}"  class="button primary" class="button primary" type="submit" tabindex="3" id="login_button" name="Login" value="{sugar_translate module="Users" label="LBL_LOGIN_BUTTON_LABEL"}"><br>&nbsp;</td>
-									</tr>
-								</table>
-							</form>
-							
-						</div>
-
-
-					</td>
-				</tr>
-			</table>
-			</div>
 			<div class="password">
-			
+
 			<form action="index.php" method="post" name="fp_form" id="fp_form" >
 								<table cellpadding="0" cellspacing="2" border="0" align="center" width="100%">
 									<tr>
@@ -165,10 +150,11 @@ var LBL_HIDEOPTIONS = '{sugar_translate module="Users" label="LBL_HIDEOPTIONS"}'
 									</tr>
 								</table>
 							</form>
-			</div>	
+			</div>
 		</div>
 		</td>
 	</tr>
 </table>
 <br>
 <br>
+-->
