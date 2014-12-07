@@ -38,6 +38,16 @@
 
     </div>
 </div>
+<div class="question_trigger">
+    <p>
+        Hi
+    </p>
+</div>
+<div class="toggle_container">
+    <div class="block">
+        Hello
+    </div>
+</div>
 <!--<footer class="footer">
     <div class="container">
         <p class="text-muted">Place sticky footer content here.</p>
@@ -173,32 +183,33 @@ function qe_init(){
             event.preventDefault();
             $('html, body').animate({scrollTop:0}, 500); // Scroll speed to the top
         });
+        // Refresh function for refresh button on sidebar
         function refresh(reload)
         {
             window.location.reload(true);
         }
+        // Expand and collapse sidebar, set cookie to remember if expanded/collapsed
+        $(document).ready(function() {
+            $(".sidebar").toggle($.cookie('showSidebar') != 'collapsed');
+            $("#togglesidebar").click(function() {
+                $(this).toggleClass("active").next().toggle();
+                var new_value = $(".sidebar").is(":visible") ? 'expanded' : 'collapsed';
+                $.cookie('showSidebar', new_value);
+                if (new_value = 'collapsed'){
+                    $( "#bootstrap-container" ).removeClass( "col-md-offset-2 col-sm-offset-3" );
+                }
+                else if (new_value = 'expanded'){
+                    $( "#bootstrap-container" ).addClass( "col-md-offset-2 col-sm-offset-3" );
+                }
+            });
+        });
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="themes/suiteresponsive/js/bootstrap.min.js"></script>
-    <script>
-        $(function() {
-            // Main function for slide effect
-            function runEffect() {
-                // Toggle sidebar
-                $( ".sidebar" ).toggle('slide', 500 );
-                // If sidebar toggled off, remove bootstrap column offset classes from main div
-                $( "#bootstrap-container" ).removeClass( "col-md-offset-2 col-sm-offset-3" );
-            };
-            // If toggle button clicked, run function
-            $( "#togglesidebar" ).click(function() {
-                runEffect();
-            });
-        });
-    </script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="themes/suiteresponsive/js/jquery.cookie.js"></script>
 {/literal}
 </div>
 </div>

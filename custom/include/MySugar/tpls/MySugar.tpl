@@ -71,9 +71,7 @@
 
                 {* Start the tabs section *}
             <ul  class="nav nav-tabs">
-                    <li role="presentation">
-                        <a id="togglesidebar" class="ui-state-default ui-corner-all"><span class="glyphicon glyphicon-th-list"></span></a>
-                    </li>
+
                 {* Display the remove button to allow the addition of more tabs *}
 
 

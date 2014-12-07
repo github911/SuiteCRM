@@ -120,12 +120,6 @@ form
     margin: 0px;
 }
 
-h3
-{
-    margin:0;
-    margin-bottom: 3px;
-    padding-top: 3px;
-}
 textarea
 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -137,19 +131,6 @@ input[type=checkbox],input[type=radio]
     background-color: transparent;
     margin: 0px;
     vertical-align: bottom;
-}
-
-ul li
-{
-    list-style-type: none;
-    margin-left: 6px;
-    margin-bottom: 2px;
-}
-
-ul
-{
-    margin-top: 2px;
-    margin-right: 0;
 }
 
 hr
@@ -4463,8 +4444,11 @@ input[type=text], select{
     border-radius:0;
 }
 
-#togglesidebar {
+#togglesidebar button{
+    position:relative;
     cursor:pointer;
+    margin:15px 000;
+    float:right;
 }
 
 #togglesidebar:hover {
