@@ -70,46 +70,49 @@
             {*<div class="yui-module yui-scroll">*}
 
                 {* Start the tabs section *}
-                <ul class="dashboardTabList">
+            <ul  class="nav nav-tabs">
+                    <li role="presentation">
+                        <a id="togglesidebar" class="ui-state-default ui-corner-all"><span class="glyphicon glyphicon-th-list"></span></a>
+                    </li>
+                {* Display the remove button to allow the addition of more tabs *}
 
-                    {* Display the remove button to allow the addition of more tabs *}
 
+                {* Foreach of the pages generate a tab in the tab section *}
 
-                    {* Foreach of the pages generate a tab in the tab section *}
+                {foreach from=$dashboardPages key=tabNum item=tab}
+                    {if $tabNum == 0} <li id="pageNum_{$tabNum}">
+                        <a id="pageNum_{$tabNum}_anchor" style='cursor: pointer;'  onClick=retrievePage({$tabNum});>
+                            <span>{$tab.pageTitle}</span>
+                        </a>
 
-                    {foreach from=$dashboardPages key=tabNum item=tab}
-                        {if $tabNum == 0} <li id="pageNum_{$tabNum}">
-                            <a id="pageNum_{$tabNum}_anchor" style='cursor: pointer;'  onClick=retrievePage({$tabNum});>
-                                <span>{$tab.pageTitle}</span>
-                            </a>
-
-                        </li>
-                        {else} <li id="pageNum_{$tabNum}">
-                            <a id="pageNum_{$tabNum}_anchor" style='cursor: pointer;' {if !$lock_homepage}ondblclick="renameTab({$tabNum})"{/if} onClick=retrievePage({$tabNum});>
-                                <span id="name_{$tabNum}">{$tab.pageTitle}</span>
-                            </a>
+                    </li>
+                    {else} <li id="pageNum_{$tabNum}">
+                        <a id="pageNum_{$tabNum}_anchor" style='cursor: pointer;' {if !$lock_homepage}ondblclick="renameTab({$tabNum})"{/if} onClick=retrievePage({$tabNum});>
+                            <span id="name_{$tabNum}">{$tab.pageTitle}</span>
+                        </a>
                         {if !$lock_homepage}<a id="removeTab_anchor"  onClick=removeDashboardForm({$tabNum});><img src="themes/default/images/id-ff-clear.png"></a>{/if}
 
-                            </li>{/if}
-                    {/foreach}
-
-
-
-                    {* Display the add button to allow the addition of more tabs *}
-
-                    {if !$lock_homepage}
-                    <li class="addButton">
-                        <a style='cursor: pointer;' onclick="return SUGAR.mySugar.showDashletsDialog();">{$lblAddDashlets}</a>
+                        </li>{/if}
+                {/foreach}
+                {if !$lock_homepage}
+                    <li style="float:right; role="presentation">
+                    <a style='cursor: pointer;' onclick="return SUGAR.mySugar.showDashletsDialog();">{$lblAddDashlets}</a>
                     </li>
 
-                    <li class="addButton">
-                        <a style='cursor: pointer;' onclick="addDashboardForm({$tabNum});">
-                            <span>{$lblAddTab}</span>
-                        </a>
+                    <li style="float:right; role="presentation">
+                    <a style='cursor: pointer;' onclick="addDashboardForm({$tabNum});">
+                        <span>{$lblAddTab}</span>
+                    </a>
                     </li>
-                    {/if}
+                {/if}
 
-                </ul>
+
+
+                {* Display the add button to allow the addition of more tabs *}
+
+
+
+            </ul>
             {*</div>*}
 
             <div class="clear"></div>
