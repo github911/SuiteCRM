@@ -52,8 +52,6 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <title>{$APP.LBL_BROWSER_TITLE}</title>
     {$SUGAR_JS}
@@ -73,6 +71,5 @@
     {/literal}
     {$SUGAR_CSS}
     <link rel="stylesheet" type="text/css" href="themes/suiteresponsive/css/colourSelector.php">
-    <script type="text/javascript" src='{sugar_getjspath file="themes/suiteresponsive/js/jscolor.js"}'></script>
     <script type="text/javascript" src='{sugar_getjspath file="cache/include/javascript/sugar_field_grp.js"}'></script>
 </head>
