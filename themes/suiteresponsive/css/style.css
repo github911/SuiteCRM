@@ -4444,17 +4444,6 @@ input[type=text], select{
     border-radius:0;
 }
 
-#togglesidebar button{
-    position:relative;
-    cursor:pointer;
-    margin:15px 000;
-    float:right;
-}
-
-#togglesidebar:hover {
-    color:#5CB85C;
-}
-
 #content{
     overflow:visible;
     width:100%;
