@@ -38,16 +38,6 @@
 
     </div>
 </div>
-<div class="question_trigger">
-    <p>
-        Hi
-    </p>
-</div>
-<div class="toggle_container">
-    <div class="block">
-        Hello
-    </div>
-</div>
 <!--<footer class="footer">
     <div class="container">
         <p class="text-muted">Place sticky footer content here.</p>
