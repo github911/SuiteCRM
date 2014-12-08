@@ -1002,13 +1002,15 @@ div.indent_right {
 }
 
 /* Footer styles */
-#footer
+footer
 {
-
-    height:30px;
+    border-top:1px solid #cccccc;
+    background:#eeeeee;
     bottom:0;
-    padding: 5px 10px 5px 10px;
-    clear: both;
+    position:relative;
+    padding: 25px;
+    margin:25px 0 0 0;
+    width:100%;
 }
 
 .companyLogo
@@ -1641,11 +1643,12 @@ li.noBullet {
     margin: 0;
 }
 
+/* commented out table styles
 table.tabForm td ul li {
     list-style-type: none;
     margin-bottom: 10px;
 }
-
+*/
 .helpButton
 {
     font-weight:700;
@@ -2191,6 +2194,7 @@ a:link, a:visited, a:hover
 
 /* DetailView styles */
 
+/* commented out table styles
 .detail table,
 table.detail
 {
@@ -2209,6 +2213,7 @@ table.detail
     border-bottom: 2px solid;
     background: #fff;
 }
+*/
 
 /* Listview styles */
 .list
@@ -4444,4 +4449,22 @@ input[type=text], select{
     width:100%;
 }
 
+.sidebar {
+    max-width:250px !important;
+}
+
+.list tr th {
+    font-weight:normal;
+}
+
+.list tr th a:link {
+    font-weight:normal;
+}
+
+.edit h4 {
+    padding:0 0 10px 0;
+    margin:0 0 10px 0;
+    font-size:21px;
+    border-bottom:1px solid #dddddd;
+}
 /* End CSS */

@@ -44,11 +44,7 @@
     </div>
 </footer>-->
 {if $AUTHENTICATED}
-<div id="bottomLinks">
-</div>
-<div class="clear_footer"></div>
-<div id="footer">
-
+<footer>
     <div class="companyLogo">
         {$STATISTICS}
     </div>
@@ -56,7 +52,6 @@
         <button id="print_page" class="button primary" onclick="printpage()">{$MOD.LBL_SUITE_PRINT}</button>
         <button id="backtotop" class="button primary">{$MOD.LBL_SUITE_TOP}</button>
     </div>
-
     <div id="copyright_data">
     <div id="dialog2" title="{$MOD.LBL_SUITE_SUPERCHARGED}">
         <p>{$MOD.LBL_SUITE_DESC1}</p>
@@ -69,12 +64,10 @@
     <div id="dialog" title="&copy; {$MOD.LBL_SUITE_POWERED_BY}">
         <p>{$COPYRIGHT}</p>
     </div>
-
     <button id="admin_options" class="button primary">&copy; {$MOD.LBL_SUITE_SUPERCHARGED}</button>
     <button id="powered_by" class="button primary">&copy; {$MOD.LBL_SUITE_POWERED_BY}</button>
-
     </div>
-</div>
+</footer>
 {/if}
 <script>
 {literal}

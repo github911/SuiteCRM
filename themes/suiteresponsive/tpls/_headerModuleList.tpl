@@ -108,8 +108,7 @@
                                                 </a>
                             </td>
                             <td align="right">
-                                <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a></em>                            </td>
-                            </span>
+                                <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a></em></td></span>
                             </li>
                         </tr>
                     </table>

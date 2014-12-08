@@ -195,7 +195,7 @@
 	href="index.php?module={$linkModule}&offset={$offset}&stamp={$pageData.stamp}&return_module={$linkModule}&action={$action}&record={$rowData.ID}"
 	                >
 	                    {capture name='tmp1' assign='alt_edit'}{sugar_translate label="LNK_EDIT"}{/capture}
-	                    {sugar_getimage name="edit_inline.gif" attr='border="0" ' alt="$alt_edit"}</a>
+                        <span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a>
 	                {/if}
 	            </td>
 	
