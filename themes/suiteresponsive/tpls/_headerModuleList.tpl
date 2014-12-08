@@ -225,9 +225,11 @@
 <!--Start Responsive Sidebar -->
 <div class="container-fluid">
     <div class="row">
+    <!-- Sidebar will be added once toggle is sorted
     <div id="togglesidebar">
         <button class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span> Toggle Sidebar</button>
     </div>
+    -->
     <div class="col-sm-3 col-md-2 sidebar">
         <div class="btn-toolbar" role="toolbar" aria-label="...">
             <div class="btn-group" role="group" aria-label="..."><a href="index.php" class="btn btn-success"></span><span class="glyphicon glyphicon-home" aria-hidden="true"></a></div>
