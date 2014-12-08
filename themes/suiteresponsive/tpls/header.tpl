@@ -42,9 +42,7 @@
     <div id="ajaxHeader">
         {include file="_headerModuleList.tpl" theme_template=true}
     </div>
-    {include file="_globalLinks.tpl" theme_template=true}
     <div class="clear"></div>
-    </div>
 {/if}
 {literal}
 <iframe id='ajaxUI-history-iframe' src='index.php?entryPoint=getImage&imageName=blank.png'  title='empty' style='display:none'></iframe>
