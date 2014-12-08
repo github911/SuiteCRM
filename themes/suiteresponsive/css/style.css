@@ -4467,4 +4467,10 @@ input[type=text], select{
     font-size:21px;
     border-bottom:1px solid #dddddd;
 }
+
+#dashletresponsive{
+    float: left;
+    width: auto;
+    height: auto;
+}
 /* End CSS */
