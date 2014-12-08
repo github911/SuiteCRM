@@ -1879,13 +1879,6 @@ td.edit.view td[align=right]
     margin-top: 0;
 }
 
-/* put a bit of left margin in when the left column menu is hidden */
-#content.noLeftColumn
-{
-    margin-left: 5px;
-    border-left: none;
-}
-
 /* override some of the detail view styles for show more detail option (KBDocument detail view)*/
 .detail td.subdetail{
     padding:0px;
@@ -3612,10 +3605,6 @@ ul#drop-nav ul li:hover {
     border: none;
 }
 
-#main {
-    padding: 0;
-}
-
 #dialog {
     text-align:center;
     overflow:hidden;
@@ -3804,10 +3793,6 @@ select, textarea {
 select:focus {
     border:1px solid #f10202;
     padding:4px;
-}
-
-#main {
-    margin:0 10px 0 0;
 }
 
 .chartContainer table tr td {
@@ -4442,11 +4427,6 @@ input[type=text], select{
     border:1px solid #cccccc;
     padding:5px;
     border-radius:0;
-}
-
-#content{
-    overflow:visible;
-    width:100%;
 }
 
 .sidebar {

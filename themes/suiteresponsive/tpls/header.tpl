@@ -59,5 +59,3 @@
     }
 </script>
 {/literal}
-<div id="main">
-    <div id="content" {if !$AUTHENTICATED}class="noLeftColumn" {/if}>

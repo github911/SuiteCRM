@@ -228,6 +228,26 @@
     <div id="togglesidebar">
         <button class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span> Toggle Sidebar</button>
     </div>
-
+    <div class="col-sm-3 col-md-2 sidebar">
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+            <div class="btn-group" role="group" aria-label="..."><a href="index.php" class="btn btn-success"></span><span class="glyphicon glyphicon-home" aria-hidden="true"></a></div>
+            <div class="btn-group" role="group" aria-label="..."><a href="index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}" class="btn btn-success"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></div>
+            <div class="btn-group" role="group" aria-label="..."><a href="" class="btn btn-success" onclick="refresh();"><span class=" glyphicon glyphicon-refresh" aria-hidden="true"></span></a></div>
+            <div class="btn-group" role="group" aria-label="..."><a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class="btn btn-success"><span class=" glyphicon glyphicon-log-out" aria-hidden="true"></span></a></div>
+        </div>
+        <hr class="hr">
+        <h2>{$APP.LBL_LAST_VIEWED}</h2>
+        <ul class="nav nav-pills nav-stacked">
+            {foreach from=$recentRecords item=item name=lastViewed}
+                <li id="recentlinks" role="presentation">
+                    <a title="{$item.module_name}"
+                       accessKey="{$smarty.foreach.lastViewed.iteration}"
+                       href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
+                        <span aria-hidden="true">{$item.item_summary_short}</span>
+                    </a>
+                </li>
+            {/foreach}
+        </ul>
+    </div>
     <!--End Responsive Sidebar -->
     <!--Start Page content -->

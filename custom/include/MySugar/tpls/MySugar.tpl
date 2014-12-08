@@ -128,7 +128,7 @@
                         <tr>
                             {counter assign=hiddenCounter start=0 print=false}
                             {foreach from=$columns key=colNum item=data}
-                                <td valign='top' width='{$data.width}'>
+                                <td  id="dashletresponsive" valign='top' width='{$data.width}'>
                                     <ul class='noBullet' id='col_{$activePage}_{$colNum}'>
                                         <li id='page_{$activePage}_hidden{$hiddenCounter}b'
                                             style='height: 5px; margin-top:12px;' class='noBullet'>
