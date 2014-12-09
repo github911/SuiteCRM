@@ -4272,7 +4272,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .dropdown-menu {
-    background:#333333;
+    background:#f7f7f7;
     padding:10px;
 }
 
@@ -4281,7 +4281,7 @@ fieldset[disabled] .btn-primary.active {
 
 }
 .dropdown-menu em a {
-    color:#5CB85C;
+    color:#337ab7;
 }
 
 .dropdown-menu em a:hover {
@@ -4299,14 +4299,14 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .dropdown-menu li a {
-    color:#cccccc;
+    color:#337ab7;
     text-decoration:none;
     padding:5px;
 }
 
 .dropdown-menu li a:hover {
     color:#ffffff;
-    background:#5CB85C;
+    background:#337ab7;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -4314,7 +4314,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .home_h2{
-    color:#eeeeee;
+    color:#333333;
     padding:0 5px 0 5px;
 }
 
