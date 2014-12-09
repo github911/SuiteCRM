@@ -36,7 +36,6 @@
 
 *}
 <!--Start Responsive Top Navigation Menu -->
-{if $AUTHENTICATED}<div id="bootstrap-container" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">{/if}
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
