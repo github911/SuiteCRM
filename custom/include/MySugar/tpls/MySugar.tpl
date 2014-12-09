@@ -69,8 +69,8 @@
         <td>
             {*<div class="yui-module yui-scroll">*}
 
-                {* Start the tabs section *}
-            <ul  class="nav nav-tabs">
+            {* Start the tabs section *}
+            <ul class="dashboardTabList">
 
                 {* Display the remove button to allow the addition of more tabs *}
 
@@ -88,27 +88,26 @@
                         <a id="pageNum_{$tabNum}_anchor" style='cursor: pointer;' {if !$lock_homepage}ondblclick="renameTab({$tabNum})"{/if} onClick=retrievePage({$tabNum});>
                             <span id="name_{$tabNum}">{$tab.pageTitle}</span>
                         </a>
-                        {if !$lock_homepage}<a id="removeTab_anchor"  onClick=removeDashboardForm({$tabNum});><img src="themes/default/images/id-ff-clear.png"></a>{/if}
+                        {if !$lock_homepage}<a id="removeTab_anchor"  onClick=removeDashboardForm({$tabNum});><span class="glyphicon glyphicon-remove"></span></a>{/if}
 
                         </li>{/if}
                 {/foreach}
-                {if !$lock_homepage}
-                    <li style="float:right; role="presentation">
-                    <a style='cursor: pointer;' onclick="return SUGAR.mySugar.showDashletsDialog();">{$lblAddDashlets}</a>
-                    </li>
-
-                    <li style="float:right; role="presentation">
-                    <a style='cursor: pointer;' onclick="addDashboardForm({$tabNum});">
-                        <span>{$lblAddTab}</span>
-                    </a>
-                    </li>
-                {/if}
 
 
 
                 {* Display the add button to allow the addition of more tabs *}
 
+                {if !$lock_homepage}
+                    <li id="addbuttons" class="btn btn-primary">
+                        <a style='cursor: pointer;' onclick="return SUGAR.mySugar.showDashletsDialog();">{$lblAddDashlets}</a>
+                    </li>
 
+                    <li id="addbuttons" class="btn btn-primary">
+                        <a style='cursor: pointer;' onclick="addDashboardForm({$tabNum});">
+                            <span>{$lblAddTab}</span>
+                        </a>
+                    </li>
+                {/if}
 
             </ul>
             {*</div>*}

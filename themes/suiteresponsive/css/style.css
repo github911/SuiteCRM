@@ -3335,10 +3335,6 @@ ul.clickMenu li ul.subnav li a:hover .showLessArrow, ul.clickMenu li ul.subnav l
 div.action_buttons form {float:left;}
 .paginationWrapper { float:right; }
 
-/* Custom CSS by Sales Agility for SuiteCRM 7 */
-
-/* Main page CSS */
-
 /* Table CSS */
 
 .view, table.view td {
@@ -3686,7 +3682,6 @@ span.crumbLink {
 
 .view tr {
     padding:5px 0 5px 0;
-    width:100%;
 }
 
 #mbfooter .yui-layout-hd td {
@@ -4278,6 +4273,17 @@ li#usermenu:hover {
 }
 
 #moremenu ul li a{
+    color:#333333;
+    cursor:pointer;
+    padding:5px;
+}
+
+#moremenu ul li{
+
+    padding:5px;
+}
+
+#moremenu ul li a:hover{
     color:#ffffff;
     cursor:pointer;
     padding:5px;
@@ -4365,5 +4371,15 @@ input[type=text], select{
     float: left;
     width: auto;
     height: auto;
+}
+
+ul.dashboardTabList li{
+    list-style:none;
+    margin:0 0 10px 0;
+}
+
+#addbuttons{
+    float:right;
+    margin:0 5px 0 5px;
 }
 /* End CSS */
