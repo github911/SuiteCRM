@@ -36,6 +36,7 @@
 
 *}
 {if $AUTHENTICATED}
+    {*
 <footer>
     <div class="companyLogo">
         {$STATISTICS}
@@ -60,6 +61,7 @@
     <button id="powered_by" class="button primary">&copy; {$MOD.LBL_SUITE_POWERED_BY}</button>
     </div>
 </footer>
+    *}
 {/if}
 <script>
 {literal}
@@ -178,6 +180,11 @@ function qe_init(){
                 }
                 */
             });
+        });
+    </script>
+    <script>
+        $(function() {
+            $( "#tabs" ).tabs();
         });
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
