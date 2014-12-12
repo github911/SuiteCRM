@@ -3344,7 +3344,7 @@ div.action_buttons form {float:left;}
 /* Dashlet CSS */
 
 .dashletPanel .h3Row {
-    background: #777777;
+    background: #35586C;
     color:#ffffff;
 }
 
@@ -4104,7 +4104,7 @@ div.input-group input{
 
 .button-primary {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #008080;
     border-color: #2e6da4;
 }
 .button-primary:hover,
@@ -4124,13 +4124,13 @@ div.input-group input{
 }
 
 .button .badge {
-    color: #337ab7;
+    color: #008080;
     background-color: #fff;
 }
 
 .button-primary {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #35586C;
     border-color: #2e6da4;
 }
 .button-primary:hover,
@@ -4166,11 +4166,11 @@ fieldset[disabled] .btn-primary:active,
 .button-primary.disabled.active,
 .button-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    background-color: #337ab7;
+    background-color: #35586C;
     border-color: #2e6da4;
 }
 .button-primary .badge {
-    color: #337ab7;
+    color: #35586C;
     background-color: #fff;
 }
 
@@ -4184,7 +4184,7 @@ fieldset[disabled] .btn-primary.active {
 
 }
 .dropdown-menu em a {
-    color:#337ab7;
+    color:#35586C;
 }
 
 .dropdown-menu em a:hover {
@@ -4195,21 +4195,22 @@ fieldset[disabled] .btn-primary.active {
     transition: all 0.3s ease-out;
 }
 
-.dropdown-me -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;nu li{
+.dropdown-menu li{
     margin:5px 0 5px 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
 
 .dropdown-menu li a {
-    color:#337ab7;
+    color:#35586C;
     text-decoration:none;
     padding:5px;
 }
 
 .dropdown-menu li a:hover {
     color:#ffffff;
-    background:#337ab7;
+    background:#35586C;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -4256,7 +4257,7 @@ ul#topnav li a:hover {
 
 li#usermenu:hover {
     color:#ffffff;
-    background:#337ab7;
+    background:#35586C;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -4291,7 +4292,7 @@ li#usermenu:hover {
 
 .button {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #35586C;
     border:none;
     padding:2px 5px 2px 5px;
     -webkit-border-radius: 2px;
@@ -4305,7 +4306,7 @@ li#usermenu:hover {
 
 input[type=submit], input[type=button] {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #35586C;
     border:none;
     padding:3px 10px 3px 10px;
     -webkit-border-radius: 2px;
@@ -4333,7 +4334,7 @@ input[type=submit], input[type=button] {
 }
 
 .button .badge {
-    color: #337ab7;
+    color: #35586C;
     background-color: #fff;
 }
 
@@ -4381,5 +4382,22 @@ ul.dashboardTabList li{
 #addbuttons{
     float:right;
     margin:0 5px 0 5px;
+}
+
+.navbar-inverse {
+    background:#35586C;
+}
+
+.navbar-inverse .navbar-brand {
+    color:#eeeeee;
+}
+
+.btn-success {
+    background:#35586C;
+    border:1px solid #008080;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+    background:#008080;
 }
 /* End CSS */

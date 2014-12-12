@@ -181,10 +181,14 @@ function qe_init(){
                 */
             });
         });
-    </script>
-    <script>
         $(function() {
-            $( "#tabs" ).tabs();
+            var tabs = $( "#tabs" ).tabs();
+            tabs.find( ".ui-tabs-nav" ).sortable({
+                axis: "x",
+                stop: function() {
+                    tabs.tabs( "refresh" );
+                }
+            });
         });
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
