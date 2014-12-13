@@ -106,7 +106,8 @@
 {$multiSelectData}
 
 {if $hideTable == false}
-	<table cellpadding='0' cellspacing='0' width='100%' border='0' class='list view'>
+<div class="table-responsive">
+	<table cellpadding='0' cellspacing='0' width='100%' border='0' class='list view table'>
     {assign var="link_select_id" value="selectLinkTop"}
     {assign var="link_action_id" value="actionLinkTop"}
     {assign var="actionsLink" value=$actionsLinkTop}
@@ -244,6 +245,7 @@
     {assign var="action_menu_location" value="bottom"}
     {include file='include/ListView/ListViewPagination.tpl'}
 	</table>
+</div>
 {/if}
 {if $contextMenus}
 <script type="text/javascript">
