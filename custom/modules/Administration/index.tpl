@@ -48,33 +48,44 @@
 
     {$MY_FRAME}
     <div id="tabs">
+        <ul>
+            {foreach  from=$ADMIN_GROUP_HEADER key=j item=val1}
+
+                {if isset($GROUP_HEADER[$j][1])}
+                    <li><a href="#tabs-{$j}">{$GROUP_HEADER[$j][0]}{*{$GROUP_HEADER[$j][1]}*}</a></li>
+
+                {else}">
+                    <li><a href="#tabs-{$GROUP_HEADER[$j][0]}">{$GROUP_HEADER[$j][0]}{$GROUP_HEADER[$j][2]}</a></li>
+                {/if}
+            {/foreach}
+        </ul>
     <ul>
         {foreach  from=$ADMIN_GROUP_HEADER key=j item=val1}
 
-            {if isset($GROUP_HEADER[$j][1])}
-                <li><a href="#tabs-{$GROUP_HEADER[$j][0]}">{$GROUP_HEADER[$j][0]}{*{$GROUP_HEADER[$j][1]}*}</a></li>
-
-            {else}">
-                <li><a href="#tabs-{$GROUP_HEADER[$j][0]}">{$GROUP_HEADER[$j][0]}{$GROUP_HEADER[$j][2]}</a></li>
-            {/if}
-
             {assign var='i' value=0}
-            {foreach  from=$VALUES_3_TAB[$j] key=link_idx item=admin_option}
-            <div id="tabs-{$GROUP_HEADER[$j][0]}" style="display:none;">
-            {if isset($COLNUM[$j][$i])}
-                    {$ITEM_HEADER_IMAGE[$j][$i]}&nbsp;<a id='{$ID_TAB[$j][$i]}' href='{$ITEM_URL[$j][$i]}' class="tabDetailViewDL2Link">{$ITEM_HEADER_LABEL[$j][$i]}</a>
-                    {$ITEM_DESCRIPTION[$j][$i]}
+            <div id="tabs-{$j}" style="display:none;">
+                <ul>
+                    {foreach  from=$VALUES_3_TAB[$j] key=link_idx item=admin_option}
 
-                    {assign var='i' value=$i+1}
-                    {if $COLNUM[$j][$i] == '0'}
-                            {$ITEM_HEADER_IMAGE[$j][$i]}&nbsp;<a id='{$ID_TAB[$j][$i]}' href='{$ITEM_URL[$j][$i]}' class="tabDetailViewDL2Link">{$ITEM_HEADER_LABEL[$j][$i]}</a>
+                    {if isset($COLNUM[$j][$i])}
+                        <li>
+                            {$ITEM_HEADER_IMAGE[$j][$i]}&nbsp;<b><a id='{$ID_TAB[$j][$i]}' href='{$ITEM_URL[$j][$i]}' class="tabDetailViewDL2Link">{$ITEM_HEADER_LABEL[$j][$i]}</a></b>
                             {$ITEM_DESCRIPTION[$j][$i]}
-                    {else}
-                    {/if}
-           {/if}
-           {assign var='i' value=$i+1}
-           </div>
-           {/foreach}
+                        </li>
+                            {assign var='i' value=$i+1}
+                            {if $COLNUM[$j][$i] == '0'}
+                                <li>
+                                    {$ITEM_HEADER_IMAGE[$j][$i]}&nbsp;<b><a id='{$ID_TAB[$j][$i]}' href='{$ITEM_URL[$j][$i]}' class="tabDetailViewDL2Link">{$ITEM_HEADER_LABEL[$j][$i]}</a></b>
+                                    {$ITEM_DESCRIPTION[$j][$i]}
+                                </li>
+                            {else}
+                            {/if}
+                   {/if}
+                   {assign var='i' value=$i+1}
+
+                   {/foreach}
+                </ul>
+            </div>
         {/foreach}
     </ul>
     </div>
