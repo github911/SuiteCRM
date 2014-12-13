@@ -71,5 +71,6 @@
     {/literal}
     {$SUGAR_CSS}
     <link rel="stylesheet" type="text/css" href="themes/suiteresponsive/css/colourSelector.php">
+    <script type="text/javascript" src='{sugar_getjspath file="themes/suiteresponsive/js/jscolor.js"}'></script>
     <script type="text/javascript" src='{sugar_getjspath file="cache/include/javascript/sugar_field_grp.js"}'></script>
 </head>
