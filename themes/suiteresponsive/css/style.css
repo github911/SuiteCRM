@@ -4434,5 +4434,43 @@ table legend {
 .list {
     font-size:1em;
 
+
+}
+#tabs {
+    border:none;
+}
+
+#tabs ul li {
+    list-style:none;
+}
+
+.ui-widget-header {
+    background:#ffffff;
+    border:none;
+    border-bottom: 1px solid #cccccc;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    padding:5px;
+    font-size:0.9em;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background:#eeeeee;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-default a:hover {
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    font-weight:bold;
+
+
 }
 /* End CSS */

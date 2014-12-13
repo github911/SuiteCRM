@@ -45,8 +45,6 @@
 
 <div class="dashletPanelMenu wizard">
 
-
-    {$MY_FRAME}
     <div id="tabs">
         <ul>
             {foreach  from=$ADMIN_GROUP_HEADER key=j item=val1}
