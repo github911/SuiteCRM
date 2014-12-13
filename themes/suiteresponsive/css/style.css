@@ -4340,10 +4340,6 @@ input[type=text], select{
     border-radius:0;
 }
 
-.sidebar {
-    max-width:250px !important;
-}
-
 .list tr th {
     font-weight:normal;
 }
@@ -4367,6 +4363,10 @@ input[type=text], select{
     float: left;
     width: auto;
     height: auto;
+}
+
+.dashboardTbList {
+    max-width:90% !important;
 }
 
 ul.dashboardTabList li{

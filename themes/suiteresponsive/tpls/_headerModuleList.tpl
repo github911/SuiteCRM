@@ -207,7 +207,7 @@
                     <li role="presentation"><a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class='utilsLink'>{$LOGOUT_LABEL}</a></li>
                 </ul>
             </div>
-            <form id="searchform" class="navbar-form navbar-left" name='UnifiedSearch' action='index.php' onsubmit='return SUGAR.unifiedSearchAdvanced.checkUsaAdvanced()'>
+            <form id="searchform" class="navbar-form navbar-right" name='UnifiedSearch' action='index.php' onsubmit='return SUGAR.unifiedSearchAdvanced.checkUsaAdvanced()'>
                 <input type="hidden" class="form-control" name="action" value="UnifiedSearch">
                 <input type="hidden" class="form-control" name="module" value="Home">
                 <input type="hidden" class="form-control" name="search_form" value="false">
@@ -220,15 +220,16 @@
         </div>
     </div>
 </nav>
+
 <!--End Responsive Top Navigation Menu -->
 <!--Start Responsive Sidebar -->
+
 <div class="container-fluid">
-    <div class="row">
-    <!-- Sidebar will be added once toggle is sorted
     <div id="togglesidebar">
         <button class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span> Toggle Sidebar</button>
     </div>
-    -->
+    <div class="row">
+
     <div class="col-sm-3 col-md-2 sidebar">
         <div class="btn-toolbar" role="toolbar" aria-label="...">
             <div class="btn-group" role="group" aria-label="..."><a href="index.php" class="btn btn-success"></span><span class="glyphicon glyphicon-home" aria-hidden="true"></a></div>
