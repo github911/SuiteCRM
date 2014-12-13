@@ -47,8 +47,8 @@
             </button>
             <a class="navbar-brand" href="index.php">{$APP.LBL_BROWSER_TITLE}</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-left">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
                 {foreach from=$moduleTopMenu item=module key=name name=moduleList}
                 {if $name == $MODULE_TAB}
                 <li id="topnav">
@@ -193,7 +193,7 @@
                 </li>
             {/if}
             </ul>
-            <div id="globalLinks" class="dropdown">
+            <div id="globalLinks" class="dropdown nav navbar-nav navbar-right">
                 <li id="usermenu" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                     <span class="glyphicon glyphicon-user"> </span> {$CURRENT_USER}
                     <span class="caret"></span>
@@ -207,7 +207,7 @@
                     <li role="presentation"><a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class='utilsLink'>{$LOGOUT_LABEL}</a></li>
                 </ul>
             </div>
-            <form id="searchform" class="navbar-form navbar-right" name='UnifiedSearch' action='index.php' onsubmit='return SUGAR.unifiedSearchAdvanced.checkUsaAdvanced()'>
+            <form id="searchform" class="navbar-form navbar-left" name='UnifiedSearch' action='index.php' onsubmit='return SUGAR.unifiedSearchAdvanced.checkUsaAdvanced()'>
                 <input type="hidden" class="form-control" name="action" value="UnifiedSearch">
                 <input type="hidden" class="form-control" name="module" value="Home">
                 <input type="hidden" class="form-control" name="search_form" value="false">
