@@ -2321,18 +2321,18 @@ a.tabFormAdvLink:link, a.tabFormAdvLink:visited, a.tabFormAdvLink:hover
 {
     border: 1px solid;
     width:75px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 #search input[name=query_string]:focus {
     width:150px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 /* for subpanel tabs */
@@ -3397,26 +3397,25 @@ ul.clickMenu>li, ul.SugarActionMenuIESub li {
 
 a#create_link.utilsLink {
     color: #fff;
-    background-color: #5CB85C;
+    background-color: #35586C;
     border:none;
     padding:5px 8px 5px 8px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
     text-decoration:none;
 }
 
 a#create_link.utilsLink:hover {
-    background-color: #449D44;
-    border-color: #398439;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    background-color: #008080;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 h1,h2,h3,h4 {
@@ -4322,10 +4321,10 @@ input[type=submit], input[type=button] {
     color: #fff;
     background-color: #286090;
     border-color: #204d74;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 .button:active,
 .button.active,
@@ -4394,10 +4393,41 @@ ul.dashboardTabList li{
 
 .btn-success {
     background:#35586C;
-    border:1px solid #008080;
+    border: none;
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
     background:#008080;
+}
+
+#headerlinks a:hover {
+    color:#ffffff;
+}
+
+.nav li {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.nav li#topnav:hover {
+    background:#008080;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+table {
+    font-size:1em;
+}
+
+table legend {
+    font-size:1.2em;
+}
+
+.edit h4 {
+    font-size:1.2em;
 }
 /* End CSS */
