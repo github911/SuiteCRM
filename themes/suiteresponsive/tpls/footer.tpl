@@ -36,7 +36,7 @@
 
 *}
 </div>
-</div>
+
 {if $AUTHENTICATED}
     <footer>
         <div class="companyLogo">
