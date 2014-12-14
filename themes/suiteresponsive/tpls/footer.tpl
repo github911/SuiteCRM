@@ -35,33 +35,35 @@
  ********************************************************************************/
 
 *}
+</div>
+</div>
 {if $AUTHENTICATED}
-    {*
-<footer>
-    <div class="companyLogo">
-        {$STATISTICS}
-    </div>
-    <div id="links">
-        <button id="print_page" class="button primary" onclick="printpage()">{$MOD.LBL_SUITE_PRINT}</button>
-        <button id="backtotop" class="button primary">{$MOD.LBL_SUITE_TOP}</button>
-    </div>
-    <div id="copyright_data">
-    <div id="dialog2" title="{$MOD.LBL_SUITE_SUPERCHARGED}">
-        <p>{$MOD.LBL_SUITE_DESC1}</p>
-        <br>
-        <p>{$MOD.LBL_SUITE_DESC2}</p>
-        <br>
-        <p>{$MOD.LBL_SUITE_DESC3}</p>
-        <br>
-    </div>
-    <div id="dialog" title="&copy; {$MOD.LBL_SUITE_POWERED_BY}">
-        <p>{$COPYRIGHT}</p>
-    </div>
-    <button id="admin_options" class="button primary">&copy; {$MOD.LBL_SUITE_SUPERCHARGED}</button>
-    <button id="powered_by" class="button primary">&copy; {$MOD.LBL_SUITE_POWERED_BY}</button>
-    </div>
-</footer>
-    *}
+    <footer>
+        <div class="companyLogo">
+            <span class="glyphicon glyphicon-globe"></span> {$STATISTICS}
+        </div>
+        <div id="links">
+            <button id="print_page" class="button primary" onclick="printpage()">{$MOD.LBL_SUITE_PRINT}</button>
+            <button id="backtotop" class="button primary">{$MOD.LBL_SUITE_TOP}</button>
+        </div>
+        <div id="copyright_data">
+            <div id="dialog2" title="{$MOD.LBL_SUITE_SUPERCHARGED}">
+                <p>{$MOD.LBL_SUITE_DESC1}</p>
+                <br>
+                <p>{$MOD.LBL_SUITE_DESC2}</p>
+                <br>
+                <p>{$MOD.LBL_SUITE_DESC3}</p>
+                <br>
+            </div>
+            <div id="dialog" title="&copy; {$MOD.LBL_SUITE_POWERED_BY}">
+                <p>{$COPYRIGHT}</p>
+            </div>
+            <div id="copyrightbuttons">
+            <button id="admin_options" class="button primary">&copy; {$MOD.LBL_SUITE_SUPERCHARGED}</button>
+            <button id="powered_by" class="button primary">&copy; {$MOD.LBL_SUITE_POWERED_BY}</button>
+            </div>
+        </div>
+    </footer>
 {/if}
 <script>
 {literal}
@@ -163,24 +165,7 @@ function qe_init(){
         {
             window.location.reload(true);
         }
-        // Expand and collapse sidebar, set cookie to remember if expanded/collapsed
-        $(document).ready(function() {
-            $(".sidebar").toggle($.cookie('showSidebar') != 'collapsed');
-            $("#togglesidebar").click(function() {
-                $(this).toggleClass("active").next().toggle();
-                var new_value = $(".sidebar").is(":visible") ? 'expanded' : 'collapsed';
-                $.cookie('showSidebar', new_value);
-                /* Unfinished code - working on removing sidebar area when sidebar toggled off
-                if (new_value = 'collapsed'){
-
-                    $( "#bootstrap-container" ).removeClass( "col-md-offset-2 col-sm-offset-3" );
-                }
-                else if (new_value = 'expanded'){
-                    $( "#bootstrap-container" ).addClass( "col-md-offset-2 col-sm-offset-3" );
-                }
-                */
-            });
-        });
+        // Tabs jQuery for Admin panel
         $(function() {
             var tabs = $( "#tabs" ).tabs();
             tabs.find( ".ui-tabs-nav" ).sortable({

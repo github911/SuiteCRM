@@ -1005,17 +1005,19 @@ div.indent_right {
 footer
 {
     border-top:1px solid #cccccc;
-    background:#eeeeee;
     bottom:0;
     position:relative;
-    padding: 25px;
-    margin:25px 0 0 0;
-    width:100%;
+    padding: 25px 25px 25px 0;
+    margin:0 auto;
+    width:90%;
 }
 
+#copyrightbuttons {
+    max-width:400px !important;
+    margin:0 auto;
+}
 .companyLogo
 {
-    width:auto;
     float:left;
     padding: 0 10px 0 0;
 
@@ -3344,7 +3346,7 @@ div.action_buttons form {float:left;}
 /* Dashlet CSS */
 
 .dashletPanel .h3Row {
-    background: #35586C;
+    background: #777777;
     color:#ffffff;
 }
 
@@ -3397,7 +3399,7 @@ ul.clickMenu>li, ul.SugarActionMenuIESub li {
 
 a#create_link.utilsLink {
     color: #fff;
-    background-color: #35586C;
+    background-color: #337AB7;
     border:none;
     padding:5px 8px 5px 8px;
     -webkit-border-radius: 2px;
@@ -3534,7 +3536,6 @@ button #powered_by {
 
 #links {
     float:right;
-    margin:5px 15px 00;
 }
 
 #bottomLinks {
@@ -4165,11 +4166,11 @@ fieldset[disabled] .btn-primary:active,
 .button-primary.disabled.active,
 .button-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    background-color: #35586C;
+    background-color: #337AB7;
     border-color: #2e6da4;
 }
 .button-primary .badge {
-    color: #35586C;
+    color: #337AB7;
     background-color: #fff;
 }
 
@@ -4183,7 +4184,7 @@ fieldset[disabled] .btn-primary.active {
 
 }
 .dropdown-menu em a {
-    color:#35586C;
+    color:#337AB7;
 }
 
 .dropdown-menu em a:hover {
@@ -4202,14 +4203,14 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .dropdown-menu li a {
-    color:#35586C;
+    color:#337AB7;
     text-decoration:none;
     padding:5px;
 }
 
 .dropdown-menu li a:hover {
     color:#ffffff;
-    background:#35586C;
+    background:#337AB7;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -4256,7 +4257,7 @@ ul#topnav li a:hover {
 
 li#usermenu:hover {
     color:#ffffff;
-    background:#35586C;
+    background:#337AB7;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -4287,7 +4288,7 @@ li#usermenu:hover {
 
 .button {
     color: #fff;
-    background-color: #35586C;
+    background-color: #337AB7;
     border:none;
     padding:2px 5px 2px 5px;
     -webkit-border-radius: 2px;
@@ -4301,7 +4302,7 @@ li#usermenu:hover {
 
 input[type=submit], input[type=button] {
     color: #fff;
-    background-color: #35586C;
+    background-color: #337AB7;
     border:none;
     padding:3px 10px 3px 10px;
     -webkit-border-radius: 2px;
@@ -4329,7 +4330,7 @@ input[type=submit], input[type=button] {
 }
 
 .button .badge {
-    color: #35586C;
+    color: #337AB7;
     background-color: #fff;
 }
 
@@ -4380,7 +4381,7 @@ ul.dashboardTabList li{
 }
 
 .navbar-inverse {
-    background:#35586C;
+    background: #333333;
 }
 
 .navbar-inverse .navbar-brand {
@@ -4388,7 +4389,7 @@ ul.dashboardTabList li{
 }
 
 .btn-success {
-    background:#35586C;
+    background:#337AB7;
     border: none;
 }
 
@@ -4408,7 +4409,7 @@ ul.dashboardTabList li{
 }
 
 .nav li#topnav:hover {
-    background:#008080;
+    background:#121212;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -4481,4 +4482,22 @@ table legend {
 .ui-widget-content a:hover {
     color:#008080;
 }
+
+.ui-tabs ul li a, .ui-tabs ul li a h3{
+    padding:5px;
+    margin:0;
+}
+#admincontainer {
+    display: table;
+}
+
+#adminrow  {
+    display: table-row;
+}
+
+#adminsection{
+    display: table-cell;
+}
+
+
 /* End CSS */
