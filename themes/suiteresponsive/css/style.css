@@ -2304,7 +2304,9 @@ a.tabFormAdvLink:link, a.tabFormAdvLink:visited, a.tabFormAdvLink:hover
 /* global links */
 
 #globalLinks {
-    padding:8px 2px 3px;
+    padding:6px 0 3px 10px;
+    border-left:1px solid #565656;
+    margin: 0 10px 0 10px;
 }
 
 #globalLinks ul {
