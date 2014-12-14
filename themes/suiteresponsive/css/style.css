@@ -2433,7 +2433,7 @@ body
 
 /* header */
 #header div.line {
-    background-color:#f10202;
+    background-color:#337AB7;
     border-bottom-color: #0046ad;
     color:#0046ad;
 }
@@ -2705,7 +2705,7 @@ a.tabFormAdvLink:link, a.tabFormAdvLink:visited
 .yearCalBodyMonth
 {
     background-color: #efefef !important;
-    border-top: 2px solid #f10202;
+    border-top: 2px solid #337AB7;
     border-bottom: 2px solid #fff;
 }
 
@@ -2818,7 +2818,7 @@ ul.tablist li a.current:link, ul.tablist li a.current:visited, ul.tablist li a.c
 /* sitemap */
 #sitemap .edit.view
 {
-    border-color: #f10202 !important;
+    border-color: #337AB7 !important;
 }
 
 /* for edit view like forms that need a smaller font size */
@@ -2849,7 +2849,7 @@ a.sugar-tab-close, .yui-navset .yui-nav a.sugar-tab-close, .yui-navset .yui-nav 
 }
 
 ul.yui-nav li.selected {
-    background:#f10202;
+    background:#337AB7;
 }
 
 #basic_search_link
@@ -2927,8 +2927,8 @@ ul.SugarActionMenuIESub li a:hover, ul.clickMenu.SugarActionMenu li a:hover, ul.
 ul#globalLinksSubnav li a:hover, ul#quickCreateULSubnav li a:hover,
 ul.clickMenu li ul.subnav li a:hover,ul.clickMenu li ul.subnav li input:hover, ul.clickMenu.subpanel.records li ul.subnav li a:hover, ul.clickMenu ul.subnav-sub li a:hover { /*--Hover effect for subnav links--*/
 
-    background-color: #f10202;
-    border-color: #f10202;
+    background-color: #337AB7;
+    border-color: #337AB7;
     color: #fff;
 }
 
@@ -3128,7 +3128,7 @@ ul.clickMenu li ul.subnav li input {
 }
 ul.SugarActionMenuIESub li a:hover,
 ul.clickMenu li ul.subnav li a:hover,ul.clickMenu li ul.subnav li input:hover, ul.clickMenu.subpanel.records li ul.subnav li a:hover, ul.clickMenu ul.subnav-sub li a:hover { /*--Hover effect for subnav links--*/
-    background-color: #f10202;
+    background-color: #337AB7;
     color: #fff;
     font-weight: normal !important;
     font-size: 12px !important;
@@ -3695,7 +3695,7 @@ select, textarea {
 }
 
 select:focus {
-    border:1px solid #f10202;
+    border:1px solid #337AB7;
     padding:4px;
 }
 
