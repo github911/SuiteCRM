@@ -1007,9 +1007,9 @@ footer
     border-top:1px solid #cccccc;
     bottom:0;
     position:relative;
-    padding: 25px 25px 25px 0;
-    margin:0 auto;
-    width:90%;
+    padding: 25px 25px 10px 0;
+    margin:10px auto;
+    width:95%;
 }
 
 #copyrightbuttons {
@@ -1020,7 +1020,6 @@ footer
 {
     float:left;
     padding: 0 10px 0 0;
-
 }
 
 .companyLogo img {
