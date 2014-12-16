@@ -29,31 +29,29 @@ background: #<?php echo $sugar_config['colourselector']['dashlet']; ?>;
 
 /* Top navigation CSS */
 
-#moduleList ul li a:link {
+.navbar-inverse {
+    background:#<?php echo $sugar_config['colourselector']['navbar']; ?>;
+}
+
+#headerlinks a:link, #headerlinks a:visited {
 background:none;
-color:#<?php echo $sugar_config['colourselector']['modlink']; ?>;
+color:#<?php echo $sugar_config['colourselector']['navbarlink']; ?>;
 }
 
-#moduleList ul li a:visited {
-background:none;
-color:#<?php echo $sugar_config['colourselector']['modlinkvisited']; ?>;
+ul#topnav li:hover {
+background:#<?php echo $sugar_config['colourselector']['navbarlihover']; ?>;
 }
 
-#moduleList ul li:hover {
-background:#<?php echo $sugar_config['colourselector']['modlisthover']; ?>;
+ul#topnav li a:hover {
+color:#<?php echo $sugar_config['colourselector']['navbaralinkhover']; ?>;
 }
 
-#moduleList ul li a:hover {
-background:none;
-color:#<?php echo $sugar_config['colourselector']['modlinkhover']; ?>;
+.dropdown-menu {
+background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 }
 
-#moduleList ul li ul.cssmenu {
-background:#<?php echo $sugar_config['colourselector']['cssmenu']; ?>;
-}
-
-#moduleList ul li ul.cssmenu li a {
-color:#<?php echo $sugar_config['colourselector']['cssmenulink']; ?>;
+.dropdown-menu li a {
+color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 }
 
 <?php echo $sugar_config['colourselector']['custom']; ?>
