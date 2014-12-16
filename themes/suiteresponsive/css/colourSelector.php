@@ -17,9 +17,13 @@ header("Content-type: text/css; charset: UTF-8");
 
 ?>
 
-/*custom colour css*/
+/* Header CSS */
 
-h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;}
+h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;
+
+}
+
+/* Dashlet CSS */
 
 .dashletPanel .h3Row{
 
@@ -46,6 +50,8 @@ ul#topnav li a:hover{
 color:#<?php echo $sugar_config['colourselector']['navbaralinkhover']; ?>;
 }
 
+/* Drop down menu CSS */
+
 .dropdown-menu {
 background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 }
@@ -54,6 +60,8 @@ background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 }
 
+/* Button CSS */
+
 .btn, .btn-success, .btn-primary, .button, input[type=submit], input[type=button] {
     background:#<?php echo $sugar_config['colourselector']['button1']; ?>;
 }
@@ -61,5 +69,3 @@ color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 .btn:hover, .btn-success:hover, .btn-primary:hover, .button:hover, input[type=submit]:hover, input[type=button]:hover {
     background:#<?php echo $sugar_config['colourselector']['buttonhover']; ?>;
 }
-
-<?php echo $sugar_config['colourselector']['custom']; ?>

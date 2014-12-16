@@ -17,27 +17,13 @@ header("Content-type: text/css; charset: UTF-8");
 
 ?>
 
-/*custom colour css*/
+/* Header CSS */
 
 #header {
     background: #<?php echo $sugar_config['colourselector']['navbar']; ?>;
 }
 
-h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;}
-
-input[type=button],
-input[type=submit],
-input[type=reset],
-.button {
-background: #<?php echo $sugar_config['colourselector']['button1']; ?>; /* Old browsers */
-}
-
-input[type=button]:hover,
-input[type=submit]:hover,
-input[type=reset]:hover {
-filter:none !important;
-background: #<?php echo $sugar_config['colourselector']['buttonhover']; ?>;
-}
+/* Dashlet CSS */
 
 .dashletPanel .h3Row {
 
@@ -66,6 +52,8 @@ background:none;
 color:#<?php echo $sugar_config['colourselector']['navbaralinkhover']; ?>;
 }
 
+/* Dropdown menu CSS */
+
 #moduleList ul li ul.cssmenu {
 background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 }
@@ -74,4 +62,20 @@ background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 }
 
-<?php echo $sugar_config['colourselector']['custom']; ?>
+/* Button CSS */
+
+h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;}
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+.button {
+background: #<?php echo $sugar_config['colourselector']['button1']; ?>; /* Old browsers */
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+filter:none !important;
+background: #<?php echo $sugar_config['colourselector']['buttonhover']; ?>;
+}
