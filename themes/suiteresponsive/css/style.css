@@ -4273,6 +4273,7 @@ li#usermenu:hover {
     color:#337AB7;
     cursor:pointer;
     padding:5px;
+    font-size:1em;
 }
 
 #moremenu ul li{
@@ -4282,6 +4283,7 @@ li#usermenu:hover {
 
 #moremenu ul li a:hover{
     color:#ffffff;
+    background:none;
     cursor:pointer;
     padding:5px;
 }

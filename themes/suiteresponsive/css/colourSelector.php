@@ -42,7 +42,7 @@ background:none;
 color:#<?php echo $sugar_config['colourselector']['navbarlink']; ?>;
 }
 
-ul#topnav li:hover, .dropdown-menu li a:hover, li#usermenu:hover  {
+ul#topnav li:hover, .dropdown-menu li a:hover, li#usermenu:hover, #moremenu ul li:hover  {
 background:#<?php echo $sugar_config['colourselector']['navbarlihover']; ?>;
 }
 
