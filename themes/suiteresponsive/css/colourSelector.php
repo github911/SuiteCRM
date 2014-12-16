@@ -50,7 +50,7 @@ color:#<?php echo $sugar_config['colourselector']['navbaralinkhover']; ?>;
 background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 }
 
-.dropdown-menu li a {
+.dropdown-menu li a, .dropdown-menu em a, #moremenu ul li a {
 color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 }
 
