@@ -21,7 +21,7 @@ header("Content-type: text/css; charset: UTF-8");
 
 h1, h2, h3, h4 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;}
 
-.dashletPanel .h3Row {
+.dashletPanel .h3Row, .home_h2 {
 
 background: #<?php echo $sugar_config['colourselector']['dashlet']; ?>;
 
@@ -38,11 +38,11 @@ background:none;
 color:#<?php echo $sugar_config['colourselector']['navbarlink']; ?>;
 }
 
-ul#topnav li:hover {
+ul#topnav li:hover, .dropdown-menu li a:hover, li#usermenu:hover  {
 background:#<?php echo $sugar_config['colourselector']['navbarlihover']; ?>;
 }
 
-ul#topnav li a:hover {
+ul#topnav li a:hover{
 color:#<?php echo $sugar_config['colourselector']['navbaralinkhover']; ?>;
 }
 
