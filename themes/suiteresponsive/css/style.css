@@ -2626,12 +2626,6 @@ table.detail
     background-color: #f6f6f6;
 }
 
-/* misc links */
-a.utilsLink:link, a.utilsLink:visited
-{
-    color: #0b578f;
-}
-
 a.tabFormAdvLink:link, a.tabFormAdvLink:visited
 {
     color: #444444;
@@ -4296,7 +4290,7 @@ li#usermenu:hover {
     color: #fff;
     background-color: #337AB7;
     border:none;
-    padding:2px 5px 2px 5px;
+    padding:3px 10px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -4310,10 +4304,7 @@ input[type=submit], input[type=button] {
     color: #fff;
     background-color: #337AB7;
     border:none;
-    padding:3px 10px 3px 10px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    padding:3px 10px;
 }
 .button:hover,
 .button:focus,
