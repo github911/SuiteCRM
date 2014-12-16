@@ -91,8 +91,3 @@ $javascript = new javascript();
 $javascript->setFormName('ConfigureSettings');
 echo $javascript->getScript();
 ?>
-<!--<script language="Javascript" type="text/javascript">
-    addToValidate('ConfigureSettings','renewal_reminder_period','int',false,"Days must be a number");
-    addToValidate('ConfigureSettings','initial_invoice_number','int',false,"Initial invoice number must be a number");
-</script>-->
-

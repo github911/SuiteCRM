@@ -4,7 +4,6 @@
 
     <span class='error'>{$error.main}</span>
 
-
     <table width="100%" cellpadding="0" cellspacing="1" border="0" class="actionsContainer">
         <tr style="float:left;">
             <td>
@@ -29,10 +28,8 @@
             <td>{$MOD.LBL_COLOUR_ADMIN_DDMENU}</td><td><input type="text" id="colourselector_cssmenu" name="colourselector_cssmenu" class="color" value="{$config.colourselector.cssmenu}" size="15" /></td>
         </tr>
         <tr style="float:left;">
-
             <td>{$MOD.LBL_COLOUR_ADMIN_MENUFONT}</td><td><input type="text" id="colourselector_menufont" name="colourselector_menufont" class="color" value="{$config.colourselector.menufont}" size="15" /></td>
             <td>{$MOD.LBL_COLOUR_ADMIN_MENULNKHVR}</td><td><input type="text" id="colourselector_modlinkhover" name="colourselector_modlinkhover" class="color" value="{$config.colourselector.modlinkhover}" size="15" /></td>
-
         </tr>
     </table>
 
