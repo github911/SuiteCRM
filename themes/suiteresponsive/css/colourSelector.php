@@ -19,9 +19,9 @@ header("Content-type: text/css; charset: UTF-8");
 
 /*custom colour css*/
 
-h1, h2, h3, h4 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;}
+h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;}
 
-.dashletPanel .h3Row, .home_h2 {
+.dashletPanel .h3Row{
 
 background: #<?php echo $sugar_config['colourselector']['dashlet']; ?>;
 
