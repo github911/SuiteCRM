@@ -39,11 +39,11 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-control$
-            <span class="sr-only"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php">{$APP.LBL_BROWSER_TITLE}</a>
         </div>
@@ -225,11 +225,10 @@
 <!--Start Responsive Sidebar -->
 
 <div class="container-fluid">
-    <div id="togglesidebar">
+    <!--<div id="togglesidebar">
         <button class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span> Toggle Sidebar</button>
-    </div>
+    </div>-->
     <div class="row">
-
     <div class="col-sm-3 col-md-2 sidebar">
         <div class="btn-toolbar" role="toolbar" aria-label="...">
             <div class="btn-group" role="group" aria-label="..."><a href="index.php" class="btn btn-success"></span><span class="glyphicon glyphicon-home" aria-hidden="true"></a></div>
