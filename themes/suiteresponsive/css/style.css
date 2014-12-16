@@ -48,8 +48,9 @@ body
 {
     background:#f7f7f7;
     margin: 0px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     overflow:auto;
+    font-size:1.3em;
 }
 
 .subDmenu {
@@ -122,7 +123,7 @@ form
 
 textarea
 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 input[type=checkbox],input[type=radio]
@@ -822,7 +823,7 @@ table.subpanelTabForm
 
 /* gantt styles */
 table.days {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 td.days {
@@ -2307,6 +2308,7 @@ a.tabFormAdvLink:link, a.tabFormAdvLink:visited, a.tabFormAdvLink:hover
     padding:6px 0 3px 10px;
     border-left:1px solid #565656;
     margin: 0 10px 0 10px;
+    font-size:1.1em;
 }
 
 #globalLinks ul {
@@ -3157,14 +3159,14 @@ ul.clickMenu.showLess .moreOverflow , ul.clickMenu.showLess .moduleMenuOverFlowL
 }
 
 ul#globalLinksSubnav, ul#quickCreateULSubnav{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 ul#globalLinks.clickMenu {
     background: none;
     border: 0px none;
     padding-right: 0px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 ul#globalLinks.clickMenu li > span {
@@ -3275,7 +3277,7 @@ ul#detailViewActions.clickMenu {
     background: none;
     border: 0px none;
     padding-right: 0px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
@@ -4225,10 +4227,12 @@ fieldset[disabled] .btn-primary.active {
 
 #topnav{
     padding:15px 0px 15px 0px;
+    font-size:1.1em;
 }
 
 ul#topnav li a {
     text-decoration:none;
+    font-size:1.4em;
 }
 
 ul#topnav li a:hover {
@@ -4267,6 +4271,7 @@ li#usermenu:hover {
 
 #moremenu a{
     color:#ffffff;
+    font-size:1.1em;
     cursor:pointer;
 }
 

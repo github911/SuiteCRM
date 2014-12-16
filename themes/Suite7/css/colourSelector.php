@@ -69,13 +69,16 @@ h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pa
 input[type=button],
 input[type=submit],
 input[type=reset],
-.button {
+.button,
+a#create_link.utilsLink{
 background: #<?php echo $sugar_config['colourselector']['button1']; ?>; /* Old browsers */
 }
 
 input[type=button]:hover,
 input[type=submit]:hover,
-input[type=reset]:hover {
+input[type=reset]:hover,
+.button:hover,
+a#create_link.utilsLink:hover{
 filter:none !important;
 background: #<?php echo $sugar_config['colourselector']['buttonhover']; ?>;
 }
