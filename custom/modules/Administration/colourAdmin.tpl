@@ -32,7 +32,7 @@
     <table width="100%" border="0" cellspacing="1" cellpadding="0" class="edit view">
         <tr><th align="left" scope="row" colspan="4"><h4><strong>{$MOD.LBL_COLOUR_ADMIN_BUTTON}</strong></h4></th></tr>
         <tr style="float:left;">
-            <td>{$MOD.LBL_COLOUR_ADMIN_BTNTOP}</td><td><input type="text" id="colourselector_button" name="colourselector_button" class="color" value="{$config.colourselector.button}" size="15" /></td>
+            <td>{$MOD.LBL_COLOUR_ADMIN_BTNTOP}</td><td><input type="text" id="colourselector_button1" name="colourselector_button1" class="color" value="{$config.colourselector.button1}" size="15" /></td>
         <tr style="float:left;">
             <td>{$MOD.LBL_COLOUR_ADMIN_BTNHOVER}</td><td><input type="text" id="colourselector_buttonhover" name="colourselector_buttonhover" class="color" value="{$config.colourselector.buttonhover}" size="15" /></td>
         </tr>

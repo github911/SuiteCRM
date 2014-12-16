@@ -55,7 +55,7 @@ color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 }
 
 .btn, .btn-success, .btn-primary, .button, input[type=submit], input[type=button] {
-    background:#<?php echo $sugar_config['colourselector']['button']; ?>;
+    background:#<?php echo $sugar_config['colourselector']['button1']; ?>;
 }
 
 .btn:hover, .btn-success:hover, .btn-primary:hover, .button:hover, input[type=submit]:hover, input[type=button]:hover {
