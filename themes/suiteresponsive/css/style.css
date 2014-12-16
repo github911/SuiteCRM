@@ -4271,7 +4271,7 @@ li#usermenu:hover {
 }
 
 #moremenu ul li a{
-    color:#333333;
+    color:#337AB7;
     cursor:pointer;
     padding:5px;
 }
@@ -4501,6 +4501,10 @@ table legend {
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     border-top:none;
+}
+
+.col-md-offset-2 {
+    min-width:12%;
 }
 
 /* End CSS */
