@@ -54,4 +54,12 @@ background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 }
 
+.btn, .btn-success, .btn-primary, .button, input[type=submit], input[type=button] {
+    background:#<?php echo $sugar_config['colourselector']['button']; ?>;
+}
+
+.btn:hover, .btn-success:hover, .btn-primary:hover, .button:hover, input[type=submit]:hover, input[type=button]:hover {
+    background:#<?php echo $sugar_config['colourselector']['buttonhover']; ?>;
+}
+
 <?php echo $sugar_config['colourselector']['custom']; ?>

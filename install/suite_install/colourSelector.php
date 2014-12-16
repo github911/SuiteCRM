@@ -11,7 +11,7 @@ function install_colourSelector() {
     if(!isset($sugar_config['colourselector']['pageheader'])) $sugar_config['colourselector']['pageheader'] = '#f10202';
     if(!isset($sugar_config['colourselector']['pagelink'])) $sugar_config['colourselector']['pagelink'] = '#f10202';
     if(!isset($sugar_config['colourselector']['dashlet'])) $sugar_config['colourselector']['dashlet'] = '#777777';
-    if(!isset($sugar_config['colourselector']['button'])) $sugar_config['colourselector']['button'] = '#ffffff';
+    if(!isset($sugar_config['colourselector']['button1'])) $sugar_config['colourselector']['button1'] = '#ffffff';
     if(!isset($sugar_config['colourselector']['buttonhover'])) $sugar_config['colourselector']['buttonhover'] = '#ffffff';
     if(!isset($sugar_config['colourselector']['navbarlihover'])) $sugar_config['colourselector']['navbarlihover'] = '#565656';
     if(!isset($sugar_config['colourselector']['bavbarhover'])) $sugar_config['colourselector']['bavbarhover'] = '#ffffff';
