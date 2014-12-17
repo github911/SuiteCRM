@@ -23,6 +23,7 @@ h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pa
 
 #header {
 background: #<?php echo $sugar_config['colourselector']['navbar']; ?>;
+border-bottom:2px solid #<?php echo $sugar_config['colourselector']['pagelink']; ?>;
 }
 
 /* Pagelink CSS */
