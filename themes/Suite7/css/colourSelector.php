@@ -78,7 +78,12 @@ input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover,
 .button:hover,
-a#create_link.utilsLink:hover{
+a#create_link.utilsLink:hover,
+#globalLinksModule ul.clickMenu.SugarActionMenu li a:hover,
+#globalLinksModule ul.clickMenu li:hover span,
+ul.SugarActionMenuIESub li a:hover, ul.clickMenu.SugarActionMenu li a:hover, ul.clickMenu.SugarActionMenu li span.subhover:hover,
+ul#globalLinksSubnav li a:hover, ul#quickCreateULSubnav li a:hover,
+ul.clickMenu li ul.subnav li a:hover,ul.clickMenu li ul.subnav li input:hover, ul.clickMenu.subpanel.records li ul.subnav li a:hover, ul.clickMenu ul.subnav-sub li a:hover{
 filter:none !important;
 background: #<?php echo $sugar_config['colourselector']['buttonhover']; ?>;
 }
