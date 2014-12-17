@@ -25,7 +25,7 @@ header("Content-type: text/css; charset: UTF-8");
 
 /* Pagelink CSS */
 
-a:link, a  {
+a, a:link, a:visited {
 color: #<?php echo $sugar_config['colourselector']['pagelink']; ?>;
 }
 
