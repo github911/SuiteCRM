@@ -49,7 +49,7 @@
     <table width="100%" border="0" cellspacing="1" cellpadding="0" class="edit view">
         <tr><th align="left" scope="row" colspan="4"><h4><strong>{$MOD.LBL_COLOUR_ADMIN_DASHLET}</strong></h4></th></tr>
         <tr style="float:left;">
-            <td>{$MOD.LBL_COLOUR_ADMIN_DASHHEAD}</td><td><input type="text" id="colourselector_dashlet" name="colourselector_dashlet" class="color" value="{$config.colourselector.dashlet}" size="15" /></td>
+            <td width="150">{$MOD.LBL_COLOUR_ADMIN_DASHHEAD}</td><td><input type="text" id="colourselector_dashlet" name="colourselector_dashlet" class="color" value="{$config.colourselector.dashlet}" size="15" /></td>
         </tr>
     </table>
 
