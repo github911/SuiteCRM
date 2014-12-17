@@ -46,6 +46,7 @@ if(isset($_REQUEST['do']) && $_REQUEST['do'] == 'save') {
 
 if(!isset($sugar_config['colourselector']['navbar'])) $sugar_config['colourselector']['navbar'] = '#121212';
 if(!isset($sugar_config['colourselector']['navbarfont'])) $sugar_config['colourselector']['navbarfont'] = '#cccccc';
+if(!isset($sugar_config['colourselector']['navbarlinkhover'])) $sugar_config['colourselector']['navbarlinkhover'] = '#cccccc';
 if(!isset($sugar_config['colourselector']['pageheader'])) $sugar_config['colourselector']['pageheader'] = '#f10202';
 if(!isset($sugar_config['colourselector']['pagelink'])) $sugar_config['colourselector']['pagelink'] = '#f10202';
 if(!isset($sugar_config['colourselector']['dashlet'])) $sugar_config['colourselector']['dashlet'] = '#777777';

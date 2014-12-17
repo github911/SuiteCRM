@@ -52,8 +52,8 @@ ul#topnav li:hover, .dropdown-menu li a:hover, li#usermenu:hover, #moremenu ul l
 background:#<?php echo $sugar_config['colourselector']['navbarlihover']; ?>;
 }
 
-ul#topnav li a:hover{
-color:#<?php echo $sugar_config['colourselector']['navbaralinkhover']; ?>;
+#headerlinks a:hover, .navbar-inverse .navbar-brand:hover, #moremenu a:hover {
+color:#<?php echo $sugar_config['colourselector']['navbarlinkhover']; ?>;
 }
 
 /* Drop down menu CSS */

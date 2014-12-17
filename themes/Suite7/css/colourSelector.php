@@ -56,11 +56,6 @@ color:#<?php echo $sugar_config['colourselector']['navbarlinkhover']; ?>;
 background:#<?php echo $sugar_config['colourselector']['navbarlihover']; ?>;
 }
 
-#moduleList ul li a:hover {
-background:none;
-color:#<?php echo $sugar_config['colourselector']['navbaralinkhover']; ?>;
-}
-
 /* Dropdown menu CSS */
 
 #moduleList ul li ul.cssmenu, #drop-nav ul, #quick-nav ul{
