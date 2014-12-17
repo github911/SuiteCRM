@@ -33,8 +33,10 @@
         <tr><th align="left" scope="row" colspan="4"><h4><strong>{$MOD.LBL_COLOUR_ADMIN_BUTTON}</strong></h4></th></tr>
         <tr style="float:left;">
             <td width="150">{$MOD.LBL_COLOUR_ADMIN_BTNTOP}</td><td><input type="text" id="colourselector_button1" name="colourselector_button1" class="color" value="{$config.colourselector.button1}" size="15" /></td>
-        <tr style="float:left;">
             <td width="150">{$MOD.LBL_COLOUR_ADMIN_BTNHOVER}</td><td><input type="text" id="colourselector_buttonhover" name="colourselector_buttonhover" class="color" value="{$config.colourselector.buttonhover}" size="15" /></td>
+        <tr style="float:left;">
+            <td width="150">{$MOD.LBL_COLOUR_ADMIN_BTNHOVER}</td><td><input type="text" id="colourselector_buttoncolour" name="colourselector_buttoncolour" class="color" value="{$config.colourselector.buttoncolour}" size="15" /></td>
+            <td width="150">{$MOD.LBL_COLOUR_ADMIN_BTNHOVER}</td><td><input type="text" id="colourselector_buttoncolourhover" name="colourselector_buttoncolourhover" class="color" value="{$config.colourselector.buttoncolourhover}" size="15" /></td>
         </tr>
     </table>
 

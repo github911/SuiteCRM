@@ -52,6 +52,8 @@ if(!isset($sugar_config['colourselector']['pagelink'])) $sugar_config['coloursel
 if(!isset($sugar_config['colourselector']['dashlet'])) $sugar_config['colourselector']['dashlet'] = '#777777';
 if(!isset($sugar_config['colourselector']['button1'])) $sugar_config['colourselector']['button1'] = '#ffffff';
 if(!isset($sugar_config['colourselector']['buttonhover'])) $sugar_config['colourselector']['buttonhover'] = '#ffffff';
+if(!isset($sugar_config['colourselector']['buttoncolour'])) $sugar_config['colourselector']['buttoncolour'] = '#121212';
+if(!isset($sugar_config['colourselector']['buttoncolourhover'])) $sugar_config['colourselector']['buttoncolourhover'] = '#ffffff';
 if(!isset($sugar_config['colourselector']['navbarlihover'])) $sugar_config['colourselector']['navbarlihover'] = '#565656';
 if(!isset($sugar_config['colourselector']['bavbarhover'])) $sugar_config['colourselector']['bavbarhover'] = '#ffffff';
 if(!isset($sugar_config['colourselector']['dropdownmenu'])) $sugar_config['colourselector']['dropdownmenu'] = '#333333';
