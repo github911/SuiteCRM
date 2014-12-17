@@ -73,7 +73,7 @@ input[type=submit],
 input[type=reset],
 .button,
 a#create_link.utilsLink{
-background: #<?php echo $sugar_config['colourselector']['button1']; ?>; /* Old browsers */
+background: #<?php echo $sugar_config['colourselector']['button1']; ?>;
 }
 
 input[type=button]:hover,
