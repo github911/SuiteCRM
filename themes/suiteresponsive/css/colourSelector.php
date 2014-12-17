@@ -43,9 +43,9 @@ background: #<?php echo $sugar_config['colourselector']['dashlet']; ?>;
     background:#<?php echo $sugar_config['colourselector']['navbar']; ?>;
 }
 
-#headerlinks a:link, #headerlinks a:visited {
+#headerlinks a:link, #headerlinks a:visited, .navbar-inverse .navbar-brand, #moremenu a {
 background:none;
-color:#<?php echo $sugar_config['colourselector']['navbarlink']; ?>;
+color:#<?php echo $sugar_config['colourselector']['navbarfont']; ?>;
 }
 
 ul#topnav li:hover, .dropdown-menu li a:hover, li#usermenu:hover, #moremenu ul li:hover  {
