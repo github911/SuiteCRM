@@ -19,8 +19,10 @@ header("Content-type: text/css; charset: UTF-8");
 
 /* Header CSS */
 
+h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;}
+
 #header {
-    background: #<?php echo $sugar_config['colourselector']['navbar']; ?>;
+background: #<?php echo $sugar_config['colourselector']['navbar']; ?>;
 }
 
 /* Pagelink CSS */
@@ -37,7 +39,7 @@ background: #<?php echo $sugar_config['colourselector']['dashlet']; ?>;
 
 }
 
-/* Top navigation CSS */
+/* Top navigation bar CSS */
 
 #moduleList ul li a:link {
 background:none;
@@ -68,9 +70,7 @@ background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 }
 
-/* Button CSS */
-
-h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;}
+/* Button and action menu CSS */
 
 input[type=button],
 input[type=submit],

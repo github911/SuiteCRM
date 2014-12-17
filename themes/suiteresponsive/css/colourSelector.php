@@ -37,7 +37,7 @@ background: #<?php echo $sugar_config['colourselector']['dashlet']; ?>;
 
 }
 
-/* Top navigation CSS */
+/* Top navigation bar CSS */
 
 .navbar-inverse {
     background:#<?php echo $sugar_config['colourselector']['navbar']; ?>;
@@ -66,7 +66,7 @@ background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 }
 
-/* Button CSS */
+/* Button and action menu CSS */
 
 .btn, .btn-success, .btn-primary, .button, input[type=submit], input[type=button], a#create_link.utilsLink {
     background:#<?php echo $sugar_config['colourselector']['button1']; ?>;
