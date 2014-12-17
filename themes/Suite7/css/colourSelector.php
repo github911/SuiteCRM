@@ -43,7 +43,7 @@ background:none;
 color:#<?php echo $sugar_config['colourselector']['navbarlinkhover']; ?>;
 }
 
-#moduleList ul li:hover, ul#drop-nav li:hover {
+#moduleList ul li:hover, ul#drop-nav li:hover, #quick-nav li:hover {
 background:#<?php echo $sugar_config['colourselector']['navbarlihover']; ?>;
 }
 
@@ -54,11 +54,11 @@ color:#<?php echo $sugar_config['colourselector']['navbaralinkhover']; ?>;
 
 /* Dropdown menu CSS */
 
-#moduleList ul li ul.cssmenu, #drop-nav ul {
+#moduleList ul li ul.cssmenu, #drop-nav ul, #quick-nav ul{
 background:#<?php echo $sugar_config['colourselector']['dropdownmenu']; ?>;
 }
 
-#moduleList ul li ul.cssmenu li a, ul#drop-nav li a {
+#moduleList ul li ul.cssmenu li a, ul#drop-nav li a, ul#quick-nav li a {
 color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 }
 
