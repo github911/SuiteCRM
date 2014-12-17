@@ -23,6 +23,12 @@ header("Content-type: text/css; charset: UTF-8");
     background: #<?php echo $sugar_config['colourselector']['navbar']; ?>;
 }
 
+/* Pagelink CSS */
+
+a:link, a  {
+color: #<?php echo $sugar_config['colourselector']['pagelink']; ?>;
+}
+
 /* Dashlet CSS */
 
 .dashletPanel .h3Row {

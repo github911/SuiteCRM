@@ -23,6 +23,12 @@ h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pa
 
 }
 
+/* Pagelink CSS */
+
+a:link, a {
+color: #<?php echo $sugar_config['colourselector']['pagelink']; ?>;
+}
+
 /* Dashlet CSS */
 
 .dashletPanel .h3Row{
