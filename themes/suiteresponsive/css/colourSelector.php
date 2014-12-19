@@ -68,12 +68,12 @@ color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 
 /* Button and action menu CSS */
 
-.btn, .btn-success, .btn-primary, .button, input[type=submit], input[type=button], a#create_link.utilsLink {
+.btn, .btn-success, .btn-primary, .button, input[type=submit], input[type=button], a#create_link.utilsLink, .btn-group a {
     background:#<?php echo $sugar_config['colourselector']['button1']; ?>;
     color:#<?php echo $sugar_config['colourselector']['buttoncolour']; ?>;
 }
 
-.btn:hover, .btn-success:hover, .btn-primary:hover, .button:hover, input[type=submit]:hover, input[type=button]:hover, a#create_link.utilsLink:hover, #globalLinksModule ul.clickMenu.SugarActionMenu li a:hover,
+.btn:hover, .btn-success:hover, .btn-primary:hover, .button:hover, input[type=submit]:hover, input[type=button]:hover, a#create_link.utilsLink:hover, .btn-group a:hover, #globalLinksModule ul.clickMenu.SugarActionMenu li a:hover,
 #globalLinksModule ul.clickMenu li:hover span,
 ul.SugarActionMenuIESub li a:hover, ul.clickMenu.SugarActionMenu li a:hover, ul.clickMenu.SugarActionMenu li span.subhover:hover,
 ul#globalLinksSubnav li a:hover, ul#quickCreateULSubnav li a:hover,
