@@ -44,7 +44,8 @@
                 <a href="index.php" class="btn btn-success"></span><span class="glyphicon glyphicon-home" aria-hidden="true"></a>
                 <a href="index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}" class="btn btn-success"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
                 <a href="" class="btn btn-success" onclick="refresh();"><span class=" glyphicon glyphicon-refresh" aria-hidden="true"></span></a>
-                <a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class="btn btn-success"><span class=" glyphicon glyphicon-log-out" aria-hidden="true"></span></a>
+                <a role="menuitem" href='index.php?module=Administration&action=index' class="btn btn-success"><span class=" glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+                <a role="menuitem" href='{$LOGOUT_LINK}' class="btn btn-success"><span class=" glyphicon glyphicon-log-out" aria-hidden="true"></span></a>
             </div>
         </div>
     </div>
