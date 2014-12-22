@@ -19,7 +19,8 @@ header("Content-type: text/css; charset: UTF-8");
 
 /* Header CSS */
 
-h1, h2, h3, h4, .home_h2 {color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;
+h1, h2, h3, h4 {
+color: #<?php echo $sugar_config['colourselector']['pageheader']; ?>;
 
 }
 

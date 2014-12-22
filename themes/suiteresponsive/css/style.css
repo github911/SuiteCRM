@@ -4531,8 +4531,20 @@ table legend {
     }
 }
 
-img {
-    opacity:0.7;
+#mobilefooter {
+
+    width:100%;
+    margin:0 auto;
+    padding:5px;
+    max-height:50px !important;
+    background:#121212;
+    position:fixed;
+    bottom:0;
+}
+
+#footernav{
+    margin:0 auto;
+    max-width:50%;
 }
 
 @media screen and (min-width:480px) {
@@ -4543,4 +4555,7 @@ img {
     footer {display:none}
 }
 
+#content{
+    margin:10px;
+}
 /* End CSS */
