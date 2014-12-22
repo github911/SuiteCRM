@@ -4534,4 +4534,13 @@ table legend {
 img {
     opacity:0.7;
 }
+
+@media screen and (min-width:480px) {
+    #mobilefooter {display:none}
+}
+
+@media screen and (max-width:480px) {
+    footer {display:none}
+}
+
 /* End CSS */
