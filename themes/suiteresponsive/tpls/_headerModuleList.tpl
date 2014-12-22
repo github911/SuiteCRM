@@ -36,6 +36,7 @@
 
 *}
 <!--Start Responsive Top Navigation Menu -->
+<div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -217,6 +218,7 @@
                             <button  type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     </span>
             </form>
+            <!--<button id="buttontoggle" class="ui-state-default ui-corner-all">Toggle Sidebar</button>-->
         </div>
     </div>
 </nav>

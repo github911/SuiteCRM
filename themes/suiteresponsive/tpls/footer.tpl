@@ -45,17 +45,17 @@
                 <a href="index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}" class="btn btn-success"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
                 <a href="" class="btn btn-success" onclick="refresh();"><span class=" glyphicon glyphicon-refresh" aria-hidden="true"></span></a>
                 <div class="btn-group" role="group">
-                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn dropdown-toggle btn-success" data-toggle="dropdown" aria-expanded="false">
                         <span class="glyphicon glyphicon-plus"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="index.php?module=Accounts&action=EditView&return_module=Accounts&return_action=DetailView">{$MOD.LBL_QUICK_ACCOUNT}</a></li>
-                        <li><a href="index.php?module=Contacts&action=EditView&return_module=Contacts&return_action=DetailView">{$MOD.LBL_QUICK_CONTACT}</a></li>
-                        <li><a href="index.php?module=Opportunities&action=EditView&return_module=Opportunities&return_action=DetailView">{$MOD.LBL_QUICK_OPPORTUNITY}</a></li>
-                        <li><a href="index.php?module=Leads&action=EditView&return_module=Leads&return_action=DetailView">{$MOD.LBL_QUICK_LEAD}</a></li>
-                        <li><a href="index.php?module=Documents&action=EditView&return_module=Documents&return_action=DetailView">{$MOD.LBL_QUICK_DOCUMENT}</a></li>
-                        <li><a href="index.php?module=Calls&action=EditView&return_module=Calls&return_action=DetailView">{$MOD.LBL_QUICK_CALL}</a></li>
-                        <li><a href="index.php?module=Tasks&action=EditView&return_module=Tasks&return_action=DetailView">{$MOD.LBL_QUICK_TASK}</a></li>
+                        <li role="presentation"><a href="index.php?module=Accounts&action=EditView&return_module=Accounts&return_action=DetailView">{$MOD.LBL_QUICK_ACCOUNT}</a></li>
+                        <li role="presentation"><a href="index.php?module=Contacts&action=EditView&return_module=Contacts&return_action=DetailView">{$MOD.LBL_QUICK_CONTACT}</a></li>
+                        <li role="presentation"><a href="index.php?module=Opportunities&action=EditView&return_module=Opportunities&return_action=DetailView">{$MOD.LBL_QUICK_OPPORTUNITY}</a></li>
+                        <li role="presentation"><a href="index.php?module=Leads&action=EditView&return_module=Leads&return_action=DetailView">{$MOD.LBL_QUICK_LEAD}</a></li>
+                        <li role="presentation"><a href="index.php?module=Documents&action=EditView&return_module=Documents&return_action=DetailView">{$MOD.LBL_QUICK_DOCUMENT}</a></li>
+                        <li role="presentation"><a href="index.php?module=Calls&action=EditView&return_module=Calls&return_action=DetailView">{$MOD.LBL_QUICK_CALL}</a></li>
+                        <li role="presentation"><a href="index.php?module=Tasks&action=EditView&return_module=Tasks&return_action=DetailView">{$MOD.LBL_QUICK_TASK}</a></li>
                     </ul>
                 </div>
                 <a role="menuitem" href='index.php?module=Administration&action=index' class="btn btn-success"><span class=" glyphicon glyphicon-cog" aria-hidden="true"></span></a>
