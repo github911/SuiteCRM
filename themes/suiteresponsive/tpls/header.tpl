@@ -40,40 +40,7 @@
 <a name="top"></a>
 {$DCSCRIPT}
 {if $AUTHENTICATED}
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <div>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">SuiteCRM</a>
-            </div>
-        </div>
-        <div class="navbar-collapse collapse">
-
-
-            <ul class="nav navbar-nav navbar-left">
-                {include file="_headerModuleList.tpl" theme_template=true}
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                {include file="_headerSearch.tpl" theme_template=true}
-                {include file="_globalLinks.tpl" theme_template=true}
-                {include file="_welcome.tpl" theme_template=true}
-            </ul>
-        </div>
-
-        {if !$AUTHENTICATED}
-            <br/>
-            <br/>
-        {/if}
-
-        {*<div class="clear"></div>*}
-
-    </div>
+    {include file="_headerModuleList.tpl" theme_template=true}
 {/if}
 
 {literal}

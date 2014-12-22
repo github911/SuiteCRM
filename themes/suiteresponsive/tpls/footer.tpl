@@ -36,7 +36,7 @@
 
 *}
 </div>
-
+</div>
 {if $AUTHENTICATED}
     <div id="mobilefooter">
         <div id="footernav" class="btn-toolbar" role="toolbar" aria-label="...">
