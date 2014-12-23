@@ -46,7 +46,17 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php">{$APP.LBL_BROWSER_TITLE}</a>
+            <form id="searchmobile" name='UnifiedSearch' action='index.php' onsubmit='return SUGAR.unifiedSearchAdvanced.checkUsaAdvanced()'>
+                <input type="hidden" class="form-control" name="action" value="UnifiedSearch">
+                <input type="hidden" class="form-control" name="module" value="Home">
+                <input type="hidden" class="form-control" name="search_form" value="false">
+                <input type="hidden" class="form-control" name="advanced" value="false">
+                    <span class="input-group-btn">
+                        <input type="text" class="form-control" name="query_string" id="query_string" placeholder="Search..." />
+                    </span>
+            </form>
         </div>
+
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 {foreach from=$moduleTopMenu item=module key=name name=moduleList}
