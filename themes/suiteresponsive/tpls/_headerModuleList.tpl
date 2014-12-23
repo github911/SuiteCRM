@@ -208,10 +208,10 @@
                     <span class="glyphicon glyphicon-user"> </span> {$CURRENT_USER}
                     <span class="caret"></span>
                 </li>
-                <li id="usermenucollapsed" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <button id="usermenucollapsed" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                     <span class="glyphicon glyphicon-user"> </span>
                     <span class="caret"></span>
-                </li>
+                </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     {foreach from=$GCLS item=GCL name=gcl key=gcl_key}
                         <li role="presentation">
