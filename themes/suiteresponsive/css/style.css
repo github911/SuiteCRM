@@ -4361,8 +4361,6 @@ input[type=text], select{
 
 #dashletresponsive{
     float: left;
-    width: auto;
-    height: auto;
 }
 
 .dashboardTbList {
