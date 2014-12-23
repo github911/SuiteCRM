@@ -208,6 +208,10 @@
                     <span class="glyphicon glyphicon-user"> </span> {$CURRENT_USER}
                     <span class="caret"></span>
                 </li>
+                <li id="usermenucollapsed" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                    <span class="glyphicon glyphicon-user"> </span>
+                    <span class="caret"></span>
+                </li>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     {foreach from=$GCLS item=GCL name=gcl key=gcl_key}
                         <li role="presentation">
@@ -235,7 +239,7 @@
 <!--End Responsive Top Navigation Menu -->
 <!--Start Responsive Sidebar -->
 
-<div class="container-fluid">
+{*<div class="container-fluid">
     <!--<div id="togglesidebar">
         <button class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span> Toggle Sidebar</button>
     </div>-->
@@ -275,6 +279,6 @@
                 </li>
             {/foreach}
         </ul>
-    </div>
+    </div>*}
     <!--End Responsive Sidebar -->
     <!--Start Page content -->
