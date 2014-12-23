@@ -4554,11 +4554,12 @@ table legend {
 
 #searchmobile{
     margin-top:8px;
+    display:none;
 }
 
 #usermenucollapsed{display:none;}
 
-@media (min-width:960px){
+@media (max-width:980px){
     #usermenu, #searchform, #searchmobile{display:none;}
     #usermenucollapsed{display:inline;}
 }
@@ -4594,6 +4595,10 @@ table legend {
     }
     .collapsing {
         overflow: hidden!important;
+    }
+    #searchmobile{
+        display:block;
+        width:100%;
     }
 }
 /* End CSS */
