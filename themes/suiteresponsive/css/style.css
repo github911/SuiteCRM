@@ -4338,7 +4338,6 @@ input[type=text], select{
     background:#ffffff;
     border:1px solid #cccccc;
     padding:5px;
-    border-radius:0;
 }
 
 .list tr th {
@@ -4543,8 +4542,8 @@ table legend {
 }
 
 #footernav{
-    margin:0 auto;
-    width:70%;
+    margin: 0 auto; padding: 0;
+    width:275px;
 }
 
 @media screen and (min-width:768px) {
