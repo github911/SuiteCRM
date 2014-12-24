@@ -56,7 +56,6 @@
                     </span>
             </form>
         </div>
-
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 {foreach from=$moduleTopMenu item=module key=name name=moduleList}

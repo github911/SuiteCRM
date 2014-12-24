@@ -4564,7 +4564,17 @@ table legend {
     #usermenucollapsed{display:inline;}
 }
 
-@media (max-width: 960px) {
+@media (max-width:1248px){
+    #usermenu, #searchmobile{display:none;}
+    #globalLinks{border:none; margin:10px 000; padding:0;}
+    .navbar-form .form-control {
+        width:100px;
+        margin:8px 000;
+    }
+    #usermenucollapsed{display:inline;}
+}
+
+@media (max-width: 1023px) {
     .navbar-header {
         float: none;
     }
@@ -4601,4 +4611,5 @@ table legend {
         width:100%;
     }
 }
+
 /* End CSS */
