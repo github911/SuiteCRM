@@ -207,7 +207,7 @@
                     <span class="glyphicon glyphicon-user"> </span> {$CURRENT_USER}
                     <span class="caret"></span>
                 </li>
-                <button id="usermenucollapsed" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <button id="usermenucollapsed" class="dropdown-toggle btn btn-default" data-toggle="dropdown" aria-expanded="true">
                     <span class="glyphicon glyphicon-user"> </span>
                     <span class="caret"></span>
                 </button>
@@ -221,7 +221,7 @@
                 </ul>
             </div>
             <div id="search" class="dropdown nav navbar-nav navbar-right">
-            <button id="searchbutton" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+            <button id="searchbutton" class="dropdown-toggle btn btn-default" data-toggle="dropdown" aria-expanded="true">
                 <span class="glyphicon glyphicon-search"> </span>
             </button>
                 <div  class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
