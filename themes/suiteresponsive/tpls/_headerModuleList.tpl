@@ -220,15 +220,36 @@
                     <li role="presentation"><a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class='utilsLink'>{$LOGOUT_LABEL}</a></li>
                 </ul>
             </div>
+            <div id="search" class="dropdown nav navbar-nav navbar-right">
+            <button id="searchbutton" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <span class="glyphicon glyphicon-search"> </span>
+            </button>
+                <div  class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <form id="searchformdropdown" name='UnifiedSearch' action='index.php' onsubmit='return SUGAR.unifiedSearchAdvanced.checkUsaAdvanced()'>
+                        <input type="hidden" class="form-control" name="action" value="UnifiedSearch">
+                        <input type="hidden" class="form-control" name="module" value="Home">
+                        <input type="hidden" class="form-control" name="search_form" value="false">
+                        <input type="hidden" class="form-control" name="advanced" value="false">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button  type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                </div>
             <form id="searchform" class="navbar-form navbar-right" name='UnifiedSearch' action='index.php' onsubmit='return SUGAR.unifiedSearchAdvanced.checkUsaAdvanced()'>
                 <input type="hidden" class="form-control" name="action" value="UnifiedSearch">
                 <input type="hidden" class="form-control" name="module" value="Home">
                 <input type="hidden" class="form-control" name="search_form" value="false">
                 <input type="hidden" class="form-control" name="advanced" value="false">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
                     <span class="input-group-btn">
-                        <input type="text" class="form-control" name="query_string" id="query_string" placeholder="Search..." />
-                            <button  type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        <button  type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     </span>
+                </div>
             </form>
             <!--<button id="buttontoggle" class="ui-state-default ui-corner-all">Toggle Sidebar</button>-->
         </div>
