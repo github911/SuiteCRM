@@ -45,7 +45,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset={$APP.LBL_CHARSET}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <!-- Bootstrap -->
     <link href="themes/suiteresponsive/css/bootstrap.min.css" rel="stylesheet">
     <link href="themes/suiteresponsive/css/dashboard.css" rel="stylesheet">
