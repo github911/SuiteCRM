@@ -4555,7 +4555,7 @@ table legend {
     #usermenucollapsed,#searchbutton{display:inline;}
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 979px) {
     .navbar-header {
         float: none;
     }
