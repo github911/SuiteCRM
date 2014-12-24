@@ -36,6 +36,7 @@
 
 *}
 </div>
+{if $AUTHENTICATED}
 <div id="mobilefooter">
     <div id="footernav" class="btn-toolbar" role="toolbar" aria-label="...">
         <div class="btn-group dropup" role="group" aria-label="...">
@@ -61,7 +62,6 @@
         </div>
     </div>
 </div>
-{if $AUTHENTICATED}
 
     <footer>
         <div class="companyLogo">
