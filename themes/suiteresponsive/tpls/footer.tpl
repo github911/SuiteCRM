@@ -205,7 +205,13 @@ function qe_init(){
                 $( "#bootstrap-container" ).toggleClass( "col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2", 1000 );
             });
         });
+        $(function () {
+
+            $('.footable').footable();
+
+        });
     </script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="themes/suiteresponsive/js/bootstrap.min.js"></script>
     <script src="themes/suiteresponsive/js/jquery.cookie.js"></script>

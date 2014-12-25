@@ -49,6 +49,7 @@
     <!-- Bootstrap -->
     <link href="themes/suiteresponsive/css/bootstrap.min.css" rel="stylesheet">
     <link href="themes/suiteresponsive/css/dashboard.css" rel="stylesheet">
+    <link href="themes/suiteresponsive/css/footable.core.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -73,4 +74,5 @@
     <link rel="stylesheet" type="text/css" href="themes/suiteresponsive/css/colourSelector.php">
     <script type="text/javascript" src='{sugar_getjspath file="themes/suiteresponsive/js/jscolor.js"}'></script>
     <script type="text/javascript" src='{sugar_getjspath file="cache/include/javascript/sugar_field_grp.js"}'></script>
+    <script src="themes/suiteresponsive/js/footable.js" type="text/javascript"></script>
 </head>

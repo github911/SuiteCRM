@@ -56,13 +56,13 @@
         $('.selectActionsDisabled').children().each(function(index) {
             $(this).attr('onclick','').unbind('click');
         });
-        
+
         var selectedTopValue = $("#selectCountTop").attr("value");
         if(typeof(selectedTopValue) != "undefined" && selectedTopValue != "0"){
         	sugarListView.prototype.toggleSelected();
         }
 	});
-{/literal}	
+{/literal}
 </script>
 {assign var="currentModule" value = $pageData.bean.moduleDir}
 {assign var="singularModule" value = $moduleListSingular.$currentModule}
@@ -106,8 +106,7 @@
 {$multiSelectData}
 
 {if $hideTable == false}
-<div class="table-responsive">
-	<table cellpadding='0' cellspacing='0' width='100%' border='0' class='list view table'>
+	<table cellpadding='0' cellspacing='0' width='100%' border='0' class='list view table footable'>
     {assign var="link_select_id" value="selectLinkTop"}
     {assign var="link_action_id" value="actionLinkTop"}
     {assign var="actionsLink" value=$actionsLinkTop}
@@ -124,8 +123,11 @@
 			<td class='td_alt' width='1%' style="padding: 0px;">&nbsp;</td>
 			{/if}
 			{counter start=0 name="colCounter" print=false assign="colCounter"}
+			<thead>
+			<th scope='col' width='{$params.width}%'>Name:</th>
 			{foreach from=$displayColumns key=colHeader item=params}
-				<th scope='col' width='{$params.width}%'>
+
+				<th scope='col' width='{$params.width}%'  data-hide="phone,tablet">
 					<div style='white-space: normal;'width='100%' align='{$params.align|default:'left'}'>
 	                {if $params.sortable|default:true}
 	                    {if $params.url_sort}
@@ -156,7 +158,7 @@
 						{/if}
 	                    </a>
 					{else}
-	                    {if !isset($params.noHeader) || $params.noHeader == false} 
+	                    {if !isset($params.noHeader) || $params.noHeader == false}
 						  {sugar_translate label=$params.label module=$pageData.bean.moduleDir}
 	                    {/if}
 					{/if}
@@ -164,14 +166,15 @@
 				</th>
 				{counter name="colCounter"}
 			{/foreach}
+			</thead>
 			<td class='td_alt' nowrap="nowrap" width='1%'>&nbsp;</td>
 		</tr>
-			
-		{counter start=$pageData.offsets.current print=false assign="offset" name="offset"}	
+
+		{counter start=$pageData.offsets.current print=false assign="offset" name="offset"}
 		{foreach name=rowIteration from=$data key=id item=rowData}
 		    {counter name="offset" print=false}
 	        {assign var='scope_row' value=true}
-	
+
 			{if $smarty.foreach.rowIteration.iteration is odd}
 				{assign var='_rowColor' value=$rowColor[0]}
 			{else}
@@ -199,7 +202,7 @@
                         <span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a>
 	                {/if}
 	            </td>
-	
+
 				{/if}
 				{counter start=0 name="colCounter" print=false assign="colCounter"}
 				{foreach from=$displayColumns key=col item=params}
@@ -213,11 +216,11 @@
 	{capture assign=url}index.php?module={$linkModule}&offset={$offset}&stamp={$pageData.stamp}&return_module={$linkModule}&action={$action}&record={$record}{/capture}
 	                        <{$pageData.tag.$id[$params.ACLTag]|default:$pageData.tag.$id.MAIN} href="{sugar_ajax_url url=$url}">
 						{/if}
-						{if $params.customCode} 
+						{if $params.customCode}
 							{sugar_evalcolumn_old var=$params.customCode rowData=$rowData}
-						{else}	
+						{else}
 	                       {sugar_field parentFieldArray=$rowData vardef=$params displayType=ListView field=$col}
-	                       
+
 						{/if}
 						{if empty($rowData.$col) && empty($params.customCode)}&nbsp;{/if}
 						{if $params.link && !$params.customCode}
@@ -236,7 +239,7 @@
 		    <td colspan="{$colCount}">
 		        <em>{$APP.LBL_NO_DATA}</em>
 		    </td>
-		</tr> 
+		</tr>
 		{/foreach}
     {assign var="link_select_id" value="selectLinkBottom"}
     {assign var="link_action_id" value="actionLinkBottom"}
@@ -245,7 +248,6 @@
     {assign var="action_menu_location" value="bottom"}
     {include file='include/ListView/ListViewPagination.tpl'}
 	</table>
-</div>
 {/if}
 {if $contextMenus}
 <script type="text/javascript">
