@@ -124,9 +124,8 @@
 			{/if}
 			{counter start=0 name="colCounter" print=false assign="colCounter"}
 			<thead>
-			<th scope='col' width='{$params.width}%'>Name:</th>
 			{foreach from=$displayColumns key=colHeader item=params}
-
+				{if $colHeader != 'name'}<th scope='col' width='{$params.width}%'>{/if}
 				<th scope='col' width='{$params.width}%'  data-hide="phone,tablet">
 					<div style='white-space: normal;'width='100%' align='{$params.align|default:'left'}'>
 	                {if $params.sortable|default:true}
