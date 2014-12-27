@@ -113,6 +113,7 @@
     {assign var="selectLink" value=$selectLinkTop}
     {assign var="action_menu_location" value="top"}
 	{include file='include/ListView/ListViewPagination.tpl'}
+	<thead>
 	<tr height='20'>
 			{if $prerow}
 				<td width='1%' class="td_alt">
@@ -123,10 +124,11 @@
 			<td class='td_alt' width='1%' style="padding: 0px;">&nbsp;</td>
 			{/if}
 			{counter start=0 name="colCounter" print=false assign="colCounter"}
-			<thead>
+
 			{foreach from=$displayColumns key=colHeader item=params}
-				{if $colHeader != 'name'}<th scope='col' width='{$params.width}%'>{/if}
+				{if $colHeader != 'name'}<th scope='col' data-toggle="true">{/if}
 				<th scope='col' width='{$params.width}%'  data-hide="phone,tablet">
+
 					<div style='white-space: normal;'width='100%' align='{$params.align|default:'left'}'>
 	                {if $params.sortable|default:true}
 	                    {if $params.url_sort}
@@ -165,10 +167,9 @@
 				</th>
 				{counter name="colCounter"}
 			{/foreach}
-			</thead>
-			<td class='td_alt' nowrap="nowrap" width='1%'>&nbsp;</td>
-		</tr>
 
+		</tr>
+	</thead>
 		{counter start=$pageData.offsets.current print=false assign="offset" name="offset"}
 		{foreach name=rowIteration from=$data key=id item=rowData}
 		    {counter name="offset" print=false}
