@@ -4593,4 +4593,8 @@ table legend {
     }
 }
 
+#pagecontent {
+    padding:10px;
+}
+
 /* End CSS */
