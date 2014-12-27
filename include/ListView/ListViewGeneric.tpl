@@ -128,7 +128,6 @@
 			{foreach from=$displayColumns key=colHeader item=params}
 				{if $colHeader != 'name'}<th scope='col' data-toggle="true">{/if}
 				<th scope='col' width='{$params.width}%'  data-hide="phone,tablet">
-
 					<div style='white-space: normal;'width='100%' align='{$params.align|default:'left'}'>
 	                {if $params.sortable|default:true}
 	                    {if $params.url_sort}

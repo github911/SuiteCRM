@@ -4591,10 +4591,12 @@ table legend {
         display:block;
         width:100%;
     }
+    #usermenucollapsed{margin:0 0 0 5px;display:none;}
+    #searchbutton{display:none;}
 }
 
 #pagecontent {
-    padding:10px;
+    margin:10px auto;
 }
 
 /* End CSS */
