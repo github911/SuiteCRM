@@ -124,10 +124,9 @@
 			<td class='td_alt' width='1%' style="padding: 0px;">&nbsp;</td>
 			{/if}
 			{counter start=0 name="colCounter" print=false assign="colCounter"}
-
 			{foreach from=$displayColumns key=colHeader item=params}
-				{if $colHeader != 'name'}<th scope='col' data-toggle="true">{/if}
-				<th scope='col' width='{$params.width}%'  data-hide="phone,tablet">
+				{if $colCounter == '0'}<th scope='col' width='{$params.width}%' data-toggle="true">
+				{else}<th scope='col' width='{$params.width}%' data-hide="phone,tablet">{/if}
 					<div style='white-space: normal;'width='100%' align='{$params.align|default:'left'}'>
 	                {if $params.sortable|default:true}
 	                    {if $params.url_sort}
