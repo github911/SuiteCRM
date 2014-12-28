@@ -56,6 +56,6 @@
     }
 </script>
 {/literal}
-    {if $AUTHENTICATED}<div id="bootstrap-container" class="">{/if}
+    {if $AUTHENTICATED}<div id="bootstrap-container"  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">{/if}
         <div id="content" {if !$AUTHENTICATED}class="noLeftColumn" {/if}>
             <div id="pagecontent">

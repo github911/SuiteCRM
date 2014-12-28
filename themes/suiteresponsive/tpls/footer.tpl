@@ -37,6 +37,7 @@
 *}
 </div>
 </div>
+</div>
 {if $AUTHENTICATED}
 <div id="mobilefooter">
     <div id="footernav" class="btn-toolbar" role="toolbar" aria-label="...">
@@ -210,6 +211,9 @@ function qe_init(){
 
             $('.footable').footable();
 
+        });
+        $(window).on('resize', function () {
+            $('#bootstrap-container').removeClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main', $(window).width() < 768);
         });
     </script>
 

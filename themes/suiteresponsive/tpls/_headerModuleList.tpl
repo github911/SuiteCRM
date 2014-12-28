@@ -259,7 +259,7 @@
 <!--End Responsive Top Navigation Menu -->
 <!--Start Responsive Sidebar -->
 
-{*<div class="container-fluid">
+<div class="container-fluid">
     <!--<div id="togglesidebar">
         <button class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span> Toggle Sidebar</button>
     </div>-->
@@ -299,6 +299,6 @@
                 </li>
             {/foreach}
         </ul>
-    </div>*}
+    </div>
     <!--End Responsive Sidebar -->
     <!--Start Page content -->
