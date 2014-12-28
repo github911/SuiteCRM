@@ -269,7 +269,7 @@
             <div class="btn-group" role="group" aria-label="..."><a href="" class="btn btn-success" onclick="refresh();"><span class=" glyphicon glyphicon-refresh" aria-hidden="true"></span></a></div>
             <div class="btn-group" role="group" aria-label="..."><a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class="btn btn-success"><span class=" glyphicon glyphicon-log-out" aria-hidden="true"></span></a></div>
         </div>
-        <hr class="hr">
+        <br>
         <div class="dropdown">
             <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                Create New Record <span class="glyphicon glyphicon-plus"></span>
