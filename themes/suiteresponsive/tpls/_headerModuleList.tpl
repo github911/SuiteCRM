@@ -255,10 +255,8 @@
         </div>
     </div>
 </nav>
-
 <!--End Responsive Top Navigation Menu -->
 <!--Start Responsive Sidebar -->
-
 <div class="container-fluid">
     <!--<div id="togglesidebar">
         <button class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span> Toggle Sidebar</button>
@@ -294,7 +292,7 @@
                     <a title="{$item.module_name}"
                        accessKey="{$smarty.foreach.lastViewed.iteration}"
                        href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
-                        <span aria-hidden="true">{$item.item_summary_short}</span>
+                        {$item.image}&nbsp;<span aria-hidden="true">{$item.item_summary_short}</span>
                     </a>
                 </li>
             {/foreach}

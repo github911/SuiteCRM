@@ -4446,8 +4446,6 @@ table legend {
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     font-weight:bold;
-
-
 }
 
 .ui-widget-content a {
@@ -4541,11 +4539,6 @@ table legend {
 #usermenucollapsed{margin:0 0 0 5px;display:none;}
 #searchbutton{display:none;}
 
-/*@media (max-width:1024px){
-    #usermenu, #searchform, #searchmobile{display:none;}
-    #usermenucollapsed, #searchformdropdown{display:inline;}
-}*/
-
 @media (max-width:1248px){
     #usermenu, #searchform, #searchmobile{display:none;}
     #globalLinks{border:none; margin:10px 000; padding:0;}
@@ -4597,6 +4590,10 @@ table legend {
 
 #pagecontent {
     margin:10px auto;
+}
+
+.nav > li > a{
+    padding:8px 0 8px 0;
 }
 
 /* End CSS */
