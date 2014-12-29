@@ -4475,35 +4475,6 @@ table legend {
     border-top:none;
 }
 
-.col-md-offset-2 {
-    min-width:12%;
-}
-
-@media (min-width: 768px) {
-    .navbar-collapse {
-        width: auto;
-        border-top: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    .navbar-collapse.collapse {
-        display: block !important;
-        height: auto !important;
-        padding-bottom: 0;
-        overflow: visible !important;
-        visibility: visible !important;
-    }
-    .navbar-collapse.in {
-        overflow-y: visible;
-    }
-    .navbar-fixed-top .navbar-collapse,
-    .navbar-static-top .navbar-collapse,
-    .navbar-fixed-bottom .navbar-collapse {
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
 #mobilefooter {
 
     width:100%;
@@ -4528,6 +4499,9 @@ table legend {
     footer {display:none}
 }
 
+#usermenucollapsed{margin:0 0 0 5px;display:none;}
+#searchbutton{display:none;}
+
 #searchmobile{
     margin-top:8px;
     display:none;
@@ -4536,8 +4510,7 @@ table legend {
     margin:10px 5px 0 0;
 }
 
-#usermenucollapsed{margin:0 0 0 5px;display:none;}
-#searchbutton{display:none;}
+/* Media queries for larger screens to hide mobile content */
 
 @media (max-width:1248px){
     #usermenu, #searchform, #searchmobile{display:none;}
@@ -4547,6 +4520,8 @@ table legend {
     }
     #usermenucollapsed,#searchbutton{display:inline;}
 }
+
+/* Media queries to hide sidebar, change menus for mobile */
 
 @media (max-width: 979px) {
     .navbar-header {
@@ -4588,9 +4563,7 @@ table legend {
     #searchbutton{display:none;}
 }
 
-#pagecontent {
-    margin:10px auto;
-}
+/* Padding for sidebar items */
 
 .nav > li > a{
     padding:8px 0 8px 0;
@@ -4599,6 +4572,8 @@ table legend {
 li#moremenu {
     padding:8px 10px 8px 10px;
 }
+
+/* Fix so that sidebar does not oversize on larger screens */
 
 @media (min-width:1024px) {
     .col-md-2 {
