@@ -4688,9 +4688,9 @@ li#moremenu {
     }
 }
 
-@media (min-width:2536px) {
+@media (min-width:2560px) {
     .col-md-10{
-        width:93%;
+        width:91%;
     }
 }
 /* End Global CSS */
