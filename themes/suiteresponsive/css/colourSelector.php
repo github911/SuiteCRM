@@ -69,7 +69,8 @@ color:#<?php echo $sugar_config['colourselector']['dropdownmenulink']; ?>;
 
 /* Button and action menu CSS */
 
-.btn, .btn-success, .btn-primary, .button, input[type=submit], input[type=button], a#create_link.utilsLink, .btn-group a {
+.btn, .btn-success, .btn-primary, .button, input[type=submit], input[type=button], a#create_link.utilsLink, .btn-group a, ul.clickMenu>li, ul.SugarActionMenuIESub li, ul.SugarActionMenuIESub li a,
+ul.clickMenu li a, .list tr.pagination td.buttons ul.clickMenu > li > a:link, .list tr.pagination td.buttons ul.clickMenu > li > a {
     background:#<?php echo $sugar_config['colourselector']['button1']; ?>;
     color:#<?php echo $sugar_config['colourselector']['buttoncolour']; ?>;
 }
