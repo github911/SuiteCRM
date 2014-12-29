@@ -63,7 +63,6 @@
         </div>
     </div>
 </div>
-
     <footer>
         <div class="companyLogo">
             <span class="glyphicon glyphicon-globe"></span> {$STATISTICS}
@@ -144,7 +143,6 @@ function qe_init(){
 
     qe_init();
 
-
 	SUGAR_callsInProgress++;
 	SUGAR._ajax_hist_loaded = true;
     if(SUGAR.ajaxUI)
@@ -155,7 +153,7 @@ function qe_init(){
             $( "#sugarcopy" ).toggle();
 
         });
-
+        /* Custom JavaScript for copyright pop-ups */
         $(function() {
             $( "#dialog, #dialog2" ).dialog({
                 autoOpen: false,
@@ -176,11 +174,6 @@ function qe_init(){
                 $( "#dialog2" ).dialog( "open" );
             });
         });
-
-        $("#read").click(function(){
-
-        });
-
         // Back to top animation
         $('#backtotop').click(function(event) {
             event.preventDefault();
@@ -206,19 +199,17 @@ function qe_init(){
                 $( "#bootstrap-container" ).toggleClass( "col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2", 1000 );
             });
         });
+        /* Function to call footable for responsive table functionality */
         $(function () {
-
             $('.footable').footable();
-
         });
+        /* JavaScript fix to remove unrequired classes on smaller screens where sidebar is obsolete */
         $(window).on('resize', function () {
             $('#bootstrap-container').removeClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main', $(window).width() < 768);
         });
     </script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Include all boostrap dependencies -->
     <script src="themes/suiteresponsive/js/bootstrap.min.js"></script>
-    <script src="themes/suiteresponsive/js/jquery.cookie.js"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 {/literal}
