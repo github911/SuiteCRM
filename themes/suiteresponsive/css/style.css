@@ -4567,8 +4567,13 @@ table legend {
         display:block;
         width:100%;
     }
+    /* Hide search/admin buttons for mobile/tablet screens */
     #usermenucollapsed{margin:0 0 0 5px;display:none;}
     #searchbutton{display:none;}
+    /* Fix to add some padding on mobile/tablet resolutions */
+    #pagecontent{
+        padding:10px;
+    }
 }
 
 /* Padding for sidebar items */
