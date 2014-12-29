@@ -4522,6 +4522,12 @@ table legend {
 
 @media screen and (min-width:801px) {
     #mobilefooter {display:none}
+    .col-md-2 {
+        max-width:215px;
+    }
+    .col-md-offset-2 {
+        margin-left:215px;
+    }
 }
 
 @media screen and (max-width:801px) {
