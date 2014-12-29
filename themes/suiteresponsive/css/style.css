@@ -4682,7 +4682,7 @@ li#moremenu {
     }
 }
 
-@media (min-width:1920px) {
+@media (min-width:1536px) {
     .col-md-10{
         width:88%;
     }
