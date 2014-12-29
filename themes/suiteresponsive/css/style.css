@@ -4678,8 +4678,19 @@ li#moremenu {
         margin-left:215px;
     }
     .col-md-10{
+        width:83%;
+    }
+}
+
+@media (min-width:1920px) {
+    .col-md-10{
         width:88%;
     }
 }
 
+@media (min-width:2536px) {
+    .col-md-10{
+        width:93%;
+    }
+}
 /* End Global CSS */
