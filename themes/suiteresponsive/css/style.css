@@ -41,7 +41,7 @@
  * theme basis.
  ********************************************************************************/
 
-/* Start CSS */
+/* Start Global CSS */
 /* Base SugarCRM Styles */
 
 body
@@ -4460,6 +4460,9 @@ table legend {
     padding:5px;
     margin:0;
 }
+
+/* CSS for custom admin panel */
+
 #admincontainer {
     display: table;
 }
@@ -4471,9 +4474,14 @@ table legend {
 #adminsection{
     display: table-cell;
 }
+
+/* Removing border for tables */
+
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     border-top:none;
 }
+
+/* Footer styles for mobile */
 
 #mobilefooter {
 
@@ -4587,4 +4595,4 @@ li#moremenu {
     }
 }
 
-/* End CSS */
+/* End Global CSS */
