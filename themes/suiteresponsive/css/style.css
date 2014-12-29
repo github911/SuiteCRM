@@ -4548,6 +4548,9 @@ table legend {
     #pagecontent{
         padding:10px;
     }
+    #dashletresponsive {
+        width:auto;
+    }
 }
 
 /*
@@ -4585,7 +4588,7 @@ body {
 .sidebar {
     display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 979px) {
     .sidebar {
         position: fixed;
         top: 51px;
@@ -4668,6 +4671,19 @@ li#moremenu {
 }
 
 /* Fix so that sidebar does not oversize on larger screens */
+
+@media (min-width:979px) {
+    .col-sm-3 {
+
+        max-width:215px !important;
+    }
+    .col-sm-offset-3 {
+        margin-left:215px;
+    }
+    .col-sm-9{
+        width:80%;
+    }
+}
 
 @media (min-width:1024px) {
     .col-md-2 {

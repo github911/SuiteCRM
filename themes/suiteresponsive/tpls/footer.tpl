@@ -206,6 +206,9 @@ function qe_init(){
         /* JavaScript fix to remove unrequired classes on smaller screens where sidebar is obsolete */
         $(window).on('resize', function () {
             $('#bootstrap-container').removeClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main', $(window).width() < 768);
+        if ($(window).width() > 979) {
+            $('#bootstrap-container').addClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main');
+        }
         });
     </script>
     <!-- Include all boostrap dependencies -->
