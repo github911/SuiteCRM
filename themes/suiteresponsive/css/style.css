@@ -4522,12 +4522,6 @@ table legend {
 
 @media screen and (min-width:801px) {
     #mobilefooter {display:none}
-    .col-md-2 {
-        max-width:215px;
-    }
-    .col-md-offset-2 {
-        margin-left:215px;
-    }
 }
 
 @media screen and (max-width:801px) {
@@ -4604,6 +4598,18 @@ table legend {
 
 li#moremenu {
     padding:8px 10px 8px 10px;
+}
+
+@media (min-width:1024px) {
+    .col-md-2 {
+        max-width:215px !important;
+    }
+    .col-md-offset-2 {
+        margin-left:215px;
+    }
+    .col-md-10{
+        width:88%;
+    }
 }
 
 /* End CSS */
