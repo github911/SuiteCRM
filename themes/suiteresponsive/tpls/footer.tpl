@@ -194,11 +194,6 @@ function qe_init(){
                 }
             });
         });
-        $(function() {
-            $( "#buttontoggle" ).click(function() {
-                $( "#bootstrap-container" ).toggleClass( "col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2", 1000 );
-            });
-        });
         /* Function to call footable for responsive table functionality */
         $(function () {
             $('.footable').footable();
