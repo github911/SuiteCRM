@@ -4710,27 +4710,24 @@ li#moremenu {
     }
 }
 
-/*
-	Max width before this PARTICULAR table gets nasty
-	This query will take effect for any screen smaller than 760px
-	and also iPads specifically.
-	*/
+/* Responsive detail view styles */
+
 @media
 only screen and (max-width: 760px)
  {
 
     /* Force table to not be like tables anymore */
-    table, thead, tbody, th, td, tr {
+    .detail508  table, .detail508 thead, .detail508 tbody, .detail508 th, .detail508 td, .detail508 tr {
         display: block;
         background:none;
     }
-tr,.detail508 tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
+    .detail508  tr,.detail508 tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
     background:none;
 
     }
 }
 
-tr {
+.detail508 tr {
     border-bottom:1px solid #cccccc;
 }
 
