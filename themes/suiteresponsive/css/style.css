@@ -4727,8 +4727,11 @@ only screen and (max-width: 760px)
     }
 }
 
-.detail508 tr {
-    border-bottom:1px solid #cccccc;
+
+@media (max-width:640px) {
+    .detail508 tr {
+        border-bottom: 1px solid #cccccc;
+    }
 }
 
 /* Responsive edit view styles */
@@ -4748,8 +4751,12 @@ only screen and (max-width: 760px)
     }
 }
 
-.edit tr {
-    border-bottom:1px solid #cccccc;
+@media (max-width:640px) {
+    .edit table {
+        border: 1px solid #cccccc;
+    }
+    .edit tr {
+        border-bottom: 1px solid #cccccc;
+    }
 }
-
 /* End Global CSS */
