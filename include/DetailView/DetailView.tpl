@@ -41,45 +41,45 @@
 {{include file=$headerTpl}}
 {sugar_include include=$includes}
 <div id="{{$module}}_detailview_tabs"
-{{if $useTabs}}
-class="yui-navset detailview_tabs"
-{{/if}}
->
-    {{if $useTabs}}
-    {* Generate the Tab headers *}
-    {{counter name="tabCount" start=-1 print=false assign="tabCount"}}
-    <ul class="yui-nav">
-    {{foreach name=section from=$sectionPanels key=label item=panel}}
-        {{capture name=label_upper assign=label_upper}}{{$label|upper}}{{/capture}}
-        {* override from tab definitions *}
-        {{if (isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == true)}}
-            {{counter name="tabCount" print=false}}
-            <li><a id="tab{{$tabCount}}" href="javascript:void(0)"><em>{sugar_translate label='{{$label}}' module='{{$module}}'}</em></a></li>
-        {{/if}}
-    {{/foreach}}
-    </ul>
-    {{/if}}
-    <div {{if $useTabs}}class="yui-content"{{/if}}>
-{{* Loop through all top level panels first *}}
-{{counter name="panelCount" print=false start=0 assign="panelCount"}}
-{{counter name="tabCount" start=-1 print=false assign="tabCount"}}
-{{foreach name=section from=$sectionPanels key=label item=panel}}
-{{assign var='panel_id' value=$panelCount}}
-{{capture name=label_upper assign=label_upper}}{{$label|upper}}{{/capture}}
-  {{if (isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == true)}}
-    {{counter name="tabCount" print=false}}
-    {{if $tabCount != 0}}</div>{{/if}}
-    <div id='tabcontent{{$tabCount}}'>
-  {{/if}}
+		{{if $useTabs}}
+	 class="yui-navset detailview_tabs"
+		{{/if}}
+		>
+	{{if $useTabs}}
+	{* Generate the Tab headers *}
+	{{counter name="tabCount" start=-1 print=false assign="tabCount"}}
+	<ul class="yui-nav">
+		{{foreach name=section from=$sectionPanels key=label item=panel}}
+		{{capture name=label_upper assign=label_upper}}{{$label|upper}}{{/capture}}
+		{* override from tab definitions *}
+		{{if (isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == true)}}
+		{{counter name="tabCount" print=false}}
+		<li><a id="tab{{$tabCount}}" href="javascript:void(0)"><em>{sugar_translate label='{{$label}}' module='{{$module}}'}</em></a></li>
+		{{/if}}
+		{{/foreach}}
+	</ul>
+	{{/if}}
+	<div {{if $useTabs}}class="yui-content"{{/if}}>
+		{{* Loop through all top level panels first *}}
+		{{counter name="panelCount" print=false start=0 assign="panelCount"}}
+		{{counter name="tabCount" start=-1 print=false assign="tabCount"}}
+		{{foreach name=section from=$sectionPanels key=label item=panel}}
+		{{assign var='panel_id' value=$panelCount}}
+		{{capture name=label_upper assign=label_upper}}{{$label|upper}}{{/capture}}
+		{{if (isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == true)}}
+		{{counter name="tabCount" print=false}}
+		{{if $tabCount != 0}}</div>{{/if}}
+	<div id='tabcontent{{$tabCount}}'>
+		{{/if}}
 
-    {{if ( isset($tabDefs[$label_upper].panelDefault) && $tabDefs[$label_upper].panelDefault == "collapsed" && isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == false) }}
-        {{assign var='panelState' value=$tabDefs[$label_upper].panelDefault}}
-    {{else}}
-        {{assign var='panelState' value="expanded"}}
-    {{/if}}
-<div id='detailpanel_{{$smarty.foreach.section.iteration}}' class='detail view  detail508 {{$panelState}}'>
-{counter name="panelFieldCount" start=0 print=false assign="panelFieldCount"}
-{{* Print out the panel title if one exists*}}
+		{{if ( isset($tabDefs[$label_upper].panelDefault) && $tabDefs[$label_upper].panelDefault == "collapsed" && isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == false) }}
+		{{assign var='panelState' value=$tabDefs[$label_upper].panelDefault}}
+		{{else}}
+		{{assign var='panelState' value="expanded"}}
+		{{/if}}
+		<div id='detailpanel_{{$smarty.foreach.section.iteration}}' class='detail view  detail508 {{$panelState}}'>
+			{counter name="panelFieldCount" start=0 print=false assign="panelFieldCount"}
+			{{* Print out the panel title if one exists*}}
 
 {{* Check to see if the panel variable is an array, if not, we'll attempt an include with type param php *}}
 {{* See function.sugar_include.php *}}
