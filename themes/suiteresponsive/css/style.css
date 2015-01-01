@@ -4709,4 +4709,43 @@ li#moremenu {
         width:91%;
     }
 }
+
+/*
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+        background:none;
+        border-bottom:1px solid #cccccc;
+    }
+tr,.detail508 tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
+    background:none;
+
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 320px; }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        width: 495px;
+    }
+}
+
 /* End Global CSS */
