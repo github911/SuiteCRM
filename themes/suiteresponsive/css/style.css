@@ -4715,6 +4715,9 @@ li#moremenu {
 @media
 only screen and (max-width: 760px)
  {
+    .view, .moduleTitle, table{
+        margin:10px;
+    }
 
     /* Force table to not be like tables anymore */
     .detail  table, .detail thead, .detail tbody, .detail th, .detail td, .detail tr {
@@ -4724,6 +4727,24 @@ only screen and (max-width: 760px)
     .detail  tr,.detail tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
     background:none;
 
+    }
+
+    .detail h4 {
+        font-size:1.2em;
+        background:#eeeeee;
+        border:1px solid #cccccc;
+        margin:10px 0 0 0;
+        padding:8px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .detail508 tr td[scope="col"]{
+        font-weight:bold;
     }
 }
 
@@ -4746,16 +4767,34 @@ only screen and (max-width: 760px)
     }
     .edit  tr,.edit tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
         background:none;
+    }
 
+    .edit h4 {
+        font-size:1.2em;
+        background:#eeeeee;
+        border:1px solid #cccccc;
+        margin:10px 0 0 0;
+        padding:8px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .edit tr td[scope="col"]{
+        font-weight:bold;
     }
 }
 
 @media (max-width:640px) {
-    .edit table {
+    .edit > table {
         border: 1px solid #cccccc;
     }
     .edit tr {
         border-bottom: 1px solid #cccccc;
     }
 }
+
 /* End Global CSS */
