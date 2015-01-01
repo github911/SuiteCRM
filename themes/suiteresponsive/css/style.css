@@ -4731,4 +4731,25 @@ only screen and (max-width: 760px)
     border-bottom:1px solid #cccccc;
 }
 
+/* Responsive edit view styles */
+
+@media
+only screen and (max-width: 760px)
+{
+
+    /* Force table to not be like tables anymore */
+    .edit table, .edit thead, .edit tbody, .edit th, .edit td, .edit tr {
+        display: block;
+        background:none;
+    }
+    .edit  tr,.edit tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
+        background:none;
+
+    }
+}
+
+.edit tr {
+    border-bottom:1px solid #cccccc;
+}
+
 /* End Global CSS */
