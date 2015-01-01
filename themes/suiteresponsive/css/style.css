@@ -4715,9 +4715,6 @@ li#moremenu {
 @media
 only screen and (max-width: 760px)
  {
-    .view, .moduleTitle, table{
-        margin:10px;
-    }
 
     /* Force table to not be like tables anymore */
     .detail  table, .detail thead, .detail tbody, .detail th, .detail td, .detail tr {
@@ -4764,9 +4761,11 @@ only screen and (max-width: 760px)
     .edit table, .edit thead, .edit tbody, .edit th, .edit td, .edit tr {
         display: block;
         background:none;
+        width:100%;
     }
     .edit  tr,.edit tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
         background:none;
+
     }
 
     .edit h4 {
