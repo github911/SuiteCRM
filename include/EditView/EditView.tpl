@@ -44,46 +44,46 @@
 <span id='tabcounterJS'><script>SUGAR.TabFields=new Array();//this will be used to track tabindexes for references</script></span>
 
 <div id="{{$form_name}}_tabs"
-{{if $useTabs}}
-class="yui-navset"
-{{/if}}
->
-    {{if $useTabs}}
-    {* Generate the Tab headers *}
-    {{counter name="tabCount" start=-1 print=false assign="tabCount"}}
-    <ul class="yui-nav">
-    {{foreach name=section from=$sectionPanels key=label item=panel}}
-        {{counter name="tabCount" print=false}}
-        {{capture name=label_upper assign=label_upper}}{{$label|upper}}{{/capture}}
-        {{if (isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == true)}}
-        <li class="selected"><a id="tab{{$tabCount}}" href="javascript:void({{$tabCount}})"><em>{sugar_translate label='{{$label}}' module='{{$module}}'}</em></a></li>
-        {{/if}}
-    {{/foreach}}
-    </ul>
-    {{/if}}
-    <div {{if $useTabs}}class="yui-content"{{/if}}>
+		{{if $useTabs}}
+	 class="yui-navset"
+		{{/if}}
+		>
+	{{if $useTabs}}
+	{* Generate the Tab headers *}
+	{{counter name="tabCount" start=-1 print=false assign="tabCount"}}
+	<ul class="yui-nav">
+		{{foreach name=section from=$sectionPanels key=label item=panel}}
+		{{counter name="tabCount" print=false}}
+		{{capture name=label_upper assign=label_upper}}{{$label|upper}}{{/capture}}
+		{{if (isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == true)}}
+		<li class="selected"><a id="tab{{$tabCount}}" href="javascript:void({{$tabCount}})"><em>{sugar_translate label='{{$label}}' module='{{$module}}'}</em></a></li>
+		{{/if}}
+		{{/foreach}}
+	</ul>
+	{{/if}}
+	<div {{if $useTabs}}class="yui-content"{{/if}}>
 
-{{assign var='tabIndexVal' value=0}}
-{{* Loop through all top level panels first *}}
-{{counter name="panelCount" start=-1 print=false assign="panelCount"}}
-{{counter name="tabCount" start=-1 print=false assign="tabCount"}}
-{{foreach name=section from=$sectionPanels key=label item=panel}}
-{{counter name="panelCount" print=false}}
-{{capture name=label_upper assign=label_upper}}{{$label|upper}}{{/capture}}
-  {{if (isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == true)}}
-    {{counter name="tabCount" print=false}}
-    {{if $tabCount != 0}}</div>{{/if}}
-    <div id='tabcontent{{$tabCount}}'>
-  {{/if}}
+		{{assign var='tabIndexVal' value=0}}
+		{{* Loop through all top level panels first *}}
+		{{counter name="panelCount" start=-1 print=false assign="panelCount"}}
+		{{counter name="tabCount" start=-1 print=false assign="tabCount"}}
+		{{foreach name=section from=$sectionPanels key=label item=panel}}
+		{{counter name="panelCount" print=false}}
+		{{capture name=label_upper assign=label_upper}}{{$label|upper}}{{/capture}}
+		{{if (isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == true)}}
+		{{counter name="tabCount" print=false}}
+		{{if $tabCount != 0}}</div>{{/if}}
+	<div id='tabcontent{{$tabCount}}'>
+		{{/if}}
 
-{{* Print out the table data *}}
-{{if $label == 'DEFAULT'}}
-  <div id="detailpanel_{{$smarty.foreach.section.iteration}}" >
-{{else}}
-  <div id="detailpanel_{{$smarty.foreach.section.iteration}}" class="{$def.templateMeta.panelClass|default:'edit view edit508'}">
-{{/if}}
+		{{* Print out the table data *}}
+		{{if $label == 'DEFAULT'}}
+		<div id="detailpanel_{{$smarty.foreach.section.iteration}}" >
+			{{else}}
+			<div id="detailpanel_{{$smarty.foreach.section.iteration}}" class="{$def.templateMeta.panelClass|default:'edit view edit508'}">
+				{{/if}}
 
-{counter name="panelFieldCount" start=0 print=false assign="panelFieldCount"}
+				{counter name="panelFieldCount" start=0 print=false assign="panelFieldCount"}
 {{* Check to see if the panel variable is an array, if not, we'll attempt an include with type param php *}}
 {{* See function.sugar_include.php *}}
 {{if !is_array($panel)}}
@@ -114,8 +114,7 @@ class="yui-navset"
   {{/if}}
 </h4>
  {{/if}}
- <div class="table-responsive">
-<table width="100%" border="0" cellspacing="1" cellpadding="0" {{if $label == 'DEFAULT'}} id='Default_{$module}_Subpanel' {{else}} id='{{$label}}' {{/if}} class="yui3-skin-sam edit view panelContainer table">
+<table width="100%" border="0" cellspacing="1" cellpadding="0" {{if $label == 'DEFAULT'}} id='Default_{$module}_Subpanel' {{else}} id='{{$label}}' {{/if}} class="yui3-skin-sam edit view panelContainer">
 
 
 {{assign var='rowCount' value=0}}
@@ -243,7 +242,6 @@ class="yui-navset"
 {/if}
 {{/foreach}}
 </table>
-</div>
 {{if !empty($label) && !is_int($label) && $label != 'DEFAULT' && $showSectionPanelsTitles && (!isset($tabDefs[$label_upper].newTab) || (isset($tabDefs[$label_upper].newTab) && $tabDefs[$label_upper].newTab == false)) && $view != "QuickCreate"}}
 <script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() {ldelim} initPanel({{$smarty.foreach.section.iteration}}, '{{$panelState}}'); {rdelim}); </script>
 {{/if}}
