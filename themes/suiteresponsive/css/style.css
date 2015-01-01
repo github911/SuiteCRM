@@ -4717,19 +4717,18 @@ only screen and (max-width: 760px)
  {
 
     /* Force table to not be like tables anymore */
-    .detail508  table, .detail508 thead, .detail508 tbody, .detail508 th, .detail508 td, .detail508 tr {
+    .detail  table, .detail thead, .detail tbody, .detail th, .detail td, .detail tr {
         display: block;
         background:none;
     }
-    .detail508  tr,.detail508 tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
+    .detail  tr,.detail tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
     background:none;
 
     }
 }
 
-
 @media (max-width:640px) {
-    .detail508 tr {
+    .detail tr {
         border-bottom: 1px solid #cccccc;
     }
 }
