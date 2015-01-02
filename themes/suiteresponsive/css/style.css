@@ -4783,6 +4783,7 @@ li#moremenu {
         font-weight: bold;
         margin:0;
         text-align:left;
+        max-width:10%;
     }
 
     /* This border breaks up/defines sections from view */
@@ -4797,9 +4798,9 @@ li#moremenu {
     .detail td {
         display: inline-block;
         border: none;
-        margin: 0 5px 0 0;
+        margin: 0 5px 0 25px;
         padding:0;
-        max-width:35%;
+        max-width:33%;
     }
 }
 
