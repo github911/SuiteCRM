@@ -63,10 +63,6 @@
 {$chartResources}
 {$mySugarChartResources}
 
-
-<table cellpadding="0" cellspacing="0" border="0" width="100%">
-    <tr>
-        <td>
             {*<div class="yui-module yui-scroll">*}
 
             {* Start the tabs section *}
@@ -113,22 +109,13 @@
             {*</div>*}
 
             <div class="clear"></div>
-            <div id="pageContainer" class="yui-skin-sam">
+            <div id="pageContainer" class="yui-skin-sam dashletContainer">
                 <div id="pageNum_{$activePage}_div">
-                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-top: 5px;">
-                        <tr>
-
-                            <td align='right'>
                                 {if !$lock_homepage}<input id="add_dashlets" class="button" type="button"
                                                            value="{$lblAddDashlets}"
                                                            onclick="return SUGAR.mySugar.showDashletsDialog();"/>{/if}
-                            </td>
-                        </tr>
-                        <tr>
                             {counter assign=hiddenCounter start=0 print=false}
-                            {foreach from=$columns key=colNum item=data}
-                                <td  id="dashletresponsive" valign='top' width='{$data.width}'>
-                                    <ul class='noBullet' id='col_{$activePage}_{$colNum}'>
+                            {foreach from=$columns key=colNum item=data}<ul class='noBullet' id='col_{$activePage}_{$colNum}'>
                                         <li id='page_{$activePage}_hidden{$hiddenCounter}b'
                                             style='height: 5px; margin-top:12px;' class='noBullet'>
                                             &nbsp;&nbsp;&nbsp;</li>
@@ -145,13 +132,9 @@
                                         <li id='page_{$activePage}_hidden{$hiddenCounter}' style='height: 5px'
                                             class='noBullet'>&nbsp;&nbsp;&nbsp;</li>
                                     </ul>
-                                </td>
                                 {counter}
                             {/foreach}
-                        </tr>
-                    </table>
                 </div>
-
                 {foreach from=$divPages key=divPageIndex item=divPageNum}
                     <div id="pageNum_{$divPageNum}_div" style="display:none;">
                     </div>

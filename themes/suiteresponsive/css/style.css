@@ -4818,6 +4818,20 @@ li#moremenu {
     .emailaddresses input[type=text]{
         margin:2px 0 2px 0;
     }
+    /* Responsive dashlet styles */
+    #pageContainer {
+        width:100%;
+    }
+    .dashletContainer{
+        float:left;
+        max-width:95%;
+    }
+    .dashletPanel {
+        overflow:auto;
+    }
+    .dashboardTabList{
+        display:none;
+    }
 }
 
 /* End Global CSS */
