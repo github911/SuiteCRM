@@ -4749,12 +4749,9 @@ li#moremenu {
     .detail tr:last-child{
         border:none;
     }
-}
 
 /* Responsive edit view styles */
 
-@media only screen and (max-width: 640px)
-{
     .edit.view{
         -webkit-border-bottom-right-radius: 5px;
         -webkit-border-bottom-left-radius: 5px;
