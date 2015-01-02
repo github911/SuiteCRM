@@ -4781,6 +4781,8 @@ li#moremenu {
 
     .detail508 tr td[scope="col"] {
         font-weight: bold;
+        margin:0;
+        text-align:left;
     }
 
     /* This border breaks up/defines sections from view */
@@ -4795,10 +4797,13 @@ li#moremenu {
     .detail td {
         display: inline-block;
         border: none;
+        margin: 0 5px 0 0;
+        padding:0;
+        max-width:35%;
     }
 }
 
-@media only screen and (max-width:640px){
+@media (max-width:640px){
 /* Responsive edit view styles */
 
     .edit.view{
