@@ -4712,10 +4712,8 @@ li#moremenu {
 
 /* Responsive detail view styles */
 
-@media
-only screen and (max-width: 760px)
+@media only screen and (max-width: 640px)
  {
-
     /* Force table to not be like tables anymore */
     .detail  table, .detail thead, .detail tbody, .detail th, .detail td, .detail tr {
         display: block;
@@ -4725,7 +4723,6 @@ only screen and (max-width: 760px)
     background:none;
 
     }
-
     .detail h4 {
         font-size:1.2em;
         background:#eeeeee;
@@ -4743,9 +4740,6 @@ only screen and (max-width: 760px)
     .detail508 tr td[scope="col"]{
         font-weight:bold;
     }
-}
-
-@media (max-width:640px) {
     .detail tr {
         border-bottom: 1px solid #cccccc;
     }
@@ -4753,8 +4747,7 @@ only screen and (max-width: 760px)
 
 /* Responsive edit view styles */
 
-@media
-only screen and (max-width: 760px)
+@media only screen and (max-width: 640px)
 {
     edit.view{
         margin:0 10px 0 10px;
@@ -4769,7 +4762,6 @@ only screen and (max-width: 760px)
         background:none;
 
     }
-
     .edit h4 {
         font-size:1.2em;
         background:#eeeeee;
@@ -4783,24 +4775,23 @@ only screen and (max-width: 760px)
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
-
     .edit tr td[scope="col"]{
         font-weight:bold;
     }
+    /* Fix for textarea so it does not overflow */
     td textarea {
         width:95%;
     }
-}
-
-@media (max-width:640px) {
     .edit > table {
         border: 1px solid #cccccc;
     }
     .edit tr {
         border-bottom: 1px solid #cccccc;
     }
-    textarea {
-        width:50%;
+    /* Fix for how email section/table shows */
+    .emailaddresses tr, .emailaddresses td{
+        display:inline;
+        border:none;
     }
 }
 
