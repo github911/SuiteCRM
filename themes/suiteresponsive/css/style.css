@@ -4819,10 +4819,6 @@ li#moremenu {
         margin:2px 0 2px 0;
     }
     /* Responsive dashlet styles */
-    #pageContainer {
-        width:100%;
-        margin: 0 0 50px 0;
-    }
     .dashletContainer{
         float:left;
         max-width:95%;
@@ -4837,6 +4833,11 @@ li#moremenu {
     #bootstrap-container,.col-sm-9, .col-sm-offset-3, .col-md-10, .col-md-offset-2, .main {
         margin:0;
         padding:0;
+    }
+    /* Fix for mobile footer hiding content at bottom of page */
+    #content, #pageContainer {
+        width:100%;
+        margin: 0 0 50px 0;
     }
 }
 
