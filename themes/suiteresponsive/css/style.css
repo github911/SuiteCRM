@@ -4745,6 +4745,10 @@ li#moremenu {
     .detail tr {
         border-bottom: 1px solid #cccccc;
     }
+
+    .detail tr:last-child{
+        border:none;
+    }
 }
 
 /* Responsive edit view styles */
@@ -4796,6 +4800,9 @@ li#moremenu {
     /* This border breaks up/defines sections from view */
     .edit tr {
         border-bottom: 1px solid #cccccc;
+    }
+    .edit tr:last-child{
+        border:none;
     }
     .edit input[type=text]{
         padding:10px;
