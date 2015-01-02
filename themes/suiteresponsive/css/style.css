@@ -4715,7 +4715,7 @@ li#moremenu {
 @media only screen and (max-width: 640px)
  {
     /* Force table to not be like tables anymore(deconstruct) */
-    .detail  table, .detail thead, .detail tbody, .detail th, .detail td, .detail tr {
+    .detail table, .detail thead, .detail tbody, .detail th, .detail td, .detail tr {
         display: block;
         background:none;
     }
@@ -4752,7 +4752,12 @@ li#moremenu {
 @media only screen and (max-width: 640px)
 {
     .edit.view{
-        margin:0 10px 0 10px;
+        -webkit-border-bottom-right-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
     /* Force table to not be like tables anymore(deconstruct) */
     .edit table, .edit thead, .edit tbody, .edit th, .edit td, .edit tr {
@@ -4792,10 +4797,19 @@ li#moremenu {
     .edit tr {
         border-bottom: 1px solid #cccccc;
     }
+    .edit input[type=text]{
+        padding:10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
     /* Fix for how email section/table shows */
     .emailaddresses tr, .emailaddresses td{
         display:inline;
         border:none;
+    }
+    .emailaddresses input[type=text]{
+        margin:2px 0 2px 0;
     }
 }
 
