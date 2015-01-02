@@ -4712,24 +4712,25 @@ li#moremenu {
 
 /* Responsive detail view styles */
 
-@media only screen and (max-width: 640px)
- {
+@media only screen and (max-width: 480px) {
     /* Force table to not be like tables anymore(deconstruct) */
     .detail table, .detail thead, .detail tbody, .detail th, .detail td, .detail tr {
         display: block;
-        background:none;
+        background: none;
     }
-    .detail  tr,.detail tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
-    background:none;
 
+    .detail tr, .detail tr td[scope="col"], .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td, .detail tr td, .detail table, table.detail {
+        background: none;
+        border: none;
     }
+
     /* Custom styling for table header */
     .detail h4 {
-        font-size:1.2em;
-        background:#eeeeee;
-        border:1px solid #cccccc;
-        margin:10px 0 0 0;
-        padding:8px;
+        font-size: 1.2em;
+        background: #eeeeee;
+        border: 1px solid #cccccc;
+        margin: 10px 0 0 0;
+        padding: 8px;
         -webkit-border-top-left-radius: 5px;
         -webkit-border-top-right-radius: 5px;
         -moz-border-radius-topleft: 5px;
@@ -4738,18 +4739,66 @@ li#moremenu {
         border-top-right-radius: 5px;
     }
 
-    .detail508 tr td[scope="col"]{
-        font-weight:bold;
+    .detail508 tr td[scope="col"] {
+        font-weight: bold;
     }
+
     /* This border breaks up/defines sections from view */
     .detail tr {
         border-bottom: 1px solid #cccccc;
     }
 
-    .detail tr:last-child{
-        border:none;
+    .detail tr:last-child {
+        border: none;
+    }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    /* Force table to not be like tables anymore(deconstruct) */
+    .detail table, .detail thead, .detail tbody, .detail th, .detail td, .detail tr {
+        display: block;
+        background: none;
     }
 
+    .detail tr, .detail tr td[scope="col"], .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td, .detail tr td, .detail table, table.detail {
+        background: none;
+        border: none;
+    }
+
+    /* Custom styling for table header */
+    .detail h4 {
+        font-size: 1.2em;
+        background: #eeeeee;
+        border: 1px solid #cccccc;
+        margin: 10px 0 0 0;
+        padding: 8px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .detail508 tr td[scope="col"] {
+        font-weight: bold;
+    }
+
+    /* This border breaks up/defines sections from view */
+    .detail tr {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .detail tr:last-child {
+        border: none;
+    }
+
+    .detail td {
+        display: inline-block;
+        border: none;
+    }
+}
+
+@media only screen and (max-width:640px){
 /* Responsive edit view styles */
 
     .edit.view{
