@@ -4714,7 +4714,7 @@ li#moremenu {
 
 @media only screen and (max-width: 640px)
  {
-    /* Force table to not be like tables anymore */
+    /* Force table to not be like tables anymore(deconstruct) */
     .detail  table, .detail thead, .detail tbody, .detail th, .detail td, .detail tr {
         display: block;
         background:none;
@@ -4723,6 +4723,7 @@ li#moremenu {
     background:none;
 
     }
+    /* Custom styling for table header */
     .detail h4 {
         font-size:1.2em;
         background:#eeeeee;
@@ -4740,6 +4741,7 @@ li#moremenu {
     .detail508 tr td[scope="col"]{
         font-weight:bold;
     }
+    /* This border breaks up/defines sections from view */
     .detail tr {
         border-bottom: 1px solid #cccccc;
     }
@@ -4749,10 +4751,10 @@ li#moremenu {
 
 @media only screen and (max-width: 640px)
 {
-    edit.view{
+    .edit.view{
         margin:0 10px 0 10px;
     }
-    /* Force table to not be like tables anymore */
+    /* Force table to not be like tables anymore(deconstruct) */
     .edit table, .edit thead, .edit tbody, .edit th, .edit td, .edit tr {
         display: block;
         background:none;
@@ -4762,6 +4764,7 @@ li#moremenu {
         background:none;
 
     }
+    /* Custom styling for table header */
     .edit h4 {
         font-size:1.2em;
         background:#eeeeee;
@@ -4785,6 +4788,7 @@ li#moremenu {
     .edit > table {
         border: 1px solid #cccccc;
     }
+    /* This border breaks up/defines sections from view */
     .edit tr {
         border-bottom: 1px solid #cccccc;
     }
