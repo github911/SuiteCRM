@@ -4867,9 +4867,6 @@ li#moremenu {
         display:inline;
         border:none;
     }
-    .emailaddresses input[type=text]{
-        margin:2px 0 2px 0;
-    }
     /* Responsive dashlet styles */
     .dashletContainer{
         float:left;
@@ -4890,6 +4887,7 @@ li#moremenu {
     #content, #pageContainer {
         width:100%;
         margin: 0 0 50px 0;
+        padding:10px;
     }
 }
 
