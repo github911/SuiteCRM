@@ -4751,6 +4751,9 @@ li#moremenu {
     .detail tr:last-child {
         border: none;
     }
+    .detail508, .moduleTitle, .actionsContainer{
+        margin: 0 10px 0 10px;
+    }
 }
 @media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
     /* Force table to not be like tables anymore(deconstruct) */
@@ -4887,7 +4890,6 @@ li#moremenu {
     #content, #pageContainer {
         width:100%;
         margin: 0 0 50px 0;
-        padding:10px;
     }
 }
 
