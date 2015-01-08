@@ -4904,6 +4904,9 @@ li#moremenu {
         transition: all 0.3s ease-out;
         margin: 2px;
     }
+    .search_form{
+        display:none;
+    }
 }
 
 /* End Global CSS */
