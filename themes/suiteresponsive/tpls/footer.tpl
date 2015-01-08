@@ -42,7 +42,6 @@
     <div id="footernav" class="btn-toolbar" role="toolbar" aria-label="...">
         <div class="btn-group dropup" role="group" aria-label="...">
             <a href="index.php" class="btn btn-success"></span><span class="glyphicon glyphicon-home" aria-hidden="true"></a>
-            <a href="index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}" class="btn btn-success"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
             <a href="" class="btn btn-success" onclick="refresh();"><span class=" glyphicon glyphicon-refresh" aria-hidden="true"></span></a>
             <div class="btn-group" role="group">
                 <button type="button" class="btn dropdown-toggle btn-success" data-toggle="dropdown" aria-expanded="false">
