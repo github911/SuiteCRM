@@ -4888,11 +4888,13 @@ li#moremenu {
         width:100%;
         margin: 0 0 50px 0;
     }
-    button, .button, input[type="button"], input[type="reset"], input[type="submit"], a#create_link.utilsLink{
+}
+@media (max-width:1023px) {
+    button, .button, input[type="button"], input[type="reset"], input[type="submit"], a#create_link.utilsLink {
         color: #fff;
         background-color: #337AB7;
-        border:none;
-        padding:8px 15px 8px 15px;
+        border: none;
+        padding: 8px 15px 8px 15px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         border-radius: 2px;
@@ -4900,20 +4902,8 @@ li#moremenu {
         -moz-transition: all 0.3s ease-out;
         -o-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
-        margin:2px;
-    }
-
-    input[type=text], select{
-        background:#ffffff;
-        border:1px solid #cccccc;
-        padding:5px;
+        margin: 2px;
     }
 }
 
-#All {
-    columns:150px 2;
-    -webkit-columns:150px 2; /* Safari and Chrome */
-    -moz-columns:150px 2; /* Firefox */
-    float:left;
-}
 /* End Global CSS */
