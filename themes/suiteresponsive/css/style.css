@@ -4823,6 +4823,7 @@ li#moremenu {
     }
     .edit  tr,.edit tr td[scope="col"],.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,.detail tr td,.detail table, table.detail {
         background:none;
+        font-size:1.1em;
 
     }
     /* Custom styling for table header */
@@ -4894,7 +4895,7 @@ li#moremenu {
         color: #fff;
         background-color: #337AB7;
         border: none;
-        padding: 8px 15px 8px 15px;
+        padding: 8px 12px 8px 12px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         border-radius: 2px;
