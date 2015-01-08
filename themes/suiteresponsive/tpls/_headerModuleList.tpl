@@ -51,9 +51,9 @@
                 <input type="hidden" class="form-control" name="module" value="Home">
                 <input type="hidden" class="form-control" name="search_form" value="false">
                 <input type="hidden" class="form-control" name="advanced" value="false">
-                    <span class="input-group-btn">
-                        <input type="text" class="form-control" name="query_string" id="query_string" placeholder="Search..." />
-                    </span>
+                <span class="input-group-btn">
+                    <input type="text" class="form-control" name="query_string" id="query_string" placeholder="Search..." />
+                </span>
             </form>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -66,8 +66,7 @@
                     <ul class="dropdown-menu" role="menu">
                         {if count($shortcutTopMenu.$name) > 0}
                         <h3 class="home_h2">{$APP.LBL_LINK_ACTIONS}</h3>
-                                <span class="breaker">
-
+                        <span class="breaker">
                             {foreach from=$shortcutTopMenu.$name item=item}
                                 {if $item.URL == "-"}
                                     <li><a></a><span>&nbsp;</span></li>
@@ -75,54 +74,53 @@
                                 <li> <a href="{$item.URL}" class=""><span>{$item.LABEL}</span></a></li>
                                 {/if}
                             {/foreach}
-                                    <br>
-                                    {/if}
-                                    {if $name == 'Home' and !$lock_homepage}
-                                        <h3>{$APP.LBL_LINK_ACTIONS}</h3>
-                                        <li style="margin-top:5px; margin-bottom:5px;"><a href="" onclick="addDashboardForm();return false">{$APP.LBL_ADD_TAB}</a></li>
-                                        <li style="margin-top:5px; margin-bottom:5px;"><a href="" onclick="return SUGAR.mySugar.showDashletsDialog();">{$APP.LBL_ADD_DASHLETS}</a></li>
-                                    {/if}
-                                    <h3 class="home_h2">{$APP.LBL_LAST_VIEWED}</h3><br>
-                                    {foreach from=$recentRecords item=item name=lastViewed}
-                                    {if $name == 'Home'}
-                                    <table style="width:100%">
-                                        <tr>
-                                            <td>
-                                                <li>
-                                                    <a title="{$item.module_name}"
-                                                       accessKey="{$smarty.foreach.lastViewed.iteration}"
-                                                       href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
-                                                        <span>{$item.item_summary_short}</span>
-                                                    </a>
-                                            </td>
-                                            <td align="right">
-                                                <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><img style="float:right;" src="index.php?entryPoint=getImage&imageName=dashlet-header-edit.png" width="14" height="14" class="iconed_dull"></a></em>
-                                            </td>
-                                            </span>
-                </li>
-                </tr>
-                </table>
-                {/if}
-                {if $item.module_name == $name}
-                    <table style="width:100%">
-                        <tr>
-                            <td>
-                                <li>
-                                                <span>
-                                                <a title="{$item.module_name}"
-                                                   accessKey="{$smarty.foreach.lastViewed.iteration}"
-                                                   href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
-                                                    <span>{$item.item_summary_short}</span>
-                                                </a>
-                            </td>
-                            <td align="right">
-                                <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a></em></td></span>
-                            </li>
-                        </tr>
-                    </table>
-                {/if}
-                {foreachelse}
-                {$APP.NTC_NO_ITEMS_DISPLAY}
+                        {/if}
+                        {if $name == 'Home' and !$lock_homepage}
+                            <h3>{$APP.LBL_LINK_ACTIONS}</h3>
+                            <li style="margin-top:5px; margin-bottom:5px;"><a href="" onclick="addDashboardForm();return false">{$APP.LBL_ADD_TAB}</a></li>
+                            <li style="margin-top:5px; margin-bottom:5px;"><a href="" onclick="return SUGAR.mySugar.showDashletsDialog();">{$APP.LBL_ADD_DASHLETS}</a></li>
+                        {/if}
+                        <h3 class="home_h2">{$APP.LBL_LAST_VIEWED}</h3><br>
+                        {foreach from=$recentRecords item=item name=lastViewed}
+                        {if $name == 'Home'}
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <li>
+                                        <a title="{$item.module_name}"
+                                        accessKey="{$smarty.foreach.lastViewed.iteration}"
+                                        href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
+                                        <span>{$item.item_summary_short}</span>
+                                        </a>
+                                </td>
+                                <td align="right">
+                                    <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><img style="float:right;" src="index.php?entryPoint=getImage&imageName=dashlet-header-edit.png" width="14" height="14" class="iconed_dull"></a></em>
+                                </td>
+                        </span>
+                                    </li>
+                            </tr>
+                        </table>
+                        {/if}
+                        {if $item.module_name == $name}
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <li>
+                                    <span>
+                                    <a title="{$item.module_name}"
+                                    accessKey="{$smarty.foreach.lastViewed.iteration}"
+                                    href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
+                                    <span>{$item.item_summary_short}</span>
+                                    </a>
+                                </td>
+                                <td align="right">
+                                    <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a></em></td></span>
+                                </li>
+                            </tr>
+                        </table>
+                        {/if}
+                    {foreachelse}
+                    {$APP.NTC_NO_ITEMS_DISPLAY}
                 {/foreach}
             </ul>
             {else}
@@ -132,58 +130,59 @@
                 <ul class="dropdown-menu" role="menu">
                     {if count($shortcutTopMenu.$name) > 0}
                     <h3 class="home_h2">{$APP.LBL_LINK_ACTIONS}</h3>
-                        {foreach from=$shortcutTopMenu.$name item=item}
-                            {if $item.URL == "-"}
-                                <li><a></a><span>&nbsp;</span></li>
-                            {else}
-                                <li><a href="{$item.URL}">{$item.LABEL}</a></li>
-                            {/if}
-                        {/foreach}
-                        <br>
+                    {foreach from=$shortcutTopMenu.$name item=item}
+                        {if $item.URL == "-"}
+                            <li><a></a><span>&nbsp;</span></li>
+                        {else}
+                            <li><a href="{$item.URL}">{$item.LABEL}</a></li>
+                        {/if}
+                    {/foreach}
+                    <br>
                     {/if}
                     <h3 class="home_h2">{$APP.LBL_LAST_VIEWED}</h3>
                     {foreach from=$recentRecords item=item name=lastViewed}
                         {if $name == 'Home'}
                         <table style="width:100%">
-                        <tr><td>
-                        <li>
-                        <a title="{$item.module_name}"
-                        accessKey="{$smarty.foreach.lastViewed.iteration}"
-                        href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
-                        <span>{$item.item_summary_short}</span>
-                        </a>
-                        </td>
-                        <td align="right">
-                        <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><img style="float:right;" src="index.php?entryPoint=getImage&imageName=dashlet-header-edit.png" width="14" height="14" class="iconed_dull"></a></em>
-                        </td>
-                        </span>
-                        </li>
-                        </tr>
+                            <tr>
+                                <td>
+                                <li>
+                                <a title="{$item.module_name}"
+                                accessKey="{$smarty.foreach.lastViewed.iteration}"
+                                href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
+                                <span>{$item.item_summary_short}</span>
+                                </a>
+                                </td>
+                                <td align="right">
+                                <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><img style="float:right;" src="index.php?entryPoint=getImage&imageName=dashlet-header-edit.png" width="14" height="14" class="iconed_dull"></a></em>
+                                </td>
+                                </span>
+                                </li>
+                            </tr>
                         </table>
                         {/if}
-            {if $item.module_name == $name}
-                <table style="width:100%">
-                    <tr>
-                        <td>
-                            <li>
-                                            <span>
-                                            <a title="{$item.module_name}"
-                                               accessKey="{$smarty.foreach.lastViewed.iteration}"
-                                               href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
-                                                <span>{$item.item_summary_short}</span>
-                                            </a>
-                        </td>
-                        <td align="right">
-                            <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a></em>
-                        </td>
-                        </span>
-                        </li>
-                        </td>
-                    </tr>
-                </table>
-            {/if}
-            {foreachelse}
-            {$APP.NTC_NO_ITEMS_DISPLAY}
+                        {if $item.module_name == $name}
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <li>
+                                    <span>
+                                    <a title="{$item.module_name}"
+                                    accessKey="{$smarty.foreach.lastViewed.iteration}"
+                                    href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
+                                    <span>{$item.item_summary_short}</span>
+                                    </a>
+                                </td>
+                                <td align="right">
+                                    <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a></em>
+                                </td>
+                                </span>
+                                </li>
+                                </td>
+                            </tr>
+                        </table>
+                    {/if}
+                {foreachelse}
+                {$APP.NTC_NO_ITEMS_DISPLAY}
             {/foreach}
             </ul>
             </li>
