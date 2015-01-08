@@ -42,21 +42,20 @@
     {include file="_headerModuleList.tpl" theme_template=true}
 {/if}
 {literal}
-    <iframe id='ajaxUI-history-iframe' src='index.php?entryPoint=getImage&imageName=blank.png' title='empty'
-            style='display:none'></iframe>
-<input id='ajaxUI-history-field' type='hidden'>
-<script type='text/javascript'>
-    if (SUGAR.ajaxUI && !SUGAR.ajaxUI.hist_loaded) {
-        YAHOO.util.History.register('ajaxUILoc', "", SUGAR.ajaxUI.go);
-        {/literal}{if $smarty.request.module != "ModuleBuilder"}{* Module builder will init YUI history on its own *}
-        YAHOO.util.History.initialize("ajaxUI-history-field", "ajaxUI-history-iframe");
-        {/if}{literal}
-    }
-</script>
+    <iframe id='ajaxUI-history-iframe' src='index.php?entryPoint=getImage&imageName=blank.png' title='empty' style='display:none'></iframe>
+    <input id='ajaxUI-history-field' type='hidden'>
+    <script type='text/javascript'>
+        if (SUGAR.ajaxUI && !SUGAR.ajaxUI.hist_loaded) {
+            YAHOO.util.History.register('ajaxUILoc', "", SUGAR.ajaxUI.go);
+            {/literal}{if $smarty.request.module != "ModuleBuilder"}{* Module builder will init YUI history on its own *}
+            YAHOO.util.History.initialize("ajaxUI-history-field", "ajaxUI-history-iframe");
+            {/if}{literal}
+        }
+    </script>
 {/literal}
 <!-- Start of page content -->
-    {if $AUTHENTICATED}
-        <div id="bootstrap-container"  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-    {/if}
-    <div id="content" {if !$AUTHENTICATED}class="noLeftColumn" {/if}>
-        <div id="pagecontent">
+{if $AUTHENTICATED}
+    <div id="bootstrap-container"  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div id="content">
+            <div id="pagecontent">
+{/if}
