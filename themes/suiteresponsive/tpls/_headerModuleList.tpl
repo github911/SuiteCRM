@@ -295,6 +295,7 @@
                         {$item.image}&nbsp;<span aria-hidden="true">{$item.item_summary_short}</span>
                     </a>
                 </li>
+                <li id="recentlinks_edit"><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a></li>
             {/foreach}
         </ul>
     </div>

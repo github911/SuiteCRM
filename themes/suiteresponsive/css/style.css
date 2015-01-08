@@ -4909,5 +4909,23 @@ li#moremenu {
         display:none;
     }
 }
+.sidebaredit{
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+#recentlinks{
+    float:left;
+    width:150px;
+}
+
+#recentlinks_edit{
+    float:right;
+}
+
+#recentlinks_edit a:hover{
+    background:none;
+}
 
 /* End Global CSS */
