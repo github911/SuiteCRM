@@ -71,27 +71,26 @@
                                 {if $item.URL == "-"}
                                     <li><a></a><span>&nbsp;</span></li>
                             {else}
-                                <li> <a href="{$item.URL}" class=""><span>{$item.LABEL}</span></a></li>
+                                    <li><a href="{$item.URL}" class=""><span>{$item.LABEL}</span></a></li>
                                 {/if}
                             {/foreach}
                         {/if}
-                        <h3 class="recent_h2">{$APP.LBL_LAST_VIEWED}</h3><br>
+                        <h3 class="recent_h2">{$APP.LBL_LAST_VIEWED}</h3>
                         {foreach from=$recentRecords item=item name=lastViewed}
                         {if $item.module_name == $name}
                         <table id=recentlyviewed">
                             <tr>
                                 <td>
                                     <li>
-                                    <span>
-                                    <a title="{$item.module_name}"
-                                    accessKey="{$smarty.foreach.lastViewed.iteration}"
-                                    href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
-                                    <span>{$item.item_summary_short}</span>
-                                    </a>
+                                        <a title="{$item.module_name}"
+                                        accessKey="{$smarty.foreach.lastViewed.iteration}"
+                                        href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
+                                        <span>{$item.item_summary_short}</span>
+                                        </a>
+                                    </li>
                                 </td>
                                 <td align="right">
                                     <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a></em></td></span>
-                                </li>
                             </tr>
                         </table>
                         {/if}
@@ -122,18 +121,16 @@
                             <tr>
                                 <td>
                                     <li>
-                                    <span>
-                                    <a title="{$item.module_name}"
-                                    accessKey="{$smarty.foreach.lastViewed.iteration}"
-                                    href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
-                                    <span>{$item.item_summary_short}</span>
-                                    </a>
+                                        <a title="{$item.module_name}"
+                                        accessKey="{$smarty.foreach.lastViewed.iteration}"
+                                        href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
+                                        <span>{$item.item_summary_short}</span>
+                                        </a>
+                                    </li>
                                 </td>
                                 <td align="right">
                                     <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><span class=" glyphicon glyphicon-pencil" aria-hidden="true"></a></em>
                                 </td>
-                                </span>
-                                </li>
                                 </td>
                             </tr>
                         </table>
