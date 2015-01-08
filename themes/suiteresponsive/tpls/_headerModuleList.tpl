@@ -77,27 +77,8 @@
                         {/if}
                         <h3 class="recent_h2">{$APP.LBL_LAST_VIEWED}</h3><br>
                         {foreach from=$recentRecords item=item name=lastViewed}
-                        {if $name == 'Home'}
-                        <table style="width:100%">
-                            <tr>
-                                <td>
-                                    <li>
-                                        <a title="{$item.module_name}"
-                                        accessKey="{$smarty.foreach.lastViewed.iteration}"
-                                        href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
-                                        <span>{$item.item_summary_short}</span>
-                                        </a>
-                                </td>
-                                <td align="right">
-                                    <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><img style="float:right;" src="index.php?entryPoint=getImage&imageName=dashlet-header-edit.png" width="14" height="14" class="iconed_dull"></a></em>
-                                </td>
-                        </span>
-                                    </li>
-                            </tr>
-                        </table>
-                        {/if}
                         {if $item.module_name == $name}
-                        <table style="width:100%">
+                        <table id=recentlyviewed">
                             <tr>
                                 <td>
                                     <li>
@@ -136,25 +117,6 @@
                     {/if}
                     <h3 class="home_h2">{$APP.LBL_LAST_VIEWED}</h3>
                     {foreach from=$recentRecords item=item name=lastViewed}
-                        {if $name == 'Home'}
-                        <table style="width:100%">
-                            <tr>
-                                <td>
-                                <li>
-                                <a title="{$item.module_name}"
-                                accessKey="{$smarty.foreach.lastViewed.iteration}"
-                                href="{sugar_link module=$item.module_name action='DetailView' record=$item.item_id link_only=1}">
-                                <span>{$item.item_summary_short}</span>
-                                </a>
-                                </td>
-                                <td align="right">
-                                <em><a href="{sugar_link module=$item.module_name action='EditView' record=$item.item_id link_only=1}" style="margin-left:10px;"><img style="float:right;" src="index.php?entryPoint=getImage&imageName=dashlet-header-edit.png" width="14" height="14" class="iconed_dull"></a></em>
-                                </td>
-                                </span>
-                                </li>
-                            </tr>
-                        </table>
-                        {/if}
                         {if $item.module_name == $name}
                         <table style="width:100%">
                             <tr>

@@ -4919,6 +4919,9 @@ li#moremenu {
     padding:0;
 }
 
+#recentlyviewed{
+    width:100%;
+}
 #recentlinks{
     float:left;
     width:150px;
