@@ -37,7 +37,10 @@
 *}
 </div>
 </div>
+<!-- END of container-fluid, pageContainer divs -->
+<!-- Start Footer Section -->
 {if $AUTHENTICATED}
+<!-- Start of mobile/tablet footer -->
 <div id="mobilefooter">
     <div id="footernav" class="btn-toolbar" role="toolbar" aria-label="...">
         <div class="btn-group dropup" role="group" aria-label="...">
@@ -62,6 +65,8 @@
         </div>
     </div>
 </div>
+<!-- END of mobile/tablet footer -->
+<!-- Start generic footer -->
     <footer>
         <div class="companyLogo">
             <span class="glyphicon glyphicon-globe"></span> {$STATISTICS}
@@ -88,6 +93,8 @@
             </div>
         </div>
     </footer>
+<!-- END Generic Footer -->
+<!-- END Footer Section -->
 {/if}
 <script>
 {literal}

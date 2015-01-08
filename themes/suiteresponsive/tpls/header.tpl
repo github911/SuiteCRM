@@ -37,12 +37,10 @@
 *}
 {include file="_head.tpl" theme_template=true}
 <body onMouseOut="closeMenus();">
-<a name="top"></a>
 {$DCSCRIPT}
 {if $AUTHENTICATED}
     {include file="_headerModuleList.tpl" theme_template=true}
 {/if}
-
 {literal}
     <iframe id='ajaxUI-history-iframe' src='index.php?entryPoint=getImage&imageName=blank.png' title='empty'
             style='display:none'></iframe>
@@ -56,6 +54,9 @@
     }
 </script>
 {/literal}
-    {if $AUTHENTICATED}<div id="bootstrap-container"  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">{/if}
-        <div id="content" {if !$AUTHENTICATED}class="noLeftColumn" {/if}>
-            <div id="pagecontent">
+<!-- Start of page content -->
+    {if $AUTHENTICATED}
+        <div id="bootstrap-container"  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    {/if}
+    <div id="content" {if !$AUTHENTICATED}class="noLeftColumn" {/if}>
+        <div id="pagecontent">
