@@ -58,7 +58,7 @@
                 </ul>
             </div>
             <a role="menuitem" href='index.php?module=Administration&action=index' class="btn btn-success"><span class=" glyphicon glyphicon-cog" aria-hidden="true"></span></a>
-            <a role="menuitem" href='{$LOGOUT_LINK}' class="btn btn-success"><span class=" glyphicon glyphicon-log-out" aria-hidden="true"></span></a>
+            <a role="menuitem" href='index.php?module=Users&action=Logout' class="btn btn-success"><span class=" glyphicon glyphicon-log-out" aria-hidden="true"></span></a>
         </div>
     </div>
 </div>
