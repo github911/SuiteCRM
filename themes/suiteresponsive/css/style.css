@@ -4933,11 +4933,4 @@ li#moremenu {
     background:none;
 }
 
-.td_alt, .list tr th, .list tr td[scope="col"], .edit .list tr th, .edit .list tr td[scope="col"]{
-    background:none;
-    background-colour:none;
-    background-image:none;
-    border:none;
-}
-
 /* End Global CSS */
