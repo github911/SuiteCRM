@@ -4930,4 +4930,8 @@ li#moremenu {
     background:none;
 }
 
+a[id^=grouptab] {
+    color: #f7f7f7;
+}
+
 /* End Global CSS */
