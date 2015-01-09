@@ -38,15 +38,7 @@
 
 .tabForm
 {
-    background-color:#F6F6F6;
-    color:#000000;
-    border-bottom:1px solid;
-    border-top:2px solid;
-    border-bottom-color:#ABC3D7;
-    border-top-color:#4E8CCF;
-    font-size:12px;
-    margin-bottom:5px;
-    padding:10px 6px 12px 10px;
+    background:none;
 }
 
 .dataLabel
