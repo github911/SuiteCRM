@@ -44,11 +44,14 @@
 /* Start Global CSS */
 /* Base SugarCRM Styles */
 
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 body
 {
     background:#f7f7f7;
     margin: 0px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     overflow:auto;
     font-size:1.3em;
 }
@@ -114,6 +117,7 @@ p
 {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 form
@@ -123,7 +127,7 @@ form
 
 textarea
 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 input[type=checkbox],input[type=radio]
@@ -822,7 +826,7 @@ table.subpanelTabForm
 
 /* gantt styles */
 table.days {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 td.days {
@@ -3128,50 +3132,6 @@ ul.clickMenu.showLess .moreOverflow , ul.clickMenu.showLess .moduleMenuOverFlowL
     display:none;
 }
 
-#globalLinksDivider {
-    float: right;
-    margin-right: 0px;
-}
-
-ul#globalLinksSubnav, ul#quickCreateULSubnav{
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-ul#globalLinks.clickMenu {
-    background: none;
-    border: 0px none;
-    padding-right: 0px;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-ul#globalLinks.clickMenu li > span {
-    height: 43px;
-    background-image: url('../../../../index.php?entryPoint=getImage&imageName=tabDownArrowOff.png');
-    background-position: right center;
-    width: auto;
-    margin-right: 10px;
-    padding-right: 8px;
-}
-
-ul#globalLinks.clickMenu li > span a {
-    color: #FFFFFF;
-    font-size: 14px;
-    margin-top: 13px;
-    padding: 0px 10px !important;
-}
-
-ul#globalLinks.clickMenu li ul.subnav {
-    top: 43px;
-    right: 0px;
-    left: auto;
-}
-
-ul#globalLinks.clickMenu > li > a {
-    color: #fff;
-    font-size: 14px;
-    padding: 14px 7px !important;
-}
-
 ul#selectLink.clickMenu {
     height: 17px;
     min-width: 20px;
@@ -3252,7 +3212,7 @@ ul#detailViewActions.clickMenu {
     background: none;
     border: 0px none;
     padding-right: 0px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -3374,6 +3334,7 @@ a#create_link.utilsLink:hover {
 h1,h2,h3,h4 {
     color:#333333;
     font-weight:normal;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h2 {
