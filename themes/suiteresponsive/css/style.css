@@ -4908,6 +4908,8 @@ li#moremenu {
     display:none;
 }
 
+/* Custom styling for recently viewed on sidebar */
+
 .sidebaredit{
     float:left;
     margin:0;
@@ -4930,8 +4932,18 @@ li#moremenu {
     background:none;
 }
 
+/* Custom styling from group tabs menu structure */
+
 a[id^=grouptab] {
     color: #f7f7f7;
+}
+
+a[id^=grouptab]:visited, a[id^=grouptab]:active{
+    background:none;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background:none;
 }
 
 /* End Global CSS */
