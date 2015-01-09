@@ -211,6 +211,9 @@ function qe_init(){
             $('#bootstrap-container').addClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main');
         }
         });
+        $('.showsearch').click(function() {
+            $('.search_form').toggle();
+        });
     </script>
     <!-- Include all boostrap dependencies -->
     <script src="themes/suiteresponsive/js/bootstrap.min.js"></script>

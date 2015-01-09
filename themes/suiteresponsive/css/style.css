@@ -2216,9 +2216,9 @@ table.detail
 {
     border-left: none;
     border-right: none;
-    border-top: 1px solid #cccccc;
+
     border-bottom: 1px solid #cccccc;
-    background: #ebebed !important;
+
 }
 
 /* module title */
@@ -3627,10 +3627,6 @@ span.crumbLink {
     margin:5px 0 5px 0;
 }
 
-.td_alt, .list tr th, .list tr td[scope="col"], .edit .list tr th, .edit .list tr td[scope="col"] {
-    border:none;
-}
-
 .view tr {
     padding:5px 0 5px 0;
 }
@@ -4905,14 +4901,16 @@ li#moremenu {
         transition: all 0.3s ease-out;
         margin: 2px;
     }
-    .search_form{
-        display:none;
-    }
     .quickcreate{
         margin:0;
         padding:5px 7px 5px 7px;
     }
 }
+
+.search_form{
+    display:none;
+}
+
 .sidebaredit{
     float:left;
     margin:0;
@@ -4933,6 +4931,13 @@ li#moremenu {
 
 #recentlinks_edit a:hover{
     background:none;
+}
+
+.td_alt, .list tr th, .list tr td[scope="col"], .edit .list tr th, .edit .list tr td[scope="col"]{
+    background:none;
+    background-colour:none;
+    background-image:none;
+    border:none;
 }
 
 /* End Global CSS */

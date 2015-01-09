@@ -72,7 +72,7 @@
 {if count($data) == 0}
 	{assign var="hideTable" value=true}
 	<div class="list view listViewEmpty">
-    {if $displayEmptyDataMesssages}
+		{if $displayEmptyDataMesssages}
         {if strlen($query) == 0}
                 {capture assign="createLink"}<a href="?module={$pageData.bean.moduleDir}&action=EditView&return_module={$pageData.bean.moduleDir}&return_action=DetailView">{$APP.LBL_CREATE_BUTTON_LABEL}</a>{/capture}
                 {capture assign="importLink"}<a href="?module=Import&action=Step1&import_module={$pageData.bean.moduleDir}&return_module={$pageData.bean.moduleDir}&return_action=index">{$APP.LBL_IMPORT}</a>{/capture}
@@ -104,7 +104,7 @@
 	</div>
 {/if}
 {$multiSelectData}
-
+<a href="#" class="btn btn-success showsearch"><span class=" glyphicon glyphicon-search" aria-hidden="true"></span></a>
 {if $hideTable == false}
 	<table cellpadding='0' cellspacing='0' width='100%' border='0' class='list view table footable'>
     {assign var="link_select_id" value="selectLinkTop"}
