@@ -4758,7 +4758,8 @@ li#moremenu {
         border-bottom-left-radius: 5px;
     }
     /* Force table to not be like tables anymore(deconstruct) */
-    .edit table, .edit thead, .edit tbody, .edit th, .edit td, .edit tr {
+    .edit table, .edit thead, .edit tbody, .edit th, .edit td, .edit tr,
+    .popupBody .edit table, .popupBody .edit thead, .popupBody .edit tbody, .popupBody .edit th, .popupBody .edit td, .popupBody .edit tr {
         display: block;
         background:none;
         width:100%;
@@ -4898,5 +4899,16 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active{
 #globalLinksicons{
     margin:0 5px 0 0;
 }
+.popupBody{
+    font-size:0.8em;
+    padding:0;
+}
 
+.popupBody h3{
+    font-weight:bold;
+}
+
+.popupBody input[type=text], .popupBody input[type=submit], .popupBody input[type=select], .button, button{
+    font-size:1em;
+}
 /* End Global CSS */
