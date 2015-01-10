@@ -4898,4 +4898,17 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active{
     margin:0 5px 0 0;
 }
 
+.popupBody{
+    margin:10px;
+    padding:0;
+}
+
+.popupBody input[type=text], .popupBody textarea{
+    width:95%;
+}
+
+.popupBody .list .view{
+    overflow:scroll;
+    width:95%;
+}
 /* End Global CSS */
