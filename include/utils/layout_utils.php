@@ -347,8 +347,6 @@ EOHTML;
         echo '<script type="text/javascript" src="' . getJSPath('cache/include/javascript/sugar_grp1.js') . '"></script>';
     }
     /* Fix to include files required to make pop-ups responsive */
-    echo '<meta http-equiv="Content-Type" content="text/html; charset={$APP.LBL_CHARSET}">';
-    echo '<meta charset="utf-8">';
     echo '<meta http-equiv="X-UA-Compatible" content="IE=edge">';
     echo '<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />';
     echo '<link href="themes/suiteresponsive/css/bootstrap.min.css" rel="stylesheet">';
