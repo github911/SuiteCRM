@@ -2887,6 +2887,11 @@ ul.clickMenu {
     vertical-align: bottom;
     color: #000000;
     display: inline-block;
+    border:1px solid #dddddd;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background:#eeeeee;
 }
 
 ul.clickMenu form{
@@ -2937,7 +2942,7 @@ ul.clickMenu li a, .list tr.pagination td.buttons ul.clickMenu > li > a:link, .l
     display: block;
     text-decoration: none;
     float: left;
-    margin:0 2px 0 2px;
+    margin:0 5px 0 0;
     color: #333333;
 }
 
@@ -3001,7 +3006,7 @@ ul.clickMenu li ul.subnav li, ul.clickMenu ul.subnav-sub li, ul.SugarActionMenuI
 
 ul.clickMenu.subpanel.records {
     background-color: #eee;
-    border: 1px solid #ddd;
+    border: 1px solid #cccccc;
     background-image: none;
 }
 
@@ -3065,19 +3070,7 @@ ul.clickMenu li a.disabled {
 }
 
 .oddListRowS1:hover td ul.clickMenu.subpanel.records , .evenListRowS1:hover td ul.clickMenu.subpanel.records {
-    background-image: -moz-linear-gradient(center top,
-    #ffffff 0%,
-    #eeeeee 10%,
-    #dfdfdf 100%
-    );
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #ffffff),
-        color-stop(.10, #eeeeee),
-        color-stop(1, #dfdfdf)
-    );
+    background:#dddddd;
     border: 1px solid #AAAAAA;
 }
 
