@@ -4897,16 +4897,5 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active{
 #globalLinksicons{
     margin:0 5px 0 0;
 }
-.popupBody{
-    font-size:0.8em;
-    padding:0;
-}
 
-.popupBody h3{
-    font-weight:bold;
-}
-
-.popupBody input[type=text], .popupBody input[type=submit], .popupBody input[type=select], .button, button{
-    font-size:1em;
-}
 /* End Global CSS */
