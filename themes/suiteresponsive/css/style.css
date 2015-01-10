@@ -2937,10 +2937,8 @@ ul.clickMenu li a, .list tr.pagination td.buttons ul.clickMenu > li > a:link, .l
     display: block;
     text-decoration: none;
     float: left;
-    font-weight: normal !important;
-    padding: 1px 10px 1px 10px !important;
+    margin:0 2px 0 2px;
     color: #333333;
-    font-size: 12px;
 }
 
 .list tr.pagination td.buttons ul.clickMenu:hover > li > a:link, .list tr.pagination td.buttons ul.clickMenu:hover > li > a{
