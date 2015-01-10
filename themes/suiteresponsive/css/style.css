@@ -3263,9 +3263,6 @@ ul.clickMenu li ul.subnav li a:hover .showLessArrow, ul.clickMenu li ul.subnav l
     opacity: .6;
 }
 
-div.action_buttons form {float:left;}
-.paginationWrapper { float:right; }
-
 /* Table CSS */
 
 .view, table.view td {
@@ -4896,6 +4893,10 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active{
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
     background:none;
+}
+
+#globalLinksicons{
+    margin:0 5px 0 0;
 }
 
 /* End Global CSS */

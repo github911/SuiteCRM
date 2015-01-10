@@ -190,12 +190,12 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    {foreach from=$GCLS item=GCL name=gcl key=gcl_key}
-                        <li role="presentation">
-                            <a id="{$gcl_key}_link" href="{$GCL.URL}"{if !empty($GCL.ONCLICK)} onclick="{$GCL.ONCLICK}"{/if}>{$GCL.LABEL}</a>
-                        </li>
-                    {/foreach}
-                    <li role="presentation"><a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class='utilsLink'>{$LOGOUT_LABEL}</a></li>
+                    <li role="presentation"><a role="menuitem" id="logout_link" href='index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}' class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                    <li role="presentation"><a role="menuitem" id="logout_link" href='index.php?module=Administration&action=index' class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-cog"></span> {$APP.LBL_ADMIN}</a></li>
+                    <li role="presentation"><a role="menuitem" id="logout_link" href='index.php?module=Employees&action=index&query=true' class='utilsLink'><span id="globalLinksicons" class="glyphicon glyphicon-list-alt"></span> {$APP.LBL_EMPLOYEES}</a></li>
+                    <li role="presentation"><a role="menuitem" id="logout_link" href="javascript:void(window.open(\'http://support.sugarcrm.com\'))'" class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-info-sign"></span> {$APP.LBL_TRAINING}</a></li>
+                    <li role="presentation"><a role="menuitem" id="logout_link" href='index.php?module=Home&action=About' class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-globe"></span> {$APP.LNK_ABOUT}</a></li>
+                    <li role="presentation"><a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-log-out"></span> {$LOGOUT_LABEL}</a></li>
                 </ul>
             </div>
             <div id="search" class="dropdown nav navbar-nav navbar-right">
@@ -229,16 +229,13 @@
                     </span>
                 </div>
             </form>
-            <!--<button id="buttontoggle" class="ui-state-default ui-corner-all">Toggle Sidebar</button>-->
+            <button id="buttontoggle" class="ui-state-default ui-corner-all">Toggle Sidebar</button>
         </div>
     </div>
 </nav>
 <!--End Responsive Top Navigation Menu -->
 <!--Start Responsive Sidebar -->
 <div class="container-fluid">
-    <!--<div id="togglesidebar">
-        <button class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span> Toggle Sidebar</button>
-    </div>-->
     <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
         <div class="btn-toolbar" role="toolbar" aria-label="...">
