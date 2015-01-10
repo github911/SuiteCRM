@@ -214,8 +214,12 @@ function qe_init(){
         $('.showsearch').click(function() {
             $('.search_form').toggle();
         });
+        $('#buttontoggle').click(function() {
+            $('.sidebar').css("display", "none");
+        });
     </script>
     <!-- Include all boostrap dependencies -->
+    <script src="themes/suiteresponsive/js/jquery.cookie.js"></script>
     <script src="themes/suiteresponsive/js/bootstrap.min.js"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>

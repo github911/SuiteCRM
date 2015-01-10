@@ -193,7 +193,7 @@
                     <li role="presentation"><a role="menuitem" id="logout_link" href='index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}' class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-user"></span> My Profile</a></li>
                     <li role="presentation"><a role="menuitem" id="logout_link" href='index.php?module=Administration&action=index' class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-cog"></span> {$APP.LBL_ADMIN}</a></li>
                     <li role="presentation"><a role="menuitem" id="logout_link" href='index.php?module=Employees&action=index&query=true' class='utilsLink'><span id="globalLinksicons" class="glyphicon glyphicon-list-alt"></span> {$APP.LBL_EMPLOYEES}</a></li>
-                    <li role="presentation"><a role="menuitem" id="logout_link" href="javascript:void(window.open(\'http://support.sugarcrm.com\'))'" class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-info-sign"></span> {$APP.LBL_TRAINING}</a></li>
+                    <li role="presentation"><a role="menuitem" id="logout_link" href='https://suitecrm.com/forum' target="_blank" class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-info-sign"></span> {$APP.LBL_TRAINING}</a></li>
                     <li role="presentation"><a role="menuitem" id="logout_link" href='index.php?module=Home&action=About' class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-globe"></span> {$APP.LNK_ABOUT}</a></li>
                     <li role="presentation"><a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class='utilsLink'><span id="globalLinksicons"  class="glyphicon glyphicon-log-out"></span> {$LOGOUT_LABEL}</a></li>
                 </ul>
@@ -229,7 +229,7 @@
                     </span>
                 </div>
             </form>
-            <button id="buttontoggle" class="ui-state-default ui-corner-all">Toggle Sidebar</button>
+            <!--<button id="buttontoggle" class="ui-state-default ui-corner-all">Toggle Sidebar</button>-->
         </div>
     </div>
 </nav>
