@@ -68,7 +68,7 @@
 <!-- END of mobile/tablet footer -->
 <!-- Start generic footer -->
     <footer>
-        <div class="companyLogo">
+        <div class="serverstats">
             <span class="glyphicon glyphicon-globe"></span> {$STATISTICS}
         </div>
         <div id="links">

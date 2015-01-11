@@ -4051,5 +4051,12 @@ ul.navbar-nav li ul li:hover {
     }
 }
 
+.serverstats{
+    margin:6px 0 0 0;
+    padding:0;
+    width:250px !important;
+    float:left;
+}
+
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
