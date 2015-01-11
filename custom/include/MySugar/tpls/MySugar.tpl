@@ -55,21 +55,16 @@
     </style>
 {/literal}
 
-
-
 {sugar_getscript file="cache/include/javascript/sugar_grp_yui_widgets.js"}
 {sugar_getscript file='include/javascript/dashlets.js'}
 
 {$chartResources}
 {$mySugarChartResources}
 
-            {*<div class="yui-module yui-scroll">*}
-
             {* Start the tabs section *}
             <ul class="dashboardTabList">
 
                 {* Display the remove button to allow the addition of more tabs *}
-
 
                 {* Foreach of the pages generate a tab in the tab section *}
 
@@ -89,8 +84,6 @@
                         </li>{/if}
                 {/foreach}
 
-
-
                 {* Display the add button to allow the addition of more tabs *}
 
                 {if !$lock_homepage}
@@ -104,43 +97,43 @@
                         </a>
                     </li>
                 {/if}
-
             </ul>
-            {*</div>*}
 
             <div class="clear"></div>
+
+            <!-- Construct Dashlets -->
             <div id="pageContainer" class="yui-skin-sam dashletContainer">
                 <div id="pageNum_{$activePage}_div">
-                                {if !$lock_homepage}<input id="add_dashlets" class="button" type="button"
-                                                           value="{$lblAddDashlets}"
-                                                           onclick="return SUGAR.mySugar.showDashletsDialog();"/>{/if}
-                            {counter assign=hiddenCounter start=0 print=false}
-                            {foreach from=$columns key=colNum item=data}<ul class='noBullet' id='col_{$activePage}_{$colNum}'>
-                                        <li id='page_{$activePage}_hidden{$hiddenCounter}b'
-                                            style='height: 5px; margin-top:12px;' class='noBullet'>
-                                            &nbsp;&nbsp;&nbsp;</li>
-                                        {foreach from=$data.dashlets key=id item=dashlet}
-                                            <li class='noBullet' id='dashlet_{$id}'>
-                                                <div id='dashlet_entire_{$id}' class='dashletPanel'>
-                                                    {$dashlet.script}
-                                                    {$dashlet.displayHeader}
-                                                    {$dashlet.display}
-                                                    {$dashlet.displayFooter}
-                                                </div>
-                                            </li>
-                                        {/foreach}
-                                        <li id='page_{$activePage}_hidden{$hiddenCounter}' style='height: 5px'
-                                            class='noBullet'>&nbsp;&nbsp;&nbsp;</li>
-                                    </ul>
-                                {counter}
+                    {if !$lock_homepage}
+                        <input id="add_dashlets" class="button" type="button"
+                        value="{$lblAddDashlets}"
+                        onclick="return SUGAR.mySugar.showDashletsDialog();"/>
+                    {/if}
+                    {counter assign=hiddenCounter start=0 print=false}
+                    {foreach from=$columns key=colNum item=data}
+                        <ul class='noBullet' id='col_{$activePage}_{$colNum}'>
+                            <li id='page_{$activePage}_hidden{$hiddenCounter}b' style='height: 5px; margin-top:12px;' class='noBullet'>
+                                &nbsp;&nbsp;&nbsp;
+                            </li>
+                            {foreach from=$data.dashlets key=id item=dashlet}
+                            <li class='noBullet' id='dashlet_{$id}'>
+                                <div id='dashlet_entire_{$id}' class='dashletPanel'>
+                                    {$dashlet.script}
+                                    {$dashlet.displayHeader}
+                                    {$dashlet.display}
+                                    {$dashlet.displayFooter}
+                                </div>
+                            </li>
                             {/foreach}
+                            <li id='page_{$activePage}_hidden{$hiddenCounter}' style='height: 5px' class='noBullet'>&nbsp;&nbsp;&nbsp;</li>
+                        </ul>
+                    {counter}
+                    {/foreach}
                 </div>
                 {foreach from=$divPages key=divPageIndex item=divPageNum}
                     <div id="pageNum_{$divPageNum}_div" style="display:none;">
                     </div>
                 {/foreach}
-
-
 
                 <div id="dashletsDialog" style="display:none;">
                     <div class="hd" id="dashletsDialogHeader"><a href="javascript:void(0)"
@@ -151,18 +144,13 @@
                     <div class="bd" id="dashletsList">
                         <form></form>
                     </div>
-
                 </div>
-
 
             </div>
             <script type="text/javascript" src="custom/include/MySugar/javascript/AddRemoveDashboardPages.js"></script>
             <script type="text/javascript" src="custom/include/MySugar/javascript/retrievePage.js"></script>
-
             <link rel="stylesheet" type="text/css" href="custom/include/MySugar/dashboardstyle.css">
-
             <script type="text/javascript">
-
 
                 var activePage = {$activePage};
                 var theme = '{$theme}';
