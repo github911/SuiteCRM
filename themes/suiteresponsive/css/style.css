@@ -4915,8 +4915,12 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active{
     border:none;
 }
 
-ul.navbar-nav li:hover{
+ul.navbar-nav li:hover, .bigmenu li a:hover{
     background:#337ab7 !important;
+}
+
+ul.navbar-nav li ul li:hover{
+    background:none !important;
 }
 
 
