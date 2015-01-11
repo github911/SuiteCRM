@@ -67,7 +67,7 @@
                 {* Display the remove button to allow the addition of more tabs *}
 
                 {* Foreach of the pages generate a tab in the tab section *}
-            <li id="buttontoggle"><a href="#"><span class="glyphicon glyphicon-list-alt"></span></a></li>
+            <li id="buttontoggle"><a href="#"><span class="glyphicon glyphicon-th-list"></span></a></li>
                 {foreach from=$dashboardPages key=tabNum item=tab}
                     {if $tabNum == 0} <li id="pageNum_{$tabNum}">
                         <a id="pageNum_{$tabNum}_anchor" style='cursor: pointer;'  onClick=retrievePage({$tabNum});>
