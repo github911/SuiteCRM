@@ -4029,8 +4029,11 @@ ul.navbar-nav li ul li:hover {
     color:#ffffff;
 }
 
-.chartContainer table tr td .label{
+.chartContainer .label{
     color:#333333 !important;
+    font-weight:normal;
+    font-size:1em;
 }
+
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
