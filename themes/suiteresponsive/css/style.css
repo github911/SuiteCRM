@@ -4035,5 +4035,21 @@ ul.navbar-nav li ul li:hover {
     font-size:1em;
 }
 
+#dlg {
+    left:300px;
+    top:75px;
+}
+
+@media (max-width:1360px){
+    #dlg{
+        top:50px;
+    }
+
+    #dlg .bd{
+        max-height:500px;
+        overflow-y:scroll;
+    }
+}
+
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
