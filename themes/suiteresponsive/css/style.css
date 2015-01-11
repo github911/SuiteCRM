@@ -2302,7 +2302,7 @@ a.tabFormAdvLink:link, a.tabFormAdvLink:visited, a.tabFormAdvLink:hover
 
 #globalLinks {
     padding:6px 0 3px 10px;
-    border-left:1px solid #565656;
+    border-left:1px solid #bbbbbb;
     margin: 0 10px 0 10px;
     font-size:1.1em;
 }
@@ -2412,7 +2412,7 @@ body
 
 /* header */
 #header div.line {
-    background-color:#337AB7;
+    background-color:#3C8DBC;
     border-bottom-color: #0046ad;
     color:#0046ad;
 }
@@ -2678,7 +2678,7 @@ a.tabFormAdvLink:link, a.tabFormAdvLink:visited
 .yearCalBodyMonth
 {
     background-color: #efefef !important;
-    border-top: 2px solid #337AB7;
+    border-top: 2px solid #3C8DBC;
     border-bottom: 2px solid #fff;
 }
 
@@ -2791,7 +2791,7 @@ ul.tablist li a.current:link, ul.tablist li a.current:visited, ul.tablist li a.c
 /* sitemap */
 #sitemap .edit.view
 {
-    border-color: #337AB7 !important;
+    border-color: #3C8DBC !important;
 }
 
 /* for edit view like forms that need a smaller font size */
@@ -2822,7 +2822,7 @@ a.sugar-tab-close, .yui-navset .yui-nav a.sugar-tab-close, .yui-navset .yui-nav 
 }
 
 ul.yui-nav li.selected {
-    background:#337AB7;
+    background:#3C8DBC;
 }
 
 #basic_search_link
@@ -2905,7 +2905,7 @@ ul.SugarActionMenuIESub li a:hover, ul.clickMenu.SugarActionMenu li a:hover, ul.
 ul#globalLinksSubnav li a:hover, ul#quickCreateULSubnav li a:hover,
 ul.clickMenu li ul.subnav li a:hover,ul.clickMenu li ul.subnav li input:hover, ul.clickMenu.subpanel.records li ul.subnav li a:hover, ul.clickMenu ul.subnav-sub li a:hover { /*--Hover effect for subnav links--*/
 
-   color: #337AB7;
+   color: #3C8DBC;
 }
 
 ul#globalLinksSubnav.SugarActionMenuIESub li a:hover, ul#quickCreateULSubnav.SugarActionMenuIESub li a:hover,
@@ -3098,7 +3098,7 @@ ul.clickMenu li ul.subnav li input {
 }
 ul.SugarActionMenuIESub li a:hover,
 ul.clickMenu li ul.subnav li a:hover,ul.clickMenu li ul.subnav li input:hover, ul.clickMenu.subpanel.records li ul.subnav li a:hover, ul.clickMenu ul.subnav-sub li a:hover { /*--Hover effect for subnav links--*/
-    background-color: #337AB7;
+    background-color: #3C8DBC;
     color: #fff;
     font-weight: normal !important;
     font-size: 12px !important;
@@ -3296,7 +3296,7 @@ ul.clickMenu li ul.subnav li a:hover .showLessArrow, ul.clickMenu li ul.subnav l
 
 a#create_link.utilsLink {
     color: #fff;
-    background-color: #337AB7;
+    background-color: #3C8DBC;
     border:none;
     padding:5px 8px 5px 8px;
     -webkit-border-radius: 2px;
@@ -3588,7 +3588,7 @@ select, textarea {
 }
 
 select:focus {
-    border:1px solid #337AB7;
+    border:1px solid #3C8DBC;
     padding:4px;
 }
 
@@ -3929,7 +3929,7 @@ input[type=text].cstm_code {
 }
 
 .navbar-inverse {
-    background:#333333;
+    background:#3C8DBC !important;
 }
 
 .nav-pills li {
@@ -3975,12 +3975,6 @@ ol, ul, dl {
 }
 .form-signin .form-control:focus {
     z-index: 2;
-}
-
-.form-signin input[type=text]{
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
 }
 
 #bigbutton{
@@ -4057,11 +4051,11 @@ fieldset[disabled] .btn-primary:active,
 .button-primary.disabled.active,
 .button-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    background-color: #337AB7;
+    background-color: #3C8DBC;
     border-color: #2e6da4;
 }
 .button-primary .badge {
-    color: #337AB7;
+    color: #3C8DBC;
     background-color: #fff;
 }
 
@@ -4075,7 +4069,7 @@ fieldset[disabled] .btn-primary.active {
 
 }
 .dropdown-menu em a {
-    color:#337AB7;
+    color:#3C8DBC;
 }
 
 .dropdown-menu em a:hover {
@@ -4094,14 +4088,14 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .dropdown-menu li a {
-    color:#337AB7;
+    color:#3C8DBC;
     text-decoration:none;
     padding:5px;
 }
 
 .dropdown-menu li a:hover {
     color:#ffffff;
-    background:#337AB7;
+    background:#3C8DBC;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -4150,7 +4144,7 @@ ul#topnav li a:hover {
 
 li#usermenu:hover {
     color:#ffffff;
-    background:#337AB7;
+    background:#3C8DBC;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -4164,7 +4158,7 @@ li#usermenu:hover {
 }
 
 #moremenu ul li a{
-    color:#337AB7;
+    color:#3C8DBC;
     cursor:pointer;
     padding:5px;
     font-size:1em;
@@ -4184,7 +4178,7 @@ li#usermenu:hover {
 
 .button {
     color: #fff;
-    background-color: #337AB7;
+    background-color: #3C8DBC;
     border:none;
     padding:3px 10px;
     -webkit-border-radius: 2px;
@@ -4199,7 +4193,7 @@ li#usermenu:hover {
 
 input[type=submit], input[type=button] {
     color: #fff;
-    background-color: #337AB7;
+    background-color: #3C8DBC;
     padding:3px 10px;
     margin:2px;
 }
@@ -4224,7 +4218,7 @@ input[type=submit], input[type=button] {
 }
 
 .button .badge {
-    color: #337AB7;
+    color: #3C8DBC;
     background-color: #fff;
 }
 
@@ -4280,7 +4274,7 @@ ul.dashboardTabList li{
 }
 
 .btn-success {
-    background:#337AB7;
+    background:#3C8DBC;
     border: none;
 }
 
@@ -4363,7 +4357,7 @@ table legend {
 }
 
 .ui-widget-content a {
-    color:#337AB7;
+    color:#3C8DBC;
 }
 
 .ui-widget-content a:hover {
@@ -4403,7 +4397,7 @@ table legend {
     margin:0 auto;
     padding:5px;
     max-height:50px !important;
-    background:#337AB7;
+    background:#3C8DBC;
     position:fixed;
     bottom:0;
 }
@@ -4834,7 +4828,7 @@ li#moremenu {
 @media (max-width:1023px) {
     button, .button, input[type="button"], input[type="reset"], input[type="submit"], a#create_link.utilsLink {
         color: #fff;
-        background-color: #337AB7;
+        background-color: #3C8DBC;
         border: none;
         padding: 8px 12px 8px 12px;
         -webkit-border-radius: 2px;
@@ -4911,4 +4905,5 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active{
     overflow:scroll;
     width:95%;
 }
+
 /* End Global CSS */
