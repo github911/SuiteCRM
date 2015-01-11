@@ -1,4 +1,3 @@
-
 /*********************************************************************************
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
@@ -34,19 +33,13 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-/*********************************************************************************
-
- * Description:  Contains a variety of utility functions used to display UI
- * components such as form headers and footers.  Intended to be modified on a per
- * theme basis.
- ********************************************************************************/
-
 /* Start Global CSS */
 /* Base SugarCRM Styles */
 
 html {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 body
 {
     background:#f7f7f7;
@@ -108,65 +101,55 @@ body
     /*	width:150px;*/
 }
 
-fieldset, table, pre
-{
+fieldset, table, pre {
     margin-bottom:0;
 }
 
-p
-{
+p {
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-form
-{
+form {
     margin: 0px;
 }
 
-textarea
-{
+textarea {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-input[type=checkbox],input[type=radio]
-{
+input[type=checkbox],input[type=radio] {
     border:0px;
     background-color: transparent;
     margin: 0px;
     vertical-align: bottom;
 }
 
-hr
-{
+hr {
     height:1px;
 }
 
-div.clear
-{
+div.clear {
     height: 0;
     clear: both;
     visibility: hidden;
 }
 
-th, td
-{
+th, td {
     border: none;
     padding: 0;
 }
 
-#header ul li
-{
+#header ul li {
     display:inline;
 }
 
-#unified_search_advanced_img{
+#unified_search_advanced_img {
     cursor:pointer;
 }
 
-#unified_search_advanced_div
-{
+#unified_search_advanced_div {
     height: 1px;
     position: relative;
     overflow: hidden;
@@ -174,60 +157,46 @@ th, td
     padding-top: 5px;
 }
 
-#unified_search_advanced_div .edit.view
-{
+#unified_search_advanced_div .edit.view {
     padding:6px 6px 6px 4px;
 }
 
-#unified_search_advanced_div .edit.view td
-{
+#unified_search_advanced_div .edit.view td {
     padding: 0 0.5em !important;
 }
 
-#themeColors img, #themeFonts img
-{
+#themeColors img, #themeFonts img {
     margin-bottom: 0;
 }
 
-#HideHandle
-{
+#HideHandle {
     padding-top: 5px;
     cursor: pointer;
 }
 
-#HideMenu
-{
+#HideMenu {
     visibility: hidden;
     position: absolute;
     z-index:100;
 }
 
-#leftHandle
-{
+#leftHandle {
     float:left;
     /*margin-top: 10px;*/
 }
 
 /* new record form */
-#newRecord form
-{
+#newRecord form {
     padding: 8px 8px 5px 8px;
 }
 
-#newRecord form input,
-#newRecord form select,
-#newRecord form textarea
-{
+#newRecord form input, #newRecord form select, #newRecord form textarea {
     margin-bottom: 4px;
     margin-top: 2px;
     max-width: 140px;
 }
 
-#newRecord form button,
-#newRecord form input[type=button],
-#newRecord form input[type=submit],
-#newRecord form input[type=reset]
-{
+#newRecord form button, #newRecord form input[type=button], #newRecord form input[type=submit], #newRecord form input[type=reset] {
     padding-top: 0px;
     vertical-align: bottom;
 }
@@ -239,74 +208,61 @@ th, td
     vertical-align: bottom;
 }
 
-#newRecord form .dataField
-{
+#newRecord form .dataField {
     padding-bottom: 3px;
 }
 
-#newRecord form #jscal_trigger
-{
+#newRecord form #jscal_trigger {
     margin-bottom: 4px;
     margin-top: 2px;
     vertical-align: bottom;
 }
 
-#newRecord form a:link,
-#newRecord form a:visited,
-#newRecord form a:hover
-{
+#newRecord form a:link, #newRecord form a:visited, #newRecord form a:hover {
     text-decoration: underline;
     border-bottom: 0px;
     padding-left: 0px;
 }
 
 /* module title */
-div.moduleTitle
-{
+div.moduleTitle {
     height:2em;
 }
 
-.moduleTitle img
-{
+.moduleTitle img {
     margin-right: 3px;
     margin-top: 3px;
     border: 0;
 }
 
-.moduleTitle h2
-{
+.moduleTitle h2 {
     display: block;
     float: left;
 }
 
-.moduleTitle h2 span.pointer
-{
+.moduleTitle h2 span.pointer {
     padding: 0px 8px;
     font-size: 18px;
     line-height: 16px;
 }
 
-.moduleTitle span.utils
-{
+.moduleTitle span.utils {
     display: block;
     float: right;
     margin-top: 10px;
 }
 
-.moduleTitle span.utils a img
-{
+.moduleTitle span.utils a img {
     margin-bottom: -3px;
 }
 
 /* EditView/projects -> grid  */
-.sqsSelectedSmartInputItem
-{
+.sqsSelectedSmartInputItem {
     background-color:#DEEFFF;
 }
 
 /* DetailView/EditView/ListView styles */
-.view, table.view
-{
+.view, table.view {
     margin-bottom:3px;
     margin-top:3px;
     padding:10px 6px 12px 10px;
@@ -314,16 +270,16 @@ div.moduleTitle
     width: 100%;
 }
 
-.view tr td input[type=checkbox]
-{
+.view tr td input[type=checkbox] {
     vertical-align: middle;
 }
 
-.collapsed .panelContainer, .collapsed .collapseLink, .expanded .expandLink { display:none; }
+.collapsed .panelContainer, .collapsed .collapseLink, .expanded .expandLink {
+    display:none;
+}
 
 /* DetailView styles */
-.detail h4
-{
+.detail h4 {
     font-weight: bold;
     margin: 0px;
     text-align: left;
@@ -334,8 +290,7 @@ div.moduleTitle
     margin-left: 0;
 }
 
-.detail tr td
-{
+.detail tr td {
     border: none;
     vertical-align: top;
     padding: 5px 6px 5px 6px;
@@ -343,36 +298,33 @@ div.moduleTitle
     text-align: left;
 }
 
-.detail tr td[scope=row]
-{
+.detail tr td[scope=row] {
     margin-top: 2px;
     margin-bottom: 10px;
     text-align: right;
     white-space:nowrap;
 }
 
-.detail tr td > li
-{
+.detail tr td > li {
     margin-left: 1.5em;
 }
 
 /* editviews top buttons */
-#EditView > table {overflow:auto;margin-bottom: 2px;}
+#EditView > table {
+    overflow:auto;margin-bottom: 2px;
+}
 
 /* editviews */
-.edit
-{
+.edit {
     padding:0 6px 12px 10px !important;
 }
 
-.edit > table
-{
+.edit > table {
     margin-bottom: 0px;
     padding: 3px 3px 3px 10px!important;
 }
 
-.edit h4
-{
+.edit h4 {
     text-align: left;
     margin-top: 0;
     padding-top:0;
@@ -380,35 +332,29 @@ div.moduleTitle
     padding-left:0;
 }
 
-.edit tr td
-{
+.edit tr td {
     font-weight: normal;
     padding: 0 !important;
     vertical-align: top;
     padding: 3px !important;
 }
 
-.edit tr td[scope=row]
-{
+.edit tr td[scope=row] {
     padding: 5px 5px 5px 7px !important;
     text-align: left;
     vertical-align: top;
 }
 
-.edit tr th
-{
+.edit tr th {
     padding: 5px 5px 5px 7px !important;
 }
 
-table#tabFormPagination td,  #tabFormPagination, #EditView > table#tabFormPagination.detail.view
-{
+table#tabFormPagination td,  #tabFormPagination, #EditView > table#tabFormPagination.detail.view {
     border-bottom: none;
     margin-bottom: 0;
 }
 
-.edit tr td table,
-.edit tr td table tr td
-{
+.edit tr td table, .edit tr td table tr td {
     padding: 3px 3px 3px 0 !important;
 }
 
@@ -417,85 +363,65 @@ table.edit.view {
 }
 
 /* search panel on top of list views ( extends .edit .view definition ) */
-.search
-{
+.search {
     margin: 0 0 4px 0 !important;
     padding:10px 6px 12px 10px;
 }
 
-.search > table
-{
+.search > table {
     padding: 0 !important;
     margin: 0;
 }
 
-.search td span
-{
+.search td span {
     color:#444444;
 }
 
-.search td input[type=text],
-.search td input[type=password],
-.search td select
-{
+.search td input[type=text], .search td input[type=password], .search td select {
     width: 150px !important;
 }
 
 /* Listview styles */
-.list, .edit .list
-{
+.list, .edit .list {
     padding: 0 !important;
     margin-bottom: 10px;
 }
 
 .list tr.pagination,
 .list tr.pagination td,
-.list tr.pagination td table
-{
+.list tr.pagination td table {
     padding: 0;
     border: 0;
     margin: 0;
 }
 
-.list tr.pagination td table td
-{
+.list tr.pagination td table td {
     padding: 3px 7px 3px 5px !important;
 }
 
-.list tr.pagination td table td button
-{
+.list tr.pagination td table td button {
     width: 25px;
 }
 
-.list tr.pagination td table td a:link,
-.list tr.pagination td table td a:visited,
-.reportGroupByDataChildTablelistViewThS1 a:link,
-.reportGroupByDataChildTablelistViewThS1 a:visited
-{
+.list tr.pagination td table td a:link, .list tr.pagination td table td a:visited, .reportGroupByDataChildTablelistViewThS1 a:link, .reportGroupByDataChildTablelistViewThS1 a:visited {
     font-weight: bold;
     text-decoration: none;
     padding: 2px 0px 3px 0px;
 }
 
-.list tr.pagination td table td a:hover,
-.reportGroupByDataChildTablelistViewThS1 a:hover
-{
+.list tr.pagination td table td a:hover, .reportGroupByDataChildTablelistViewThS1 a:hover {
     text-decoration: underline;
 }
 
-.list tr.pagination .buttons
-{
+.list tr.pagination .buttons {
     padding: 2px 2px 2px 0 !important;
 }
 
-.list tr.pagination #selectCountTop
-{
+.list tr.pagination #selectCountTop {
     width: 5em;
 }
 
-.td_alt, .list tr th, .list tr td[scope=col],
-.edit .list tr th, .edit .list tr td[scope=col]
-{
+.td_alt, .list tr th, .list tr td[scope=col], .edit .list tr th, .edit .list tr td[scope=col] {
     font-weight: bold;
     text-align: left;
     padding: 4px 5px 4px 5px !important;
@@ -504,55 +430,40 @@ table.edit.view {
     white-space:nowrap;
 }
 
-.list tr td
-{
+.list tr td {
     vertical-align: middle;
     padding: 3px 8px 5px 5px !important;
 }
 
-.list tr.pagination td
-{
+.list tr.pagination td {
     padding: 0 !important;
 }
 
-.list tr td.odd
-{
+.list tr td.odd {
     padding: 3px 8px 5px 5px;
     vertical-align: middle;
 }
 
-.list th a:link,
-.list th a:visited,
-.list td[scope=col] a:link,
-.list td[scope=col] a:visited
-{
+.list th a:link, .list th a:visited, .list td[scope=col] a:link, .list td[scope=col] a:visited {
     font-weight: bold;
     text-decoration: none;
 }
 
-.list th a:hover,
-.list td[scope=col] a:hover
-{
+.list th a:hover, .list td[scope=col] a:hover {
     text-decoration: underline;
 }
 
-.list tr.oddListRowS1 td,
-.list tr.evenListRowS1 td
-{
+.list tr.oddListRowS1 td, .list tr.evenListRowS1 td {
     white-space: normal;
     word-wrap: break-word;
 }
 
-.list tr.oddListRowS1 td[nowrap],
-.list tr.evenListRowS1 td[nowrap]
-{
+.list tr.oddListRowS1 td[nowrap], .list tr.evenListRowS1 td[nowrap] {
     white-space: nowrap;
     word-wrap: normal;
 }
 
-.list td a.listViewTdToolsS1,
-.list tr td.nowrap
-{
+.list td a.listViewTdToolsS1, .list tr td.nowrap {
     white-space: nowrap;
     word-wrap: normal;
 }
@@ -563,210 +474,164 @@ table.edit.view {
 }
 
 /* style for page content tables */
-.other
-{
+.other {
     border: none !important;
     margin-bottom: 20px !important;
     padding: 0 !important;
     width: 100%;
 }
 
-.other td
-{
+.other td {
     font-weight: normal;
     padding: 4px 10px 4px 6px;
     vertical-align: middle;
 }
 
-.other td[scope=row]
-{
+.other td[scope=row] {
     padding: 4px 6px 4px 6px;
     white-space:nowrap;
 }
 
-.other .edit td
-{
+.other .edit td {
     background: transparent !important;
 }
 
-.other .edit
-{
+.other .edit {
     margin-top: 0;
 }
 
 /* Special for Campaigns Wizard */
-.other td.edit #wizard td
-{
+.other td.edit #wizard td {
     background: transparent;
 }
 
-.other td.edit #wizard h4
-{
+.other td.edit #wizard h4 {
     padding-left: 0;
     margin-top: 0;
 }
 
-#wizard td
-{
+#wizard td {
     white-space: normal;
     word-wrap: break-word;
 }
 
 /* detail view */
-.detail.view,
-.detail table,
-table.detail
-{
+.detail.view, .detail table, table.detail {
     padding: 0;
     width: 100%;
 }
 
-.detail tr.pagination td
-{
+.detail tr.pagination td {
     padding-top: 4px;
     text-align: right;
     vertical-align: middle;
 }
 
-.detail table tr.pagination td
-{
+.detail table tr.pagination td {
     padding-bottom: 4px;
 }
 
-.detail td > table tr td
-{
+.detail td > table tr td {
     border: none;
 }
 
 /* Upgrade Wizard*/
-.small{
+.small {
     width:100%;
 }
 
-.small table{
+.small table {
     width:auto;
 }
 
-.small tr td table{
+.small tr td table {
     background-color:transparent;
 }
 
-.small tr td[scope=row] table tr td, .small tr td[scope=row] table tr th{
+.small tr td[scope=row] table tr td, .small tr td[scope=row] table tr th {
     background-color:transparent;
 }
 
-.small tr td table tr th{
+.small tr td table tr th {
     text-align:left;
     border-bottom:none;
 }
 
-/* for report wizard */
-.reportwizard
-{
-    padding: 10px 6px 12px 10px;
-}
-
-.reportwizard > table
-{
-    padding: 0 !important;
-}
-
-.reportwizard tr td
-{
-    vertical-align: middle;
-}
-
 /* for subpanel tabs */
-ul.tablist, ul.subpanelTablist
-{
+ul.tablist, ul.subpanelTablist {
     list-style: none;
     padding: 3px 0;
     margin: 0;
 }
 
-ul.tablist li, ul.subpanelTablist li
-{
+ul.tablist li, ul.subpanelTablist li {
     list-style: none;
     margin: 0;
     display: inline;
 }
 
-ul.tablist li a, ul.subpanelTablist li a
-{
+ul.tablist li a, ul.subpanelTablist li a {
     padding: 3px 8px;
     margin: 0px;
     border-bottom: none;
     text-decoration: none;
 }
 
-ul.subpanelTablist #addPageItem a, ul.subpanelTablist #addPageItem a:hover
-{
+ul.subpanelTablist #addPageItem a, ul.subpanelTablist #addPageItem a:hover {
     border: none;
     background: transparent;
     text-decoration: none;
 }
 
-ul.tablist li a:link, ul.tablist li a:visited, ul.subpanelTablist li a:link, ul.subpanelTablist li a:visited
-{
+ul.tablist li a:link, ul.tablist li a:visited, ul.subpanelTablist li a:link, ul.subpanelTablist li a:visited {
     text-decoration: none;
 }
 
-.subpanelTabForm
-{
+.subpanelTabForm {
     padding: 15px 0px 0 0px;
 }
 
-table.subpanelTabForm td
-{
+table.subpanelTabForm td {
     padding-bottom: 2px;
     padding-top: 0;
 }
 
-.subpanelTabForm p
-{
+.subpanelTabForm p {
     margin-bottom:0;
 }
 
-.subpanelTabForm h3
-{
+.subpanelTabForm h3 {
     padding-left: 3px;
 }
 
-.subpanelTabForm .h3Row
-{
+.subpanelTabForm .h3Row {
     padding-top: 2px;
     margin-top: 0;
 }
 
-.subpanelTabForm
-{
+.subpanelTabForm {
     margin-bottom: 10px;
 }
 
-#groupTabs
-{
+#groupTabs {
     margin-top: 20px;
 }
 
-#groupTabs li, #searchTabs li
-{
+#groupTabs li, #searchTabs li {
     margin:0 -3px 0 0;
 }
 
-table.subpanelTabForm
-{
+table.subpanelTabForm {
     border-top: 0px none;
     margin-bottom: 4px;
 }
 
-.search_form
-{
+.search_form {
     overflow: visible;
     text-align: left;
 }
 
-.search_form .view
-{
+.search_form .view {
     width:99%;
     margin: 0 0 3px;
     padding-right:0 !important;
@@ -775,49 +640,46 @@ table.subpanelTabForm
 }
 /* sitemap */
 
-#sitemap
-{
+#sitemap {
     width: 650px;
     display:none;
     z-index:9999;
     margin-right:1em;
     margin-top:2.5em;
 }
-#sitemap .edit.view
-{
+
+#sitemap .edit.view {
     border: 2px solid;
     padding: 6px 6px 6px 16px;
 }
-#sitemap a:link, #sitemap a:visited
-{
+
+#sitemap a:link, #sitemap a:visited {
     text-decoration:none;
 }
-#sitemap a:hover, #sitemap h4 a:hover
-{
+
+#sitemap a:hover, #sitemap h4 a:hover {
     text-decoration:underline;
 }
-#sitemap h4 a:link, #sitemap h4 a:visited
-{
+
+#sitemap h4 a:link, #sitemap h4 a:visited {
 
 }
-#sitemap ul
-{
+
+#sitemap ul {
     margin-top: 5px !important;
     margin-left: 5px !important;
 }
-#sitemap ul li
-{
+
+#sitemap ul li {
     margin-bottom: 5px !important;
     display: list-item;
 }
 
 /* sitemap link div */
-#sitemapLink span
-{
+#sitemapLink span {
     cursor:pointer;
 }
-#sitemapLink span img
-{
+#sitemapLink span img {
     cursor:pointer;
     margin-left: 2px;
 }
@@ -828,8 +690,7 @@ table.subpanelTabForm
 }
 
 /* Footer styles */
-footer
-{
+footer {
     border-top:1px solid #cccccc;
     bottom:0;
     position:relative;
@@ -840,16 +701,6 @@ footer
 #copyrightbuttons {
     max-width:400px !important;
     margin:0 auto;
-}
-.companyLogo
-{
-    float:left;
-    padding: 0 10px 0 0;
-}
-
-.companyLogo img {
-    width:100%;
-    height:100%;
 }
 
 div#responseTime {
@@ -863,19 +714,17 @@ div#responseTime {
     margin:0 auto;
 }
 
-#themePicker, #langPicker
-{
+#themePicker, #langPicker {
     text-align: center;
     margin-bottom: 0.5em;
 }
 
 /* Scheduler Styles */
-#scheduler
-{
+#scheduler {
     margin-top: 5px;
 }
-#scheduler .schedulerDiv
-{
+
+#scheduler .schedulerDiv {
     color: #000000;
     text-align: left;
     width: 100%;
@@ -883,65 +732,64 @@ div#responseTime {
     border-collapse: collapse;
     border-bottom: 1px solid #999;
 }
-#scheduler .schedulerDiv table
-{
+
+#scheduler .schedulerDiv table {
     width: 100%;
     border-collapse: collapse;
 }
-#scheduler .schedulerDiv table tr td
-{
+
+#scheduler .schedulerDiv table tr td {
     height: 18px;
     border: 1px solid #dddddd;
 }
-#scheduler .schedulerDiv table tr.schedulerTimeRow td
-{
+
+#scheduler .schedulerDiv table tr.schedulerTimeRow td {
     border-left: 0;
 }
-#scheduler .schedulerDiv table tr.schedulerTimeRow th[scope=col]
-{
+
+#scheduler .schedulerDiv table tr.schedulerTimeRow th[scope=col] {
     border-left:1px solid #DDDDDD;
     padding-left:4px;
 }
-#scheduler .schedulerDiv table tr.schedulerAttendeeRow td
-{
+
+#scheduler .schedulerDiv table tr.schedulerAttendeeRow td {
     background-color: #eeeeee;
     width: 15px;
 }
-#scheduler .schedulerDiv table tr.schedulerAttendeeRow td[scope=row]
-{
+
+#scheduler .schedulerDiv table tr.schedulerAttendeeRow td[scope=row] {
     overflow: hidden;
     padding-left: 4px;
     width: 125px;
     background: transparent;
     border-left: 0;
 }
-#scheduler .schedulerDiv table tr.schedulerAttendeeRow td.schedulerSlotCellStartTime
-{
+
+#scheduler .schedulerDiv table tr.schedulerAttendeeRow td.schedulerSlotCellStartTime {
     border-left: 4px solid #75AF4F !important;
     background-color:#FFFFFF;
 }
-#scheduler .schedulerDiv table tr.schedulerAttendeeRow td.schedulerSlotCellEndTime
-{
+
+#scheduler .schedulerDiv table tr.schedulerAttendeeRow td.schedulerSlotCellEndTime {
     border-left: 4px solid #ff0000 !important;
 }
-#scheduler .schedulerDiv table tr.schedulerAttendeeRow td.schedulerAttendeeDeleteCell
-{
+
+#scheduler .schedulerDiv table tr.schedulerAttendeeRow td.schedulerAttendeeDeleteCell {
     background: transparent;
     border-left: 1px solid #dddddd;
     padding-left: 4px;
 }
-#scheduler .schedulerInvitees
-{
+
+#scheduler .schedulerInvitees {
     margin-top: 1em;
 }
-#scheduler .schedulerInvitees .tabForm
-{
+
+#scheduler .schedulerInvitees .tabForm {
     margin-bottom: 0;
 }
 
 /* calendar module styles */
-.monthFooter td
-{
+.monthFooter td {
     padding-left: 7px;
     padding-right: 7px;
     padding-top: 3px;
@@ -949,93 +797,94 @@ div#responseTime {
     border-top: 1px solid;
     border-bottom: 2px solid;
 }
-.monthHeader
-{
+
+.monthHeader {
     padding: 6px 5px 4px 3px;
     margin-top: 10px;
     vertical-align: middle;
     background-repeat: repeat-x;
     background-position: top;
 }
-.monthHeader td
-{
+
+.monthHeader td {
     padding-left: 5px;
 }
-.monthViewDayHeight
-{
+
+.monthViewDayHeight {
     height: 100px;
 }
-.monthViewDayHeight td[scope=row]
-{
+
+.monthViewDayHeight td[scope=row] {
     padding: 5px;
     text-align:center;
 }
-.monthViewDayHeight td
-{
+
+.monthViewDayHeight td {
     vertical-align: top;
     padding: 3px;
     text-align: right !important;
 }
-.yearViewDayHeight
-{
+
+.yearViewDayHeight {
     height: 40px;
 }
-.monthCalBodyDayItem
-{
+
+.monthCalBodyDayItem {
     margin: 7px 0px 7px 0px;
     padding: 5px 0px 8px 0px;
     border-top: 1px solid;
 }
-.monthCalBodyDayItem td
-{
+
+.monthCalBodyDayItem td {
     vertical-align: top;
 }
-.monthCalBodyDayItem td img
-{
+
+.monthCalBodyDayItem td img {
     padding-right: 3px;
     vertical-align: top;
 }
-.monthCalBody th
-{
+
+.monthCalBody th {
     vertical-align: top;
     padding: 7px;
     height: 20px;
     font-weight: normal;
 }
-.monthCalBodyTH th
-{
+
+.monthCalBodyTH th {
     padding: 5px !important;
     border-bottom: 1px solid;
     font-weight: bold;
 }
-.monthCalBody td
-{
+
+.monthCalBody td {
     padding: 5px;
     text-align: left;
 }
+
 .monthCalBody td div table td {
     text-align: left!important;
 }
-.monthCalBody
-{
+
+.monthCalBody {
     padding: 0;
 }
-.monthCalBody td.yearCalBody
-{
+
+.monthCalBody td.yearCalBody {
     padding: 0;
     margin: 0;
 }
-.yearCalBodyMonth
-{
+
+.yearCalBodyMonth {
     padding:5px 0 0 0 !important;
     text-align:center !important;
 }
-.yearCalBodyMonth #daily_cal_table
-{
+
+.yearCalBodyMonth #daily_cal_table {
     margin-top: 5px;
 }
-.yearCalBodyMonth > a
-{
+
+.yearCalBodyMonth > a {
     font-weight: bold;
     margin: 0px;
     padding: 5px;
@@ -1043,12 +892,12 @@ div#responseTime {
     margin-bottom: 5px;
     text-decoration: none !important;
 }
-.yearCalBodyMonth > a:hover
-{
+
+.yearCalBodyMonth > a:hover {
     text-decoration: underline;
 }
-.calSharedUser
-{
+
+.calSharedUser {
     height: 20px;
     padding-top: 5px;
     padding-left: 8px;
@@ -1058,17 +907,16 @@ div#responseTime {
 }
 
 /* js calendar styles */
-.calendar
-{
+.calendar {
     border: 1px solid #999;
 }
-.calendar .button
-{
+
+.calendar .button {
     background-color: #eee;
     background-image: none;
 }
-.calendar .combo
-{
+
+.calendar .combo {
     border-top: 1px solid #f1f1f1;
     border-right: 1px solid #999;
     border-bottom: 1px solid #999;
@@ -1076,309 +924,139 @@ div#responseTime {
     background: #eee;
     padding: 0px;
 }
-.calendar .combo .active
-{
+
+.calendar .combo .active {
     background: #eee;
 }
-.calendar .combo .hilite
-{
+
+.calendar .combo .hilite {
     background: #f8f7f7;
     padding: 1px 4px 1px 4px;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: #9e9e9e;
 }
-.calendar .combo .label,
-.calendar .combo .label-IEfix
-{
+
+.calendar .combo .label, .calendar .combo .label-IEfix {
     text-align: left;
     padding: 2px 4px 2px 4px;
 }
-.calendar .nav
-{
+
+.calendar .nav {
     background: transparent no-repeat 100% 100%;
 }
-.calendar table
-{
+
+.calendar table {
     background: #eee;
 }
-.calendar table .wn
-{
+
+.calendar table .wn {
     background: #eeeeee;
     border-right: 1px solid #ccc;
 }
-.calendar tbody .day
-{
+
+.calendar tbody .day {
     background: #fff;
     text-align: right;
     padding: 2px 4px 2px 2px;
 }
+
 .calendar tbody .day.othermonth.oweekend
 {
     color: #666;
 }
-.calendar tbody .emptycell
-{
+
+.calendar tbody .emptycell {
     display: hidden;
 }
-.calendar tbody .rowhilite td,
-.calendar tbody .rowhilite td.weekend
-{
+
+.calendar tbody .rowhilite td, .calendar tbody .rowhilite td.weekend {
     background: #f6f6f6;
 }
-.calendar tbody .rowhilite td.wn
-{
+
+.calendar tbody .rowhilite td.wn {
     background: #fff;
 }
+
 .calendar tbody td.hilite,
-.calendar tbody td.weekend.hilite
-{
+.calendar tbody td.weekend.hilite {
     background: #f8f7f7;
     border-color: #9e9e9e;
 }
-.calendar tbody td.selected
-{
+
+.calendar tbody td.selected {
     border-color: #666;
     background: #eee;
 }
-.calendar tbody td.today
-{
+
+.calendar tbody td.today {
     color: #666;
 }
-.calendar tbody td.weekend
-{
+
+.calendar tbody td.weekend {
     color: #666;
     background: #f9f9f9;
 }
-.calendar tfoot .ttip
-{
+
+.calendar tfoot .ttip {
     background: #e8f0f4;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #ccc;
     background: #dfdfdf;
     color: #000;
 }
-.calendar thead .hilite
-{
+
+.calendar thead .hilite {
     border-bottom: 1px solid #fff;
     border-left: 1px solid #aaa;
     border-top: 1px solid #aaa;
     border-right: 1px solid #fff;
 }
-.calendar thead .name
-{
+
+.calendar thead .name {
     background: #dddddd;
     border-color: #cccccc;
 }
-.calendar thead .title
-{
+
+.calendar thead .title {
     padding: 3px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #cccccc;
     color: #000;
     background: #f8f7f7;
 }
-.calendar thead .weekend
-{
+
+.calendar thead .weekend {
     color: #000;
     font-weight: bold;
 }
+
 .listViewCalCurrentAppt {
     background-color: #75AF4F;
 }
+
 .listViewCalOtherAppt {
     background-color: #4D5EAA;
 }
+
 .listViewCalConflictAppt {
     background-color: #AA4D4D;
 }
+
 .listViewCalCurrentApptLgnd {
     background-color: #75AF4F;
     border: 1px solid #444444;
 }
+
 .listViewCalOtherApptLgnd {
     background-color: #4D5EAA;
     border: 1px solid #444444;
 }
+
 .listViewCalConflictApptLgnd {
     background-color: #AA4D4D;
     border: 1px solid #444444;
 }
-
-/** report styles **/
-table.reportlistViewRC{
-    /* this definition should be exactly the same as .listViewThS1 */
-    background:Black;
-}
-
-table.reportlistView{
-    /* this definition should be exactly the same as .listViewThS1 */
-    background:Black;
-}
-
-.reportlistViewThS1 {
-    font-size: 13px;
-    font-weight: bold;
-    text-align: left;
-    padding: 4px 5px 4px 5px;
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    background:Gainsboro;
-}
-
-.reportevenListRowS1, .reportoddListRowS1 {
-    font-size: 12px;
-    padding-left: 5px;
-    padding-right: 8px;
-    padding-bottom: 5px;
-    padding-top: 3px;
-    vertical-align: middle;
-    background:white;
-}
-
-.reportlistViewPaginationTdS1 {
-    border: none;
-    vertical-align: top;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 12px;
-    background:white;
-}
-
-/* These are for summation report */
-.reportViewTable {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    background:White;
-}
-.reportGroupViewTable {
-    border-left: 1px solid Black;
-    border-top: 1px solid Black;
-    background:LightGrey;
-}
-.reportGroup1ByTable {
-    font-size: 15px;
-    border-left: none;
-    border-right: 1px solid Black;
-    border-bottom: 1px solid Black;
-    background:LightGrey;
-}
-.reportGroupNByTable {
-    font-size: 13px;
-    border-left: none;
-    border-right: 1px solid Black;
-    border-bottom: none;
-    background:White;
-}
-.reportGroupByDataTableHeader {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-    background:White;
-}
-.reportDataChildtablelistView {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-    background:Black;
-}
-table.reportDataChildtablelistView td {
-    border-color: #ccc;
-    background: white;
-    padding:4px 5px;
-}
-.reportGroupByDataChildTablelistViewThS1 {
-    font-size: 11px;
-    font-weight: bold;
-    text-align: left;
-    padding: 4px 5px 4px 5px;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-    background:White;
-}
-.reportGroupByDataEvenListRowS1, .reportGroupByDataOddListRowS1 {
-    font-size: 12px;
-    padding-left: 5px;
-    padding-right: 8px;
-    padding-bottom: 5px;
-    padding-top: 3px;
-    vertical-align: middle;
-    background:white;
-}
-.reportGroup1ByTableEvenListRowS1 {
-    font-weight: bold;
-    font-size: 14px;
-    padding-left: 5px;
-    padding-right: 8px;
-    padding-bottom: 5px;
-    padding-top: 3px;
-    vertical-align: middle;
-    background:LightGrey;
-    text-align: left;
-}
-.reportGroupNByTableEvenListRowS1 {
-    font-weight: bold;
-    font-size: 12px;
-    padding-left: 5px;
-    padding-right: 8px;
-    padding-bottom: 5px;
-    padding-top: 3px;
-    vertical-align: middle;
-    background:LightGrey;
-    text-align: left;
-}
-.reportGroupBySpaceTableView {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    background:White;
-}
-.reportGroupByDataTableHeaderEmptyCell {
-    border-bottom: 1px solid Black;
-    border-top: 1px solid Black;
-    background:White;
-}
-.reportevenListRowS1,
-.reportoddListRowS1,
-.reportGroupByDataEvenListRowS1,
-.reportGroupByDataOddListRowS1,
-.reportGroupByDataMatrixEvenListRowS1,
-.reportGroupByDataMatrixEvenListRowS2,
-.reportGroupByDataMatrixEvenListRowS3,
-.reportGroupByDataMatrixEvenListRowS4
-{
-    padding-bottom: 4px;
-    padding-top: 2px;
-}
-
-/* End of summation report classes */
-
-/* Start of Matrix Report Class */
-.reportlistView {
-    border-top: 1px solid #000;
-    border-left: 1px solid #000;
-}
-table.reportlistView td, table.reportlistView th {
-    background: #fff;
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;
-    color: #000;
-    padding: 4px;
-    text-align: center;
-}
-table.reportlistView th, .reportlistView .reportlistViewMatrixRightEmptyData, .reportlistView .reportlistViewMatrixRightEmptyData1 {
-    background: #dcdcdc;
-    font-weight: bold;
-}
-
-/* End of matrix report classes */
 
 /* for overlib js library */
 .olCapFontClass {
@@ -1386,30 +1064,37 @@ table.reportlistView th, .reportlistView .reportlistViewMatrixRightEmptyData, .r
     color: #444;
     background-color: #dfdfdf;
 }
+
 .olCapFontClass A {
     color: #dfdfdf;
 }
+
 .olFgClass td, #forecastsWorksheet .olBgClass td.olFgClass {
     background-color: #fff;
     padding: 5px 7px 7px 10px !important;
     line-height: 18px;
 }
+
 .olCgClass td, #forecastsWorksheet .olBgClass td.olCgClass {
     border-bottom: 2px solid #ddd;
     background-color: #f6f6f6;
     padding: 5px 3px 3px 10px !important;
 }
+
 .olCgClass {
     padding: 0px;
     border: 0px;
 }
+
 .olBgClass {
     background-color: #ddd;
     padding: 2px !important;
 }
+
 #forecastsWorksheet .olBgClass td {
     padding: 0 !important;
 }
+
 .olCloseFontClass {
     padding-bottom: 1px;
     text-align: right;
@@ -1417,23 +1102,22 @@ table.reportlistView th, .reportlistView .reportlistViewMatrixRightEmptyData, .r
 }
 
 /* acl role colors */
-.aclAll
-{
+.aclAll {
     color: #008000;
     font-weight: bold;
 }
-.aclOwner
-{
+
+.aclOwner {
     color: #000000;
     font-weight: bold;
 }
-.aclNone
-{
+
+.aclNone {
     color: #FF0000;
     font-weight: bold;
 }
-.aclEnabled
-{
+
+.aclEnabled {
     color: #008000;
     font-weight: bold;
 }
@@ -1442,13 +1126,13 @@ table.reportlistView th, .reportlistView .reportlistViewMatrixRightEmptyData, .r
     color: #FF0000;
     font-weight: bold;
 }
-.aclAdmin
-{
+
+.aclAdmin {
     color: #0000FF;
     font-weight: bold;
 }
-.aclNormal
-{
+
+.aclNormal {
     color: #008000;
     font-weight: bold;
 }
@@ -1466,16 +1150,8 @@ li.noBullet {
     margin: 0;
 }
 
-/* commented out table styles
-table.tabForm td ul li {
-    list-style-type: none;
-    margin-bottom: 10px;
-}
-*/
-
 /* for subpanels */
-#MorePanelHandle
-{
+#MorePanelHandle {
     cursor: pointer;
     display: inline;
     margin-left: 2px;
@@ -1519,86 +1195,83 @@ table.tabForm td ul li {
     background-color:#eeeeee;
     color:#980000;
 }
+
 /* misc font displays */
-.todaysTask
-{
+.todaysTask {
     color: #FF7800
 }
-.overdueTask
-{
+
+.overdueTask {
     color: #ff0000;
 }
-.required,
-.error
-{
+
+.required, .error {
     color: #ff0000;
 }
-.success
-{
+
+.success {
     color: #00ee00;
 }
-.rssItemDate
-{
+
+.rssItemDate {
     color: #666666;
 }
-.date
-{
+
+.date {
     font-size: 13px;
     font-weight: bold;
     border-bottom: 1px solid;
     padding-right: 10px;
 }
-.dateFormat
-{
+
+.dateFormat {
     font-weight: normal;
     font-style: italic;
 }
+
 /* list view page numbers */
 .pageNumbers {
     padding-right: 3px;
     padding-left: 3px;
 }
+
 .contentBox {
     border-top: 1px solid #DDD;
     border-bottom: 1px solid #DDD;
     padding: 0px 10px 0px 0px;
     margin: 10px 0 10px 0;
 }
-.contentBox td
-{
+
+.contentBox td {
     padding-top: 0;
 }
 
 /* for team notices and my portal dashlets */
-.teamNoticeBox
-{
+.teamNoticeBox {
     border: 1px solid;
     padding: 0;
     background: #fff;
     width:100%;
 }
-.teamNoticeText
-{
+
+.teamNoticeText {
     padding: 0px 10px 0px 10px;
 }
 
 /* to force border to display on tiny-mce controls */
-.mceToolbarTop
-{
+.mceToolbarTop {
     border-bottom:1px solid #CCCCCC !important;
 }
 
-#dashletCtrls
-{
+#dashletCtrls {
     float: right;
 }
 
-ul#dashletCategories li a:link, ul#dashletCategories li a:visited
-{
+ul#dashletCategories li a:link, ul#dashletCategories li a:visited {
     background: #eee;
 }
-ul#dashletCategories li a.current, ul#dashletCategories li a.current:hover
-{
+
+ul#dashletCategories li a.current, ul#dashletCategories li a.current:hover {
     color: #444;
     background: transparent;
 }
@@ -1606,122 +1279,107 @@ ul#dashletCategories li a.current, ul#dashletCategories li a.current:hover
 ul#dashletCategories li a:link:hover {
     border:1px solid #ccc;
 }
-#moduleDashlets h3,#chartDashlets h3,#toolsDashlets h3
-{
+
+#moduleDashlets h3,#chartDashlets h3,#toolsDashlets h3 {
     margin-top: 13px;
 }
-#dashletSearch table tr td input[type=button]
-{
+
+#dashletSearch table tr td input[type=button] {
     vertical-align: top;
 }
+
 .x-dlg-btns button.x-btn-text:hover,
-.x-dlg-btns .x-btn-focus button.x-btn-text
-{
+.x-dlg-btns .x-btn-focus button.x-btn-text {
     color: #000;
 }
 
 /* Bug 27478 - IE Hacks to make sure username/password boxes on login page are same length */
-td.edit.view td
-{
+td.edit.view td {
     text-align: left;
 }
-td.edit.view td[align=right]
-{
+
+td.edit.view td[align=right] {
     text-align: right;
 }
 
 /* if we have horizontal padding anywhere in the table, it will break the rollup tree */
 #forecastsWorksheet  tbody  tr  td,
-#forecastsWorksheet  tr  td
-{
+#forecastsWorksheet  tr  td {
     padding: 3px 0px 5px 0px !important;
 }
-#forecastsWorksheet  tr.pagination  td
-{
+
+#forecastsWorksheet  tr.pagination  td {
     padding: 0 !important;
 }
-#forecastsWorksheet tr.pagination td table td
-{
+
+#forecastsWorksheet tr.pagination td table td {
     padding:3px 7px 3px 5px !important;
 }
+
 /* for forecasts worksheet containing table ( overrides .list .view style ) */
-#forecastsWorksheet > tbody > tr > td,
-#forecastsWorksheet > tr > td,
-#forecastsWorksheet #activetimeperiods  tr  td
-{
+#forecastsWorksheet > tbody > tr > td, #forecastsWorksheet > tr > td, #forecastsWorksheet #activetimeperiods  tr  td {
     padding: 0  ! important;
     vertical-align: top;
 }
 
-/* help styles */
-.helpButton, .helpShortcut
-{
-    font-weight: bold;
-}
-
 /* fixes email setting issues */
-#tab_general > form > table,
-#tab_general > form > table.detail th,
-#tab_accounts > table,
-#tab_accounts > table.detail th
-{
+#tab_general > form > table, #tab_general > form > table.detail th, #tab_accounts > table, #tab_accounts > table.detail th {
     border: 0;
 }
-#tab_accounts .detail.view .edit.view
-{
+
+#tab_accounts .detail.view .edit.view {
     margin-top: 0;
 }
-#tab_accounts #ieSelect > table, #ieAccount > table, #ieAccount > table td table
-{
+
+#tab_accounts #ieSelect > table, #ieAccount > table, #ieAccount > table td table {
     padding: 0pt ! important;
     border-collapse: collapse;
 }
-#importDialogContent
-{
+
+#importDialogContent {
     overflow: hidden;
 }
-#importDialogContent #importDiv
-{
+
+#importDialogContent #importDiv {
     margin-top: 0;
 }
 
 /* override some of the detail view styles for show more detail option (KBDocument detail view)*/
-.detail td.subdetail{
+.detail td.subdetail {
     padding:0px;
     border-bottom:medium none;
 }
-.detail td.subdetail table tr td{
+
+.detail td.subdetail table tr td {
     padding: 5px 6px;
 }
+
 /* override some of the detail view styles for the import options dialog */
-#importOptions td
-{
+#importOptions td {
     padding: 5px 6px;
 }
-#importOptions table
-{
+
+#importOptions table {
     border-collapse:collapse;
 }
-#importOptions #chooser_choose_index_text,
-#importOptions #chooser_ignore_index
-{
+
+#importOptions #chooser_choose_index_text, #importOptions #chooser_ignore_index {
     background: white;
     border: 0;
     text-align: left;
 }
 
 /* login page*/
-.login table tr td
-{
+.login table tr td {
     padding:0px !important;
     text-align:left;
 }
-.login
-{
+
+.login {
     padding:10px 6px 12px 10px !important;
 }
-.login .login_more
-{
+
+.login .login_more {
     text-align:right;
 }
 
@@ -1729,75 +1387,61 @@ td.edit.view td[align=right]
     display:none;
 }
 
-#popup_query_form
-{
+#popup_query_form {
     padding-left:0;
     padding-right:0;
 }
 
-.emailaddresses tr td[scope=row]
-{
+.emailaddresses tr td[scope=row] {
     padding-left:0 !important;
     padding-top:0 !important;
 }
 
 /*System Settings*/
-#container_upload
-{
+#container_upload {
     margin-top:7px;
 }
 
 /* Subpanel links */
-.subTabs td
-{
-
+.subTabs td {
     padding: 0 0.25em;
 }
 
-.sugarFeedDashlet
-{
+.sugarFeedDashlet {
     overflow:auto;
     max-height:375px;
 }
 
-.sugarFeedDashlet td.list th, .sugarFeedDashlet td.list td[scope=col]
-{
+.sugarFeedDashlet td.list th, .sugarFeedDashlet td.list td[scope=col] {
     display:none;
 }
 
-.sugarFeedDashlet tr
-{
+.sugarFeedDashlet tr {
     height:auto;
 }
 
-.sugarFeedDashlet .byLineBox
-{
+.sugarFeedDashlet .byLineBox {
     width:100%;
     position:relative;
     overflow: hidden;
 }
 
-.sugarFeedDashlet .byLineBox .byLineLeft
-{
+.sugarFeedDashlet .byLineBox .byLineLeft {
     float:left;
 }
 
-.sugarFeedDashlet .byLineBox .byLineRight
-{
+.sugarFeedDashlet .byLineBox .byLineRight {
     display:inline;
     float:right;
     font-size:79%;
 }
 
-iframe.teamNoticeBox
-{
+iframe.teamNoticeBox {
     width:99%;
     padding:0;
 }
 
-.loading-indicator
-{
-
+.loading-indicator {
     background-image:url('../default/ext/resources/images/default/grid/loading.gif');
     background-repeat:no-repeat;
     background-position:left;
@@ -1806,23 +1450,20 @@ iframe.teamNoticeBox
     margin:3px;
 }
 
-.x-sqs-list
-{
+.x-sqs-list {
     border:1px solid #d0d0d0;
     background:#d0d0d0;
     overflow:hidden;
 }
 
-.x-sqs-list-inner
-{
+.x-sqs-list-inner {
     overflow:auto;
     background:#FFF;
     position:relative;
     overflow-x:hidden;
 }
 
-.x-sqs-list-item
-{
+.x-sqs-list-item {
     font:normal 12px tahoma,arial,helvetica,sans-serif;
     border:1px solid #fff;
     white-space:nowrap;
@@ -1831,34 +1472,29 @@ iframe.teamNoticeBox
     padding:1px;
 }
 
-.x-sqs-list .x-sqs-selected
-{
+.x-sqs-list .x-sqs-selected {
     border:1px dotted #f6f6f6!important;
     background:#d0d0d0;
     cursor:pointer;
 }
-embed
-{
+
+embed {
     background: transparent;
 }
 
-#massupdate_form
-{
+#massupdate_form {
     margin-top: 20px;
 }
 
-#massupdate_form .buttons
-{
+#massupdate_form .buttons {
     padding-bottom: 2px;
 }
 
 /* Bug 32603 - Fixes missing center line for KB Admin */
-#selected_directory_children
-{
+#selected_directory_children {
     border-left: 1px solid;
     padding: 3px;
 }
-
 
 .dashletPanel .hd .hd-center .dashletToolSet a{
     padding: 0 2px;
@@ -1878,15 +1514,16 @@ embed
     display: block;
     background-color: #fff;
 }
+
 div.confirmTable {
     overflow: auto;
     width: 1056px;
     position: relative;
     margin-bottom: 20px;
 }
+
 /* Bug 19728 - Email Templates detail view is different with edit view */
-#html_div p
-{
+#html_div p {
     margin: 12px 0;
 }
 
@@ -1903,17 +1540,17 @@ div.confirmTable {
     background-position: top;
     background-color: #fff;
 }
-.h3Row td
-{
+
+.h3Row td {
     padding: 4px 5px 3px 3px;
 }
-h4, h5
-{
+
+h4, h5 {
     margin-bottom: 2px;
     padding-left: 4px;
 }
-hr
-{
+
+hr {
     border: 0;
     border-top: 1px solid #999;
     background-color: #999;
@@ -1922,8 +1559,8 @@ hr
     margin: 1em 0;
     clear: both;
 }
-a:link, a:visited, a:hover
-{
+
+a:link, a:visited, a:hover {
     text-decoration: underline;
 }
 
@@ -1954,19 +1591,17 @@ a:link, a:visited, a:hover
     background-image: url('../../../../index.php?entryPoint=getImage&imageName=slider_button_less.png');
 }
 
-#sitemapLink
-{
+#sitemapLink {
     padding-top: 3px;
 }
-#sitemapLinkSpan
-{
+
+#sitemapLinkSpan {
     border-right:1px solid #999;
     border-right:none;
 }
 
 /* DetailView/EditView/ListView styles */
-.view
-{
+.view {
     border-bottom:1px solid;
     border-top:2px solid;
 }
@@ -1995,92 +1630,82 @@ table.detail
 */
 
 /* Listview styles */
-.list
-{
+.list {
     border: 1px solid;
 }
-.list tr.pagination td table td
-{
+
+.list tr.pagination td table td {
     background:#FAFAFA none repeat scroll 0 0;
     color:#666666;
 }
-.td_alt, .list tr th, .list tr td[scope=col], .edit .list tr th, .edit .list tr td[scope=col]
-{
+
+.td_alt, .list tr th, .list tr td[scope=col], .edit .list tr th, .edit .list tr td[scope=col] {
     border-left: none;
     border-right: none;
-
     border-bottom: 1px solid #cccccc;
-
 }
 
 /* module title */
-.moduleTitle
-{
+.moduleTitle {
     padding-bottom: 3px;
     padding-top: 0;
     margin-bottom: 10px;
     margin-top: 0;
 }
-.moduleTitle > h2 > img
-{
+
+.moduleTitle > h2 > img {
     display: none;
 }
 
 /* for subpanel tabs */
-ul.subTabs
-{
+ul.subTabs {
     padding: 4px 0;
     margin: 0px 0 0 0;
     border: none;
     font: 12px Arial, Verdana, Helvetica, sans-serif;
 }
-ul.subTabs li
-{
+
+ul.subTabs li {
     list-style: none;
     margin: 0;
     display: inline;
 }
-.activeSubTab,
-ul.subTabs li a.activeSubTab:link,
-ul.subTabs li a.activeSubTab:visited,
-ul.subTabs li a.activeSubTab:hover
-{
+
+.activeSubTab, ul.subTabs li a.activeSubTab:link, ul.subTabs li a.activeSubTab:visited, ul.subTabs li a.activeSubTab:hover {
     font-weight: bold;
 }
-ul.subTabs li a
-{
+
+ul.subTabs li a {
     padding: 0 8px 0 8px;
     margin: 0px;
     border-right: 1px solid;
     border-bottom: none;
     text-decoration: none;
 }
-ul.subTabs li a:link, ul.subTabs li a:visited
-{
+
+ul.subTabs li a:link, ul.subTabs li a:visited {
     text-decoration: none;
 }
-.subTabMore
-{
+
+.subTabMore {
 
     text-decoration: none;
     padding-top: 3px;
 }
 
 /* new record form */
-#newRecord form
-{
+#newRecord form {
     border-bottom: 1px solid;
 }
 
 /* misc links */
-a.utilsLink:link, a.utilsLink:visited
-{
+a.utilsLink:link, a.utilsLink:visited {
     font-weight: normal;
     text-decoration: underline;
     padding-bottom: 3px;
 }
-a.tabFormAdvLink:link, a.tabFormAdvLink:visited, a.tabFormAdvLink:hover
-{
+
+a.tabFormAdvLink:link, a.tabFormAdvLink:visited, a.tabFormAdvLink:hover {
     text-decoration: none;
     line-height: 20px;
     margin-right: 2px;
@@ -2100,8 +1725,7 @@ a.tabFormAdvLink:link, a.tabFormAdvLink:visited, a.tabFormAdvLink:hover
 }
 
 /* themepicker */
-#themepickerLinkSpan a
-{
+#themepickerLinkSpan a {
     color: #444444;
 }
 
@@ -2110,28 +1734,27 @@ ul.tablist, ul.subpanelTablist
 {
     border-bottom: 2px solid;
 }
-ul.tablist li a, ul.subpanelTablist li a
-{
+ul.tablist li a, ul.subpanelTablist li a {
     border-top: 2px solid;
     border-right: 1px solid;
     border-bottom: none;
 }
-ul.tablist li a:hover, ul.subpanelTablist li a:hover
-{
+
+ul.tablist li a:hover, ul.subpanelTablist li a:hover {
     border-top: 2px solid;
 }
-ul.tablist li a.current, ul.tablist li a.current:hover
-{
+
+ul.tablist li a.current, ul.tablist li a.current:hover {
     border-bottom:2px solid #f6f6f6;
     font-weight: bold;
 }
-ul.subpanelTablist li a.current, ul.subpanelTablist li a.current:hover
-{
+
+ul.subpanelTablist li a.current, ul.subpanelTablist li a.current:hover {
     border-bottom:2px solid #fff;
     font-weight: bold;
 }
-.subpanelTabForm .h3Row
-{
+
+.subpanelTabForm .h3Row {
     border-top: 1px solid #dddddd;
     background-image: none;
 }
@@ -2170,54 +1793,37 @@ ul.subpanelTablist li a.current, ul.subpanelTablist li a.current:hover
 }
 
 /* YUI styles */
-.ygrid-row,
-.ygrid-hd,
-.ygrid-hd-body,
-.ygrid-hd-body span
-{
+.ygrid-row, .ygrid-hd, .ygrid-hd-body, .ygrid-hd-body span {
     font-size: 8pt;
 }
 
-/* colors */
-body
-{
-    color: #444444;
-    background-color: #ffffff;
-}
-
 /* for team notices dashlet */
-.teamNoticeBox
-{
+.teamNoticeBox {
     border-color: #abc3d7;
     color: #444444;
 }
 
 /* for subpanel tabs */
-ul.tablist li a.activeSubTab:hover
-{
+ul.tablist li a.activeSubTab:hover {
     border-bottom-color: #ddd;
     color: #000000;
 }
-ul.subpanelTablist li a.activeSubTab:hover
-{
+
+ul.subpanelTablist li a.activeSubTab:hover {
     color: #000000;
 }
 
 /* search */
-#search input[name=query_string]
-{
+#search input[name=query_string] {
     border-color: #6fb0e4;
     background-color: #f6fafd;
 }
 
 /* new record form */
-#newRecord form a:link,
-#newRecord form a:visited
-{
+#newRecord form a:link, #newRecord form a:visited {
     color: #666666;
 }
-#newRecord form a:hover
-{
+#newRecord form a:hover {
     color: #444444;
 }
 
@@ -2232,33 +1838,25 @@ ul.subpanelTablist li a.activeSubTab:hover
 .list tr td[scope=col],
 .list tr td[scope=col] a:link,
 .list tr td[scope=col] a:visited,
-.list tr.pagination td table td span.pageNumbers
-{
+.list tr.pagination td table td span.pageNumbers {
     color: #444444;
 }
 
-.evenListRowS1 td,
-.oddListRowS1 td
-{
+.evenListRowS1 td, .oddListRowS1 td {
     color: #000000;
     border-bottom: 1px solid #cbdae6;
 }
 
-.evenListRowS1:hover td,
-.oddListRowS1:hover td
-{
+.evenListRowS1:hover td, .oddListRowS1:hover td {
     background: #f6f6f6;
 }
 
 /* detailviews */
-.detail table,
-table.detail
-{
+.detail table, table.detail {
     background-color: #cbdae6;
 }
 
-.detail tr td[scope="row"]
-{
+.detail tr td[scope="row"] {
     color: #000000;
     background-color: #f6f6f6;
     border-color: #cbdae6;
@@ -2268,28 +1866,22 @@ table.detail
     color: #444444;
 }
 
-.detail tr th
-{
+.detail tr th {
     border-color: #cbdae6;
 }
 
-.detail tr td
-{
+.detail tr td {
     color: #444444;
     border-color: #cbdae6;
     background-color: #fff;
 }
 
-.detail tr td a:link,
-.detail tr td a:visited,
-.detail tr td a:hover
-{
+.detail tr td a:link, .detail tr td a:visited, .detail tr td a:hover {
     color: #0b578f;
 }
 
 /* editviews */
-.edit td[scope=row]
-{
+.edit td[scope=row] {
     color: #444444;
 }
 
@@ -2297,149 +1889,122 @@ table.detail
     border-color:#abc3d7;
 }
 
-.edit
-{
+.edit {
     color: #333333;
     background-color: #f6f6f6;
 }
 
-.detail .edit td
-{
+.detail .edit td {
     background-color: #fff !important;
     border-bottom: 0 !important;
 }
 
 /* other views */
-.other
-{
+.other {
     border-color: #abc3d7;
     background-color: #cbdae6;
 }
 
-.other td
-{
+.other td {
     color: #444444;
     background-color: #ffffff;
     border-left-color: #dfdfdf;
 }
 
-.other td[scope=row]
-{
+.other td[scope=row] {
     color: #000000;
     background-color: #fafafa;
 }
 
-.other td.edit
-{
+.other td.edit {
     color: #000000;
     background-color: #f6f6f6;
 }
 
-a.tabFormAdvLink:link, a.tabFormAdvLink:visited
-{
+a.tabFormAdvLink:link, a.tabFormAdvLink:visited {
     color: #444444;
 }
 
 /* calendar styles */
-.monthCalBody
-{
+.monthCalBody {
     background-color: #abc3d7;
 }
 
-.monthFooter td
-{
+.monthFooter td {
     border-top-color: #abc3d7;
     border-bottom-color: #abc3d7;
     background-color: #ffffff;
 }
 
-.monthHeader a:hover,
-.monthViewDayHeight a:hover
-{
+.monthHeader a:hover, .monthViewDayHeight a:hover {
     color: #0b578f;
 }
 
-.monthCalBodyTH th[scope=row],
-.monthViewDayHeight td[scope=row]
-{
+.monthCalBodyTH th[scope=row], .monthViewDayHeight td[scope=row] {
     background-color: #ebebeb;
 }
 
-.monthCalBodyTH th
-{
+.monthCalBodyTH th {
     background-color: #fafafa;
     color: #444444;
     border-color: #abc3d7 !important;
 }
 
-.monthViewDayHeight td
-{
+.monthViewDayHeight td {
     border-color: #abc3d7;
     background-color: #ffffff;
     color: #444444;
 }
 
-.monthViewDayHeight td[class=weekEnd]
-{
+.monthViewDayHeight td[class=weekEnd] {
     background-color: #f6f6f6;
 }
 
-.monthCalBodyDayItem
-{
+.monthCalBodyDayItem {
     background-color: #ffffff;
     border-top-color: #abc3d7;
     border-bottom-color: #ddd;
 }
 
-.monthCalBody td
-{
+.monthCalBody td {
     background-color: #fff;
     color: #444444;
 }
 
-.monthCalBody th a
-{
+.monthCalBody th a {
     color: #000000;
 }
 
-.yearCalBody
-{
+.yearCalBody {
     border: none;
 }
 
-.yearCalBodyMonth
-{
+.yearCalBodyMonth {
     background-color: #efefef !important;
     border-top: 2px solid #3C8DBC;
     border-bottom: 2px solid #fff;
 }
 
-.yearCalBody .monthHeader
-{
+.yearCalBody .monthHeader {
     border: none;
 }
 
-.yearCalBodyMonth #daily_cal_table
-{
+.yearCalBodyMonth #daily_cal_table {
     border-top: #abc3d7;
 }
 
-.yearCalBodyMonth #daily_cal_table .monthCalBodyTHDay
-{
+.yearCalBodyMonth #daily_cal_table .monthCalBodyTHDay {
     border-color: #abc3d7;
 }
 
-.yearCalBodyMonth > a
-{
+.yearCalBodyMonth > a {
     color: #000000;
 }
 
-h5.calSharedUser
-{
+h5.calSharedUser {
     color: #444444;
 }
-.monthHeader
-{
+.monthHeader {
     color: #444;
     background-color: #fff;
     border-color: #abc3d7;
@@ -2447,49 +2012,35 @@ h5.calSharedUser
 }
 
 /* for subpanel tabs */
-.subpanelTabForm
-{
+.subpanelTabForm {
     border-color: #abc3d7;
     color: #000000;
     background-color: #ffffff;
 }
 
-ul.tablist, ul.subpanelTablist
-{
+ul.tablist, ul.subpanelTablist {
     border-bottom-color: #abc3d7;
 }
 
-ul.tablist li a:hover,
-ul.subpanelTablist li a:hover
-{
+ul.tablist li a:hover, ul.subpanelTablist li a:hover {
     background: #fafafa;
     border-color: #abc3d7;
 }
 
-ul.tablist li a,
-ul.subpanelTablist li a
-{
+ul.tablist li a, ul.subpanelTablist li a {
     background-color: #fff;
     border-color: #dddddd;
 }
 
-ul.tablist li a:link,
-ul.tablist li a:visited,
-ul.subpanelTablist li a:link,
-ul.subpanelTablist li a:visited
-{
+ul.tablist li a:link, ul.tablist li a:visited, ul.subpanelTablist li a:link, ul.subpanelTablist li a:visited {
     color: #444444;
 }
 
-ul.tablist li a:hover,
-ul.subpanelTablist li a:hover
-{
+ul.tablist li a:hover, ul.subpanelTablist li a:hover {
     background: #fafafa;
 }
 
-ul.subpanelTablist li a.current,
-ul.subpanelTablist li a.current:hover
-{
+ul.subpanelTablist li a.current, ul.subpanelTablist li a.current:hover {
     color: #4f4f4f;
     background: #fff;
     border-right-color: #abc3d7;
@@ -2497,32 +2048,27 @@ ul.subpanelTablist li a.current:hover
     border-bottom-color: #fff;
 }
 
-ul.tablist li a.current:link, ul.tablist li a.current:visited, ul.tablist li a.current:hover
-{
+ul.tablist li a.current:link, ul.tablist li a.current:visited, ul.tablist li a.current:hover {
     background: #f6f6f6;
     border-bottom-color: #f6f6f6;
     border-right-color: #abc3d7;
     border-top-color: #abc3d7;
 }
 
-#change_layout
-{
+#change_layout {
     border: 0;
 }
 
 /* for overlib js library */
-.olCgClass td
-{
+.olCgClass td {
     border-bottom-color: #abc3d7;
 }
-.olBgClass
-{
+.olBgClass {
     background-color: #abc3d7;
 }
 
 /* sitemap */
-#sitemap .edit.view
-{
+#sitemap .edit.view {
     border-color: #3C8DBC !important;
 }
 
@@ -2547,8 +2093,7 @@ ul.yui-nav li.selected {
     background:#3C8DBC;
 }
 
-#basic_search_link
-{
+#basic_search_link {
     margin-left:6px !important;
 }
 
@@ -2564,14 +2109,12 @@ ul.yui-nav li.selected {
     padding: 5px;
 }
 
-div#chartDashlets
-{
+div#chartDashlets {
     overflow-y: auto;
 }
 
 /* miscellaneaous 508 classes */
-.detail508 tr td[scope="col"]
-{
+.detail508 tr td[scope="col"] {
     background-color: #F6F6F6;
     border-color: #CBDAE6;
     color: #000000;
@@ -3526,9 +3069,6 @@ ol, ul, dl {
     padding: 10px;
     font-size: 16px;
 }
-.form-signin .form-control:focus {
-    z-index: 2;
-}
 
 #bigbutton{
     padding:10px 0 10px 0;
@@ -3545,6 +3085,7 @@ div.input-group input{
     background-color: #008080;
     border-color: #2e6da4;
 }
+
 .button-primary:hover,
 .button-primary:focus,
 .button-primary.focus,
@@ -3555,9 +3096,7 @@ div.input-group input{
     background-color: #286090;
     border-color: #204d74;
 }
-.button:active,
-.button.active,
-.open > .dropdown-toggle.btn-primary {
+.button:active, .button.active, .open > .dropdown-toggle.btn-primary {
     background-image: none;
 }
 
@@ -3571,6 +3110,7 @@ div.input-group input{
     background-color: #35586C;
     border-color: #2e6da4;
 }
+
 .button-primary:hover,
 .button-primary:focus,
 .button-primary.focus,
@@ -3581,11 +3121,11 @@ div.input-group input{
     background-color: #286090;
     border-color: #204d74;
 }
-.button-primary:active,
-.button-primary.active,
-.open > .dropdown-toggle.btn-primary {
+
+.button-primary:active, .button-primary.active, .open > .dropdown-toggle.btn-primary {
     background-image: none;
 }
+
 .button-primary.disabled,
 .button-primary[disabled],
 fieldset[disabled] .btn-primary,
@@ -3607,6 +3147,7 @@ fieldset[disabled] .btn-primary.active {
     background-color: #3C8DBC;
     border-color: #2e6da4;
 }
+
 .button-primary .badge {
     color: #3C8DBC;
     background-color: #fff;
@@ -3678,7 +3219,6 @@ ul#topnav li a:hover {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
-/* End SuiteCRM Responsive/Bootstrap additional CSS */
 
 .hr {
     height:1px;
@@ -3703,6 +3243,8 @@ li#usermenu:hover {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
+/* Custom styles fore 'More' list item on top navigation */
 
 #moremenu a{
     color:#ffffff;
@@ -3796,11 +3338,11 @@ input[type=text], select{
     border-bottom:1px solid #dddddd;
 }
 
-#globalinks ul li a{
+#globalinks ul li a {
     color:#333333;
 }
 
-#dashletresponsive{
+#dashletresponsive {
     float: left;
 }
 
@@ -3808,22 +3350,18 @@ input[type=text], select{
     max-width:90% !important;
 }
 
-ul.dashboardTabList li{
+ul.dashboardTabList li {
     list-style:none;
     margin:0 0 10px 0;
 }
 
-#addbuttons{
+#addbuttons {
     float:right;
     margin:0 5px 0 5px;
 }
 
-.navbar-inverse {
-    background: #333333;
-}
-
 .navbar-inverse .navbar-brand {
-    color:#eeeeee;
+    color:#ffffff;
 }
 
 .btn-success {
@@ -3837,21 +3375,6 @@ ul.dashboardTabList li{
 
 #headerlinks a:hover {
     color:#ffffff;
-}
-
-.nav li {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-.nav li#topnav:hover {
-    background:#121212;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
 }
 
 table {
@@ -3961,17 +3484,25 @@ table legend {
 }
 
 @media screen and (min-width:801px) {
-    #mobilefooter {display:none}
+    #mobilefooter {
+        display:none
+    }
 }
 
 @media screen and (max-width:801px) {
-    footer {display:none}
+    footer {
+        display:none
+    }
 }
 
-#usermenucollapsed{margin:0 0 0 5px;display:none;}
-#searchbutton{display:none;}
+#usermenucollapsed {
+    margin:0 0 0 5px;display:none;
+}
+#searchbutton {
+    display:none;
+}
 
-#searchmobile{
+#searchmobile {
     margin-top:8px;
     display:none;
 }
@@ -3982,8 +3513,14 @@ table legend {
 /* Media queries for larger screens to hide mobile content */
 
 @media (max-width:1248px){
-    #usermenu, #searchform, #searchmobile{display:none;}
-    #globalLinks{border:none; margin:10px 000; padding:0;}
+    #usermenu, #searchform, #searchmobile{
+        display:none;
+    }
+
+    #globalLinks{
+        border:none; margin:10px 000; padding:0;
+    }
+
     .navbar-form .form-control {
         margin:8px 000;
     }
@@ -4040,38 +3577,30 @@ table legend {
     }
 }
 
-/*
- * Sidebar CSS
- */
+/* Sidebar CSS */
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
 }
 
-
-/*
- * Global add-ons
- */
+/* Global add-ons */
 
 .sub-header {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
 }
 
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
+/* Top navigation - Hide default border to remove 1px line. */
+
 .navbar-fixed-top {
     border: 0;
 }
 
-/*
- * Sidebar
- */
+/* Sidebar */
 
 /* Hide for mobile, show later */
+
 .sidebar {
     display: none;
 }
@@ -4093,6 +3622,7 @@ body {
 }
 
 /* Sidebar navigation */
+
 .nav-sidebar {
     margin-right: -21px; /* 20px padding + 1px border */
     margin-bottom: 20px;
@@ -4102,17 +3632,12 @@ body {
     padding-right: 20px;
     padding-left: 20px;
 }
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
     color: #fff;
     background-color: #428bca;
 }
 
-
-/*
- * Main content
- */
+/* Main content */
 
 .main {
     padding: 20px 20px 0px 20px;
@@ -4127,10 +3652,7 @@ body {
     margin-top: 0;
 }
 
-
-/*
- * Placeholder dashboard ideas
- */
+/* Placeholder dashboard ideas */
 
 .placeholders {
     margin-bottom: 30px;
@@ -4149,7 +3671,7 @@ body {
 
 /* Padding for sidebar items */
 
-.nav > li > a{
+.nav > li > a {
     padding:8px 0 8px 0;
 }
 
@@ -4291,10 +3813,11 @@ li#moremenu {
     }
 }
 
-@media (max-width:640px){
 /* Responsive edit view styles */
 
-    .edit.view{
+@media (max-width:640px){
+
+    .edit.view {
         -webkit-border-bottom-right-radius: 5px;
         -webkit-border-bottom-left-radius: 5px;
         -moz-border-radius-bottomright: 5px;
@@ -4328,7 +3851,7 @@ li#moremenu {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
-    .edit tr td[scope="col"]{
+    .edit tr td[scope="col"] {
         font-weight:bold;
     }
     /* Fix for textarea so it does not overflow */
@@ -4342,29 +3865,29 @@ li#moremenu {
     .edit tr {
         border-bottom: 1px solid #cccccc;
     }
-    .edit tr:last-child{
+    .edit tr:last-child {
         border:none;
     }
-    .edit input[type=text]{
+    .edit input[type=text] {
         padding:10px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         border-radius: 2px;
     }
     /* Fix for how email section/table shows */
-    .emailaddresses tr, .emailaddresses td{
+    .emailaddresses tr, .emailaddresses td {
         display:inline;
         border:none;
     }
     /* Responsive dashlet styles */
-    .dashletContainer{
+    .dashletContainer {
         float:left;
         max-width:95%;
     }
     .dashletPanel {
         overflow:auto;
     }
-    .dashboardTabList{
+    .dashboardTabList {
         display:none;
     }
     /* Fix to remove rogue bootstrap margin on smaller devices to correct margin issue */
@@ -4378,6 +3901,9 @@ li#moremenu {
         margin: 0 0 50px 0;
     }
 }
+
+/* Make buttons larger on mobile */
+
 @media (max-width:1023px) {
     button, .button, input[type="button"], input[type="reset"], input[type="submit"], a#create_link.utilsLink {
         color: #fff;
@@ -4393,37 +3919,39 @@ li#moremenu {
         transition: all 0.3s ease-out;
         margin: 2px;
     }
-    .quickcreate{
+    .quickcreate {
         margin:0;
         padding:5px 7px 5px 7px;
     }
 }
 
-.search_form{
+/* Hide search form as standard */
+
+.search_form {
     display:none;
 }
 
 /* Custom styling for recently viewed on sidebar */
 
-.sidebaredit{
+.sidebaredit {
     float:left;
     margin:0;
     padding:0;
 }
 
-#recentlyviewed{
+#recentlyviewed {
     width:100%;
 }
-#recentlinks{
+#recentlinks {
     float:left;
     width:150px;
 }
 
-#recentlinks_edit{
+#recentlinks_edit {
     float:right;
 }
 
-#recentlinks_edit a:hover{
+#recentlinks_edit a:hover {
     background:none;
 }
 
@@ -4433,19 +3961,19 @@ a[id^=grouptab] {
     color: #f7f7f7;
 }
 
-a[id^=grouptab]:visited, a[id^=grouptab]:active{
+a[id^=grouptab]:visited, a[id^=grouptab]:active {
     background:none;
 }
 
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background:none;
 }
 
-#globalLinksicons{
+#globalLinksicons {
     margin:0 5px 0 0;
 }
 
-.popupBody{
+.popupBody {
     margin:10px;
     padding:0;
 }
@@ -4454,20 +3982,20 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active{
     width:95%;
 }
 
-.popupBody .list .view{
+.popupBody .list .view {
     overflow:scroll;
     width:95%;
 }
 
-.navbar-inverse .navbar-toggle{
+.navbar-inverse .navbar-toggle {
     border:none;
 }
 
-ul.navbar-nav li:hover, .bigmenu li a:hover{
+ul.navbar-nav li:hover, .bigmenu li a:hover {
     background:#337ab7 !important;
 }
 
-ul.navbar-nav li ul li:hover{
+ul.navbar-nav li ul li:hover {
     background:none !important;
 }
 
@@ -4475,8 +4003,9 @@ ul.navbar-nav li ul li:hover{
     background:none;
 }
 
-#user_password, #user_name
-{
+#user_password, #user_name {
     width: 150px;
 }
+
+/* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
