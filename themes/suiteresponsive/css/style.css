@@ -126,10 +126,6 @@ input[type=checkbox],input[type=radio] {
     vertical-align: bottom;
 }
 
-hr {
-    height:1px;
-}
-
 div.clear {
     height: 0;
     clear: both;
@@ -227,12 +223,6 @@ th, td {
 /* module title */
 div.moduleTitle {
     height:2em;
-}
-
-.moduleTitle img {
-    margin-right: 3px;
-    margin-top: 3px;
-    border: 0;
 }
 
 .moduleTitle h2 {
@@ -356,10 +346,6 @@ table#tabFormPagination td,  #tabFormPagination, #EditView > table#tabFormPagina
 
 .edit tr td table, .edit tr td table tr td {
     padding: 3px 3px 3px 0 !important;
-}
-
-table.edit.view {
-    margin-top: 0;
 }
 
 /* search panel on top of list views ( extends .edit .view definition ) */
