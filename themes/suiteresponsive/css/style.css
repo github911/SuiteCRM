@@ -4923,5 +4923,8 @@ ul.navbar-nav li ul li:hover{
     background:none !important;
 }
 
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+    background:none;
+}
 
 /* End Global CSS */
