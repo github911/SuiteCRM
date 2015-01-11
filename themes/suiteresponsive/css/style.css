@@ -4014,5 +4014,9 @@ ul.navbar-nav li ul li:hover {
     width: 150px;
 }
 
+.edit img#company_logo_image{
+    max-width:250px !important;
+    margin-top:50px;
+}
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
