@@ -4019,5 +4019,8 @@ ul.navbar-nav li ul li:hover {
     margin-top:50px;
 }
 
+#buttontoggle {
+    margin-right:10px;
+}
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */

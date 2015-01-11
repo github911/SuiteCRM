@@ -229,7 +229,6 @@
                     </span>
                 </div>
             </form>
-            <!--<button id="buttontoggle" class="ui-state-default ui-corner-all">Toggle Sidebar</button>-->
         </div>
     </div>
 </nav>

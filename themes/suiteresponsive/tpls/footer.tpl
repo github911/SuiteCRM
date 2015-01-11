@@ -154,6 +154,7 @@ function qe_init(){
     if(SUGAR.ajaxUI)
     	YAHOO.util.Event.onContentReady('ajaxUI-history-field', SUGAR.ajaxUI.firstLoad);
 </script>
+    <script src="themes/suiteresponsive/js/jquery.cookie.js"></script>
     <script>
         $( "button" ).click(function() {
             $( "#sugarcopy" ).toggle();
@@ -214,12 +215,25 @@ function qe_init(){
         $('.showsearch').click(function() {
             $('.search_form').toggle();
         });
-        $('#buttontoggle').click(function() {
-            $('.sidebar').css("display", "none");
+        $('#buttontoggle').click(function(){
+            $('.sidebar').toggle();
+            if ($('.sidebar').is(':visible')){
+                $.cookie('sidebartoggle', 'expanded');
+            }
+
+            if ($('.sidebar').is(':hidden')){
+                $.cookie('sidebartoggle', 'collapsed');
+            }
+            console.log($.cookie('sidebartoggle'));
         });
+        var sidebartoggle = $.cookie('sidebartoggle');
+        if (sidebartoggle == 'collapsed'){
+            $('.sidebar').hide();
+            $('#bootstrap-container').removeClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2');
+        }
     </script>
     <!-- Include all boostrap dependencies -->
-    <script src="themes/suiteresponsive/js/jquery.cookie.js"></script>
+
     <script src="themes/suiteresponsive/js/bootstrap.min.js"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
