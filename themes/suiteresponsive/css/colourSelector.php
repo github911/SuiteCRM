@@ -41,7 +41,7 @@ background: #<?php echo $sugar_config['colourselector']['dashlet']; ?>;
 /* Top navigation bar CSS */
 
 .navbar-inverse {
-    background:#<?php echo $sugar_config['colourselector']['navbar']; ?>;
+    background:#<?php echo $sugar_config['colourselector']['navbar'];?> !important;
 }
 
 #headerlinks a:link, #headerlinks a:visited, .navbar-inverse .navbar-brand, #moremenu a {
@@ -49,8 +49,8 @@ background:none;
 color:#<?php echo $sugar_config['colourselector']['navbarfont']; ?>;
 }
 
-ul#topnav li:hover, .dropdown-menu li a:hover, li#usermenu:hover, #moremenu ul li:hover  {
-background:#<?php echo $sugar_config['colourselector']['navbarlihover']; ?>;
+ul#topnav li:hover, .dropdown-menu li a:hover, li#usermenu:hover, #moremenu ul li:hover,ul.navbar-nav li:hover, .bigmenu li a:hover  {
+background:#<?php echo $sugar_config['colourselector']['navbarlihover']; ?> !important;
 }
 
 #headerlinks a:hover, .navbar-inverse .navbar-brand:hover, #moremenu a:hover {
