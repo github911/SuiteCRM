@@ -231,6 +231,9 @@ function qe_init(){
             $('.sidebar').hide();
             $('#bootstrap-container').removeClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2');
         }
+        if (sidebartoggle == 'expanded'){
+            $('#bootstrap-container').addClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2');
+        }
     </script>
     <!-- Include all boostrap dependencies -->
 
