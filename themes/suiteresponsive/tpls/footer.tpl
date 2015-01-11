@@ -219,17 +219,21 @@ function qe_init(){
             $('.sidebar').toggle();
             if ($('.sidebar').is(':visible')){
                 $.cookie('sidebartoggle', 'expanded');
+                $('#bootstrap-container').addClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2');
+
             }
 
             if ($('.sidebar').is(':hidden')){
                 $.cookie('sidebartoggle', 'collapsed');
+                $('#bootstrap-container').removeClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-sm-3 col-md-2 sidebar');
+
             }
             console.log($.cookie('sidebartoggle'));
         });
         var sidebartoggle = $.cookie('sidebartoggle');
         if (sidebartoggle == 'collapsed'){
             $('.sidebar').hide();
-            $('#bootstrap-container').removeClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2');
+            $('#bootstrap-container').removeClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-sm-3 col-md-2 sidebar');
         }
         if (sidebartoggle == 'expanded'){
             $('#bootstrap-container').addClass('col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2');
