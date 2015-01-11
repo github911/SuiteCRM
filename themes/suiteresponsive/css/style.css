@@ -4058,5 +4058,9 @@ ul.navbar-nav li ul li:hover {
     float:left;
 }
 
+.dashboardTabList li a span {
+    cursor:pointer;
+}
+
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
