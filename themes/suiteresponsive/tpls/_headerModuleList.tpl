@@ -197,6 +197,7 @@
                     {/foreach}
                     <li role="presentation"><a role="menuitem" id="logout_link" href='{$LOGOUT_LINK}' class='utilsLink'>{$LOGOUT_LABEL}</a></li>
                 </ul>
+                <li id="buttontoggle"><span class="glyphicon glyphicon-th-list"></span></li>
             </div>
             <div id="search" class="dropdown nav navbar-nav navbar-right">
             <button id="searchbutton" class="dropdown-toggle btn btn-default" data-toggle="dropdown" aria-expanded="true">

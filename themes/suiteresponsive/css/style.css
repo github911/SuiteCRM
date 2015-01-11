@@ -4020,11 +4020,13 @@ ul.navbar-nav li ul li:hover {
 }
 
 #buttontoggle {
-    margin-right:10px;
+    margin-top:10px;
+    padding: 0 0 0 15px;
+    cursor:pointer;
 }
 
 #buttontoggle span {
-    padding: 0 10px 0 10px;
+    color:#ffffff;
 }
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
