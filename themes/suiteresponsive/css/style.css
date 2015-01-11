@@ -4909,4 +4909,8 @@ a[id^=grouptab]:visited, a[id^=grouptab]:active{
 .navbar-inverse .navbar-toggle{
     border:none;
 }
+
+ul.nav li:hover{
+    background:#337ab7 !important;
+}
 /* End Global CSS */
