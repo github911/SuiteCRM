@@ -80,7 +80,7 @@ if($queryString){
     <?php getPaginateHTML($queryString, $start,$amount,$total); ?>
     <thead>
     <tr height='20'>
-        <th scope='col' width='10%'>
+        <th scope='col' width='10%'data-hide="phone">
 				<span sugar="sugar1">
                     <div style='white-space: nowrap;'width='100%' align='left'>
                         <?php echo translate("LBL_SEARCH_RESULT_MODULE","AOD_Index"); ?>
@@ -94,19 +94,19 @@ if($queryString){
                     </div>
                 </span sugar='sugar1'>
         </th>
-        <th scope='col' width='30%' data-hide="phone,tablet">
+        <th scope='col' width='30%' data-hide="phone">
 				<span sugar="sugar1">
                     <div style='white-space: nowrap;'width='100%' align='left'>
                         <?php echo translate("LBL_SEARCH_RESULT_SUMMARY","AOD_Index"); ?>
                     </div>
                 </span sugar='sugar1'>
         </th>
-        <th scope='col' width='25%' data-hide="phone,phonelandscape,tablet">
+        <th scope='col' width='25%' data-hide="phone,phonelandscape">
             <div style='white-space: nowrap;'width='100%' align='left'>
                 <?php echo translate("LBL_SEARCH_RESULT_DATE_CREATED","AOD_Index"); ?>
             </div>
         </th>
-        <th scope='col' width='25%' data-hide="phone,phonelandscape,tablet">
+        <th scope='col' width='25%' data-hide="phone,phonelandscape">
             <div style='white-space: nowrap;'width='100%' align='left'>
                 <?php echo translate("LBL_SEARCH_RESULT_DATE_MODIFIED","AOD_Index"); ?>
             </div>
