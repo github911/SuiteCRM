@@ -4062,5 +4062,17 @@ ul.navbar-nav li ul li:hover {
     cursor:pointer;
 }
 
+.View {
+    border: 1px solid #cccccc;
+}
+
+@media (max-width:768px) {
+    .View {
+        border: 1px solid #cccccc;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+}
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
