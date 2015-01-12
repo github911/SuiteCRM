@@ -111,7 +111,7 @@ if($queryString){
                 <?php echo translate("LBL_SEARCH_RESULT_DATE_MODIFIED","AOD_Index"); ?>
             </div>
         </th>
-        <th scope='col' width='10%' data-hide="phone,tablet">
+        <th scope='col' width='10%'>
             <div style='white-space: nowrap;'width='100%' align='left'>
                 <?php echo translate("LBL_SEARCH_RESULT_SCORE","AOD_Index"); ?>
             </div>
