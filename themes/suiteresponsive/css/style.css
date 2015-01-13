@@ -4114,5 +4114,14 @@ ul.navbar-nav li ul li:hover {
         padding:0;
     }
 }
+
+.table > thead > tr > th {
+    border:none;
+}
+
+.list thead{
+    border-bottom:1px solid #cccccc;
+}
+
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
