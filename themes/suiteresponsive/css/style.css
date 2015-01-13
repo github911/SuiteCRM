@@ -4074,5 +4074,45 @@ ul.navbar-nav li ul li:hover {
         border-radius: 5px;
     }
 }
+
+@media (max-width:320px) {
+    #dashletcontainer {
+        width:67%;
+        position:relative;
+        margin:0;
+        float:left;
+        padding:0;
+    }
+}
+
+@media (min-width:340px) and (max-width:360px) {
+    #dashletcontainer {
+        width:75%;
+        position:relative;
+        margin:0;
+        float:left;
+        padding:0;
+    }
+}
+
+@media (min-width:480px) and (max-width:480px) {
+    #dashletcontainer {
+        width:95%;
+        position:relative;
+        margin:0;
+        float:left;
+        padding:0;
+    }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+    #dashletcontainer {
+        width:95%;
+        position:relative;
+        margin:0;
+        float:left;
+        padding:0;
+    }
+}
 /* End SuiteCRM Responsive/Bootstrap additional CSS */
 /* End Global CSS */
