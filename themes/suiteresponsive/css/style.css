@@ -4105,7 +4105,7 @@ ul.navbar-nav li ul li:hover {
     }
 }
 
-@media (min-width:480px) and (max-width:767px) {
+@media (min-width:480px) and (max-width:959px) {
     #dashletcontainer {
         width:95%;
         position:relative;
