@@ -89,7 +89,7 @@
                     {if $name != 'Home'}<span id="headerlinks" class="dropdown-toggle" data-toggle="dropdown" class="currentTab">{sugar_link id="moduleTab_$name" module=$name data=$module}</span><span>&nbsp;</span>{/if}
                     <ul class="dropdown-menu" role="menu">
                         {if count($shortcutTopMenu.$name) > 0}
-                        <h3 class="home_h2">{$APP.LBL_LINK_ACTIONS}</h3>
+                        <h3 class="home_h2"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>{$APP.LBL_LINK_ACTIONS}</h3>
                         <span class="breaker">
                             {foreach from=$shortcutTopMenu.$name item=item}
                                 {if $item.URL == "-"}
@@ -129,7 +129,7 @@
                 {if $name != 'Home'}<span id="headerlinks" class="dropdown-toggle" data-toggle="dropdown" class="notCurrentTab">{sugar_link id="moduleTab_$name" module=$name data=$module}</span><span class="notCurrentTabRight">&nbsp;</span>{/if}
                 <ul class="dropdown-menu" role="menu">
                     {if count($shortcutTopMenu.$name) > 0}
-                    <h3 class="home_h2">{$APP.LBL_LINK_ACTIONS}</h3>
+                    <h3 class="home_h2"><span class="glyphicon glyphicon-share" aria-hidden="true"></span>{$APP.LBL_LINK_ACTIONS}</h3>
                     {foreach from=$shortcutTopMenu.$name item=item}
                         {if $item.URL == "-"}
                             <li><a></a><span>&nbsp;</span></li>
@@ -139,7 +139,7 @@
                     {/foreach}
                     <br>
                     {/if}
-                    <h3 class="home_h2">{$APP.LBL_LAST_VIEWED}</h3>
+                    <h3 class="recent_h2">{$APP.LBL_LAST_VIEWED}</h3>
                     {foreach from=$recentRecords item=item name=lastViewed}
                         {if $item.module_name == $name}
                         <table style="width:100%">
@@ -260,7 +260,7 @@
             </ul>
         </div>
         <hr class="hr">
-        <h2>{$APP.LBL_LAST_VIEWED}</h2>
+        <h2 class="recent_h2">{$APP.LBL_LAST_VIEWED}</h2>
         <ul class="nav nav-pills nav-stacked">
             {foreach from=$recentRecords item=item name=lastViewed}
                 <li id="recentlinks" role="presentation">
